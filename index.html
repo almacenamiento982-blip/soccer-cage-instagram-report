@@ -1740,17 +1740,17 @@ h3.sec{
   <div class="nav-in">
     <div class="brand">⚫⚪ <b>JAM</b> Analytics</div>
     <div class="nav-links" id="nl">
-      <a href="#resumen" class="on">Resumen</a>
-      <a href="#audiencia">Audiencia</a>
-      <a href="#contenido">Contenido</a>
-      <a href="#formatos">Formatos</a>
-      <a href="#evolucion">Evolución</a>
-      <a href="#cadencia">Días y horas</a>
-      <a href="#reels">Reels</a>
-      <a href="#top">Top contenidos</a>
-      <a href="#facebook">Facebook</a>
-      <a href="#tabla">Tabla maestra</a>
-      <a href="#hallazgos">Hallazgos</a>
+      <a href="#resumen" class="on" data-i18n="jam-nav-resumen">Resumen</a>
+      <a href="#audiencia" data-i18n="jam-nav-audiencia">Audiencia</a>
+      <a href="#contenido" data-i18n="jam-nav-contenido">Contenido</a>
+      <a href="#formatos" data-i18n="jam-nav-formatos">Formatos</a>
+      <a href="#evolucion" data-i18n="jam-nav-evolucion">Evolución</a>
+      <a href="#cadencia" data-i18n="jam-nav-cadencia">Días y horas</a>
+      <a href="#reels" data-i18n="jam-nav-reels">Reels</a>
+      <a href="#top" data-i18n="jam-nav-top">Top contenidos</a>
+      <a href="#facebook" data-i18n="jam-nav-facebook">Facebook</a>
+      <a href="#tabla" data-i18n="jam-nav-tabla">Tabla maestra</a>
+      <a href="#hallazgos" data-i18n="jam-nav-hallazgos">Hallazgos</a>
     </div>
   </div>
     </nav>
@@ -1758,8 +1758,8 @@ h3.sec{
 
 <!-- ============ NIVEL 1 ============ -->
 <section id="resumen">
-  <div class="lvl">Nivel 1</div>
-  <h1>Auditoría de Instagram · <span style="color:var(--accent)">@juventusacademymiami</span></h1>
+  <div class="lvl" data-i18n="jam-lvl-1">Nivel 1</div>
+  <h1 data-i18n="jam-h1-resumen">Auditoría de Instagram · <span style="color:var(--accent)">@juventusacademymiami</span></h1>
   <p class="sub" id="hdr-sub"></p>
 
   <div class="grid kpis" id="kpi-main"></div>
@@ -1773,22 +1773,22 @@ h3.sec{
     <span class="pill interp">Interpretación</span> = lectura analítica mía sobre esos datos.
   </div>
 
-  <h3>Totales del período y promedio por publicación</h3>
-  <p class="sub">Los totales dependen del volumen publicado; los promedios permiten comparar
+  <h3 data-i18n="jam-h3-totales">Totales del período y promedio por publicación</h3>
+  <p class="sub" data-i18n="jam-p-totales">Los totales dependen del volumen publicado; los promedios permiten comparar
   rendimiento real. Ambos se muestran siempre juntos para evitar conclusiones falsas.</p>
   <div class="tw">
     <table id="t-tot"><thead><tr>
-      <th>Métrica</th><th class="num">Total</th><th class="num">Prom./publicación</th>
-      <th class="num">Mediana</th><th>Fuente</th>
+      <th data-i18n="jam-th-metrica">Métrica</th><th class="num" data-i18n="jam-th-total">Total</th><th class="num" data-i18n="jam-th-prom-post">Prom./publicación</th>
+      <th class="num" data-i18n="jam-th-mediana">Mediana</th><th data-i18n="jam-th-fuente">Fuente</th>
     </tr></thead><tbody></tbody></table>
   </div>
 </section>
 
 <!-- ============ NIVEL 2 ============ -->
 <section id="audiencia">
-  <div class="lvl">Nivel 2</div>
-  <h2>Audiencia</h2>
-  <p class="sub">Demografía de seguidores entregada por Meta
+  <div class="lvl" data-i18n="jam-lvl-2">Nivel 2</div>
+  <h2 data-i18n="jam-h2-audiencia">Audiencia</h2>
+  <p class="sub" data-i18n="jam-p-audiencia">Demografía de seguidores entregada por Meta
   (<code>follower_demographics</code>, timeframe <code>this_month</code>, snapshot del momento de
   extracción). Meta solo entrega el estado actual: <strong>no existe serie histórica</strong> de
   demografía, por lo que no es posible mostrar su evolución.</p>
@@ -1796,23 +1796,23 @@ h3.sec{
   <div class="grid kpis" id="kpi-aud"></div>
 
   <div class="c2" style="margin-top:16px">
-    <div class="card"><h3 style="margin-top:0">Distribución por edad</h3>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-edad">Distribución por edad</h3>
       <div class="ch sm"><canvas id="c-age"></canvas></div></div>
-    <div class="card"><h3 style="margin-top:0">Distribución por género</h3>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-genero">Distribución por género</h3>
       <div class="ch sm"><canvas id="c-gen"></canvas></div>
-      <p class="mini">Meta entrega 3 categorías: F (femenino), M (masculino) y U (no declarado /
+      <p class="mini" data-i18n="jam-p-genero">Meta entrega 3 categorías: F (femenino), M (masculino) y U (no declarado /
       undeclared). No existen categorías adicionales en la respuesta de la API.</p></div>
   </div>
 
   <div class="c2" style="margin-top:14px">
-    <div class="card"><h3 style="margin-top:0">Top 15 ciudades</h3>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-ciudades">Top 15 ciudades</h3>
       <div class="ch"><canvas id="c-city"></canvas></div></div>
-    <div class="card"><h3 style="margin-top:0">Top 12 países</h3>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-paises">Top 12 países</h3>
       <div class="ch"><canvas id="c-ctry"></canvas></div></div>
   </div>
 
   <div class="tw" style="margin-top:14px">
-    <table><thead><tr><th>Ciudad</th><th class="num">Seguidores</th><th class="num">% del total</th></tr></thead>
+    <table><thead><tr><th data-i18n="jam-th-ciudad">Ciudad</th><th class="num" data-i18n="jam-th-seguidores">Seguidores</th><th class="num" data-i18n="jam-th-pct-total">% del total</th></tr></thead>
     <tbody id="t-city"></tbody></table>
   </div>
 
@@ -1821,24 +1821,24 @@ h3.sec{
 
 <!-- ============ NIVEL 3 ============ -->
 <section id="contenido">
-  <div class="lvl">Nivel 3</div>
-  <h2>Análisis de contenido por temática</h2>
-  <p class="sub">Clasificación automática por coincidencia de palabras clave en el caption.
+  <div class="lvl" data-i18n="jam-lvl-3">Nivel 3</div>
+  <h2 data-i18n="jam-h2-contenido">Análisis de contenido por temática</h2>
+  <p class="sub" data-i18n="jam-p-contenido">Clasificación automática por coincidencia de palabras clave en el caption.
   Las reglas son explícitas y auditables (se listan abajo); cada publicación recibe la primera
   categoría que coincide. Los posts sin coincidencia quedan en
   <em>"Otros / No clasificable"</em> en lugar de forzarlos a una categoría inventada.</p>
 
   <div class="tw">
     <table id="t-topic"><thead><tr>
-      <th>Temática</th><th class="num">N</th><th class="num">Views prom.</th>
-      <th class="num">Views mediana</th><th class="num">Alcance prom.</th>
-      <th class="num">Likes prom.</th><th class="num">Compart. prom.</th>
-      <th class="num">Guard. prom.</th><th class="num">ER alcance</th>
+      <th data-i18n="jam-th-tematica">Temática</th><th class="num">N</th><th class="num" data-i18n="jam-th-views-prom">Views prom.</th>
+      <th class="num" data-i18n="jam-th-views-mediana">Views mediana</th><th class="num" data-i18n="jam-th-alcance-prom">Alcance prom.</th>
+      <th class="num" data-i18n="jam-th-likes-prom">Likes prom.</th><th class="num" data-i18n="jam-th-compart-prom">Compart. prom.</th>
+      <th class="num" data-i18n="jam-th-guard-prom">Guard. prom.</th><th class="num" data-i18n="jam-th-er-alcance">ER alcance</th>
     </tr></thead><tbody></tbody></table>
   </div>
 
   <div class="card" style="margin-top:14px">
-    <h3 style="margin-top:0">Views promedio por temática</h3>
+    <h3 style="margin-top:0" data-i18n="jam-h3-views-tematica">Views promedio por temática</h3>
     <div class="ch"><canvas id="c-topic"></canvas></div>
   </div>
 
@@ -1855,28 +1855,28 @@ h3.sec{
 
 <!-- ============ NIVEL 4 ============ -->
 <section id="formatos">
-  <div class="lvl">Nivel 4</div>
-  <h2>Rendimiento por formato</h2>
-  <p class="sub">La distinción entre total y promedio es crítica aquí: el formato más publicado
+  <div class="lvl" data-i18n="jam-lvl-4">Nivel 4</div>
+  <h2 data-i18n="jam-h2-formatos">Rendimiento por formato</h2>
+  <p class="sub" data-i18n="jam-p-formatos">La distinción entre total y promedio es crítica aquí: el formato más publicado
   no es el que mejor rinde. Se incluye la mediana porque los promedios de views están
   distorsionados por un post viral atípico.</p>
 
   <div class="tw">
     <table id="t-fmt"><thead><tr>
-      <th>Formato</th><th class="num">N</th><th class="num">% posts</th>
-      <th class="num">Views total</th><th class="num">Views prom.</th><th class="num">Views mediana</th>
-      <th class="num">Alcance prom.</th><th class="num">Likes prom.</th>
-      <th class="num">Compart. prom.</th><th class="num">Guard. prom.</th><th class="num">ER alcance</th>
+      <th data-i18n="jam-th-formato">Formato</th><th class="num">N</th><th class="num" data-i18n="jam-th-pct-posts">% posts</th>
+      <th class="num" data-i18n="jam-th-views-total">Views total</th><th class="num" data-i18n="jam-th-views-prom">Views prom.</th><th class="num" data-i18n="jam-th-views-mediana">Views mediana</th>
+      <th class="num" data-i18n="jam-th-alcance-prom">Alcance prom.</th><th class="num" data-i18n="jam-th-likes-prom">Likes prom.</th>
+      <th class="num" data-i18n="jam-th-compart-prom">Compart. prom.</th><th class="num" data-i18n="jam-th-guard-prom">Guard. prom.</th><th class="num" data-i18n="jam-th-er-alcance">ER alcance</th>
     </tr></thead><tbody></tbody></table>
   </div>
 
   <div class="c2" style="margin-top:14px">
-    <div class="card"><h3 style="margin-top:0">Views TOTALES por formato</h3>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-views-totales-fmt">Views TOTALES por formato</h3>
       <div class="ch sm"><canvas id="c-ft"></canvas></div>
-      <p class="mini">Refleja volumen acumulado — influido por cuántas piezas se publicaron.</p></div>
-    <div class="card"><h3 style="margin-top:0">Views PROMEDIO y MEDIANA por formato</h3>
+      <p class="mini" data-i18n="jam-p-views-totales-fmt">Refleja volumen acumulado — influido por cuántas piezas se publicaron.</p></div>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-views-prom-fmt">Views PROMEDIO y MEDIANA por formato</h3>
       <div class="ch sm"><canvas id="c-fa"></canvas></div>
-      <p class="mini">Refleja rendimiento real por pieza. Esta es la comparación válida.</p></div>
+      <p class="mini" data-i18n="jam-p-views-prom-fmt">Refleja rendimiento real por pieza. Esta es la comparación válida.</p></div>
   </div>
 
   <div id="fmt-read"></div>
@@ -1884,80 +1884,80 @@ h3.sec{
 
 <!-- ============ NIVEL 5 ============ -->
 <section id="evolucion">
-  <div class="lvl">Nivel 5</div>
-  <h2>Evolución temporal</h2>
-  <p class="sub">Series mensuales construidas agregando las métricas por publicación.
+  <div class="lvl" data-i18n="jam-lvl-5">Nivel 5</div>
+  <h2 data-i18n="jam-h2-evolucion">Evolución temporal</h2>
+  <p class="sub" data-i18n="jam-p-evolucion">Series mensuales construidas agregando las métricas por publicación.
   El alcance y las visitas al perfil a nivel de cuenta provienen de una fuente distinta
   (<code>INSTAGRAM_GET_USER_INSIGHTS</code>) y se muestran por separado para no mezclar criterios
   de medición.</p>
 
   <div class="tabs" id="tb-ev">
     <button class="tab on" data-m="views">Views</button>
-    <button class="tab" data-m="reach">Alcance</button>
+    <button class="tab" data-m="reach" data-i18n="jam-tab-alcance">Alcance</button>
     <button class="tab" data-m="likes">Likes</button>
-    <button class="tab" data-m="comments">Comentarios</button>
-    <button class="tab" data-m="shares">Compartidos</button>
-    <button class="tab" data-m="saved">Guardados</button>
-    <button class="tab" data-m="interactions">Interacciones</button>
+    <button class="tab" data-m="comments" data-i18n="jam-tab-comentarios">Comentarios</button>
+    <button class="tab" data-m="shares" data-i18n="jam-tab-compartidos">Compartidos</button>
+    <button class="tab" data-m="saved" data-i18n="jam-tab-guardados">Guardados</button>
+    <button class="tab" data-m="interactions" data-i18n="jam-tab-interacciones">Interacciones</button>
     <button class="tab" data-m="er_reach">ER (%)</button>
   </div>
   <div class="card"><div class="ch"><canvas id="c-ev"></canvas></div></div>
 
   <div class="card" style="margin-top:14px">
-    <h3 style="margin-top:0">Volumen publicado por mes y formato</h3>
+    <h3 style="margin-top:0" data-i18n="jam-h3-volumen">Volumen publicado por mes y formato</h3>
     <div class="ch"><canvas id="c-vol"></canvas></div>
   </div>
 
   <div class="card" style="margin-top:14px">
-    <h3 style="margin-top:0">Alcance y visitas al perfil — métricas de cuenta</h3>
-    <p class="mini" style="margin-bottom:12px">Fuente independiente: alcance agregado de la cuenta
+    <h3 style="margin-top:0" data-i18n="jam-h3-alcance-visitas">Alcance y visitas al perfil — métricas de cuenta</h3>
+    <p class="mini" style="margin-bottom:12px" data-i18n="jam-p-alcance-visitas">Fuente independiente: alcance agregado de la cuenta
     (incluye stories y anuncios, no solo publicaciones) en ventanas de 30 días.</p>
     <div class="ch"><canvas id="c-acct"></canvas></div>
   </div>
 
-  <h3>Año 1 vs Año 2</h3>
+  <h3 data-i18n="jam-h3-anos">Año 1 vs Año 2</h3>
   <p class="sub" id="yc-sub"></p>
   <div class="tw">
     <table id="t-yc"><thead><tr>
-      <th>Métrica</th><th class="num">Año 1</th><th class="num">Año 2</th><th class="num">Variación</th>
+      <th data-i18n="jam-th-metrica">Métrica</th><th class="num" data-i18n="jam-th-ano1">Año 1</th><th class="num" data-i18n="jam-th-ano2">Año 2</th><th class="num" data-i18n="jam-th-variacion">Variación</th>
     </tr></thead><tbody></tbody></table>
   </div>
   <div id="yc-read"></div>
 
-  <h3>Meses extremos</h3>
+  <h3 data-i18n="jam-h3-meses-extremos">Meses extremos</h3>
   <div class="c2">
-    <div class="card"><h3 style="margin-top:0;color:var(--ok)">Top 5 meses por views</h3>
+    <div class="card"><h3 style="margin-top:0;color:var(--ok)" data-i18n="jam-h3-top5-meses">Top 5 meses por views</h3>
       <div class="tw" style="border:0"><table><tbody id="t-mtop"></tbody></table></div></div>
-    <div class="card"><h3 style="margin-top:0;color:var(--bad)">5 meses más bajos por views</h3>
+    <div class="card"><h3 style="margin-top:0;color:var(--bad)" data-i18n="jam-h3-bottom5-meses">5 meses más bajos por views</h3>
       <div class="tw" style="border:0"><table><tbody id="t-mbot"></tbody></table></div></div>
   </div>
 </section>
 
 <!-- ============ CADENCIA ============ -->
 <section id="cadencia">
-  <div class="lvl">Nivel 5b</div>
-  <h2>Días y horarios</h2>
-  <p class="sub">Separa explícitamente <strong>cuándo se publica más</strong> de
+  <div class="lvl" data-i18n="jam-lvl-5b">Nivel 5b</div>
+  <h2 data-i18n="jam-h2-cadencia">Días y horarios</h2>
+  <p class="sub" data-i18n="jam-p-cadencia">Separa explícitamente <strong>cuándo se publica más</strong> de
   <strong>cuándo funciona mejor</strong>. Se prioriza la mediana sobre el promedio porque un solo
   post viral distorsiona por completo los promedios en días con pocas publicaciones.</p>
 
   <div class="card">
-    <h3 style="margin-top:0">Día de la semana: volumen vs. rendimiento</h3>
+    <h3 style="margin-top:0" data-i18n="jam-h3-dow">Día de la semana: volumen vs. rendimiento</h3>
     <div class="ch"><canvas id="c-dow"></canvas></div>
   </div>
 
   <div class="tw" style="margin-top:14px">
     <table id="t-dow"><thead><tr>
-      <th>Día</th><th class="num">Publicaciones</th><th class="num">Views prom.</th>
-      <th class="num">Views mediana</th><th class="num">ER alcance</th>
+      <th data-i18n="jam-th-dia">Día</th><th class="num" data-i18n="jam-th-publicaciones">Publicaciones</th><th class="num" data-i18n="jam-th-views-prom">Views prom.</th>
+      <th class="num" data-i18n="jam-th-views-mediana">Views mediana</th><th class="num" data-i18n="jam-th-er-alcance">ER alcance</th>
     </tr></thead><tbody></tbody></table>
   </div>
   <div id="dow-read"></div>
 
   <div class="card" style="margin-top:14px">
-    <h3 style="margin-top:0">Hora de publicación (hora de Miami, UTC−4)</h3>
+    <h3 style="margin-top:0" data-i18n="jam-h3-hora">Hora de publicación (hora de Miami, UTC−4)</h3>
     <div class="ch"><canvas id="c-hour"></canvas></div>
-    <p class="mini">Los timestamps de Meta vienen en UTC; se convirtieron a hora de Miami con offset
+    <p class="mini" data-i18n="jam-p-hora">Los timestamps de Meta vienen en UTC; se convirtieron a hora de Miami con offset
     fijo de −4h. <strong>Limitación:</strong> el offset real varía entre EDT (−4) y EST (−5) según la
     época del año, por lo que las publicaciones de invierno pueden tener 1 hora de desviación.</p>
   </div>
@@ -1965,12 +1965,12 @@ h3.sec{
 
 <!-- ============ REELS ============ -->
 <section id="reels">
-  <div class="lvl">Nivel 5c</div>
-  <h2>Análisis específico de Reels / Video</h2>
-  <p class="sub">Sección dedicada al formato con mayor volumen de publicación de la cuenta.</p>
+  <div class="lvl" data-i18n="jam-lvl-5c">Nivel 5c</div>
+  <h2 data-i18n="jam-h2-reels">Análisis específico de Reels / Video</h2>
+  <p class="sub" data-i18n="jam-p-reels">Sección dedicada al formato con mayor volumen de publicación de la cuenta.</p>
   <div class="grid kpis" id="kpi-reel"></div>
 
-  <div class="note w" style="margin-top:16px">
+  <div class="note w" style="margin-top:16px" data-i18n="jam-note-duracion-reels">
     <strong>Duración de los Reels:</strong> <span class="pill na">No disponible vía API</span> —
     el endpoint de Instagram no expone la duración del video. Sin embargo, sí se midió de forma
     indirecta en un análisis previo: se extrajeron frames a 1 fps de 100 reels, lo que da la duración
@@ -1980,28 +1980,28 @@ h3.sec{
     No se integra aquí porque cubre 100 reels y no los 57 del Año 2, lo que impediría un cruce limpio.
   </div>
 
-  <h3>Top 12 Reels por views</h3>
+  <h3 data-i18n="jam-h3-top12-reels">Top 12 Reels por views</h3>
   <div class="grid rk" id="rk-reel"></div>
 </section>
 
 <!-- ============ NIVEL 7 ============ -->
 <section id="top">
-  <div class="lvl">Nivel 7</div>
-  <h2>Top de contenidos</h2>
-  <p class="sub">Cada ranking usa <strong>una sola métrica</strong> como criterio de ordenamiento,
+  <div class="lvl" data-i18n="jam-lvl-7">Nivel 7</div>
+  <h2 data-i18n="jam-h2-top">Top de contenidos</h2>
+  <p class="sub" data-i18n="jam-p-top">Cada ranking usa <strong>una sola métrica</strong> como criterio de ordenamiento,
   sin combinaciones arbitrarias. Todas las miniaturas y enlaces son reales, obtenidos de la API de
   Meta. Clic en la imagen para ampliarla.</p>
 
   <div class="tabs" id="tb-rk">
     <button class="tab on" data-r="views">Views</button>
-    <button class="tab" data-r="reach">Alcance</button>
+    <button class="tab" data-r="reach" data-i18n="jam-tab-alcance">Alcance</button>
     <button class="tab" data-r="likes">Likes</button>
-    <button class="tab" data-r="comments">Comentarios</button>
-    <button class="tab" data-r="shares">Compartidos</button>
-    <button class="tab" data-r="saved">Guardados</button>
-    <button class="tab" data-r="er_reach">Engagement</button>
-    <button class="tab" data-r="views_carousel">Carruseles</button>
-    <button class="tab" data-r="views_image">Imágenes</button>
+    <button class="tab" data-r="comments" data-i18n="jam-tab-comentarios">Comentarios</button>
+    <button class="tab" data-r="shares" data-i18n="jam-tab-compartidos">Compartidos</button>
+    <button class="tab" data-r="saved" data-i18n="jam-tab-guardados">Guardados</button>
+    <button class="tab" data-r="er_reach" data-i18n="jam-tab-engagement">Engagement</button>
+    <button class="tab" data-r="views_carousel" data-i18n="jam-tab-carruseles">Carruseles</button>
+    <button class="tab" data-r="views_image" data-i18n="jam-tab-imagenes">Imágenes</button>
     <button class="tab" data-r="views_video">Reels</button>
   </div>
   <div id="rk-note" class="note" style="margin-top:0"></div>
@@ -2010,9 +2010,9 @@ h3.sec{
 
 <!-- ============ NIVEL 6 ============ -->
 <section id="facebook">
-  <div class="lvl">Nivel 6</div>
-  <h2>Instagram vs. Facebook</h2>
-  <div class="note d">
+  <div class="lvl" data-i18n="jam-lvl-6">Nivel 6</div>
+  <h2 data-i18n="jam-h2-facebook">Instagram vs. Facebook</h2>
+  <div class="note d" data-i18n="jam-note-facebook">
     <strong>No fue posible obtener datos de Facebook.</strong>
     Al inventariar las conexiones disponibles se encontraron <strong>9 conexiones de Instagram</strong>
     (1 activa: <code>juventusacademymiami2</code>) y <strong>ninguna conexión de Facebook o Meta
@@ -2031,65 +2031,65 @@ h3.sec{
 
 <!-- ============ NIVEL 8 ============ -->
 <section id="tabla">
-  <div class="lvl">Nivel 8</div>
-  <h2>Tabla maestra de contenidos</h2>
-  <p class="sub">Las 243 publicaciones del período con todas sus métricas. Buscable, filtrable y
+  <div class="lvl" data-i18n="jam-lvl-8">Nivel 8</div>
+  <h2 data-i18n="jam-h2-tabla">Tabla maestra de contenidos</h2>
+  <p class="sub" data-i18n="jam-p-tabla">Las 243 publicaciones del período con todas sus métricas. Buscable, filtrable y
   ordenable. Clic en cualquier encabezado numérico para ordenar; clic en la miniatura para ampliar.</p>
 
   <div class="flt">
-    <input type="search" id="q" placeholder="Buscar en caption...">
-    <select id="f-type"><option value="">Todos los formatos</option>
-      <option value="VIDEO">Reel / Video</option>
-      <option value="CAROUSEL_ALBUM">Carrusel</option>
-      <option value="IMAGE">Imagen</option></select>
+    <input type="search" id="q" placeholder="Buscar en caption..." data-i18n-placeholder="jam-ph-buscar">
+    <select id="f-type"><option value="" data-i18n="jam-opt-todos-formatos">Todos los formatos</option>
+      <option value="VIDEO" data-i18n="jam-opt-reel-video">Reel / Video</option>
+      <option value="CAROUSEL_ALBUM" data-i18n="jam-opt-carrusel">Carrusel</option>
+      <option value="IMAGE" data-i18n="jam-opt-imagen">Imagen</option></select>
     <select id="f-topic"><option value="">Todas las temáticas</option></select>
-    <select id="f-year"><option value="">Todo el período</option>
-      <option value="1">Año 1 (2024-09 a 2025-09)</option>
-      <option value="2">Año 2 (2025-09 a 2026-09)</option></select>
+    <select id="f-year"><option value="" data-i18n="jam-opt-todo-periodo">Todo el período</option>
+      <option value="1" data-i18n="jam-opt-ano1">Año 1 (2024-09 a 2025-09)</option>
+      <option value="2" data-i18n="jam-opt-ano2">Año 2 (2025-09 a 2026-09)</option></select>
     <select id="f-sort">
-      <option value="views">Ordenar: Views</option>
-      <option value="reach">Alcance</option><option value="likes">Likes</option>
-      <option value="comments">Comentarios</option><option value="shares">Compartidos</option>
-      <option value="saved">Guardados</option><option value="er_reach">ER</option>
-      <option value="date">Fecha</option></select>
+      <option value="views" data-i18n="jam-opt-ordenar-views">Ordenar: Views</option>
+      <option value="reach" data-i18n="jam-tab-alcance">Alcance</option><option value="likes">Likes</option>
+      <option value="comments" data-i18n="jam-tab-comentarios">Comentarios</option><option value="shares" data-i18n="jam-tab-compartidos">Compartidos</option>
+      <option value="saved" data-i18n="jam-tab-guardados">Guardados</option><option value="er_reach">ER</option>
+      <option value="date" data-i18n="jam-opt-fecha">Fecha</option></select>
     <span class="mini" id="cnt"></span>
   </div>
 
   <div class="tw" style="max-height:640px;overflow-y:auto">
     <table id="t-all"><thead><tr>
-      <th></th><th>Fecha</th><th>Formato</th><th>Temática</th><th>Caption</th>
-      <th class="num">Views</th><th class="num">Alcance</th><th class="num">Likes</th>
-      <th class="num">Coment.</th><th class="num">Comp.</th><th class="num">Guard.</th>
-      <th class="num">ER%</th><th>Link</th>
+      <th></th><th data-i18n="jam-th-fecha">Fecha</th><th data-i18n="jam-th-formato">Formato</th><th data-i18n="jam-th-tematica">Temática</th><th>Caption</th>
+      <th class="num">Views</th><th class="num" data-i18n="jam-tab-alcance">Alcance</th><th class="num">Likes</th>
+      <th class="num" data-i18n="jam-th-coment">Coment.</th><th class="num" data-i18n="jam-th-comp">Comp.</th><th class="num" data-i18n="jam-th-guard">Guard.</th>
+      <th class="num">ER%</th><th data-i18n="jam-th-link">Link</th>
     </tr></thead><tbody></tbody></table>
   </div>
 </section>
 
 <!-- ============ HALLAZGOS ============ -->
 <section id="hallazgos">
-  <div class="lvl">Síntesis</div>
-  <h2>Principales hallazgos</h2>
-  <p class="sub">Cada hallazgo indica si es un <span class="pill dato">Dato</span> medido por Meta
+  <div class="lvl" data-i18n="jam-lvl-sintesis">Síntesis</div>
+  <h2 data-i18n="jam-h2-hallazgos">Principales hallazgos</h2>
+  <p class="sub" data-i18n="jam-p-hallazgos">Cada hallazgo indica si es un <span class="pill dato">Dato</span> medido por Meta
   o una <span class="pill interp">Interpretación</span> mía, con la evidencia numérica que lo respalda.</p>
   <div id="finds"></div>
 
-  <h2 style="margin-top:44px">Oportunidades detectadas</h2>
-  <p class="sub">Derivadas exclusivamente de los datos de esta cuenta, no de buenas prácticas genéricas.</p>
+  <h2 style="margin-top:44px" data-i18n="jam-h2-oportunidades">Oportunidades detectadas</h2>
+  <p class="sub" data-i18n="jam-p-oportunidades">Derivadas exclusivamente de los datos de esta cuenta, no de buenas prácticas genéricas.</p>
   <div id="opps"></div>
 </section>
 
 <!-- ============ NIVEL 9 ============ -->
 <section id="metodologia" hidden>
-  <div class="lvl">Nivel 9</div>
-  <h2>Metodología y calidad de los datos</h2>
+  <div class="lvl" data-i18n="jam-lvl-9">Nivel 9</div>
+  <h2 data-i18n="jam-h2-metodologia">Metodología y calidad de los datos</h2>
 
-  <h3>Auditoría de integridad</h3>
+  <h3 data-i18n="jam-h3-auditoria-integridad">Auditoría de integridad</h3>
   <div class="grid kpis" id="kpi-audit"></div>
 
-  <h3>Inconsistencias detectadas — reportadas, no corregidas</h3>
+  <h3 data-i18n="jam-h3-inconsistencias">Inconsistencias detectadas — reportadas, no corregidas</h3>
   <div id="audit-notes"></div>
 
-  <h3>Inventario de métricas: disponibles, parciales y no disponibles</h3>
+  <h3 data-i18n="jam-h3-inventario">Inventario de métricas: disponibles, parciales y no disponibles</h3>
   <div class="tw">
     <table><thead><tr><th>Métrica</th><th>Estado</th><th>Fuente / motivo</th></tr></thead>
     <tbody id="t-inv"></tbody></table>
@@ -2354,6 +2354,156 @@ window.I18N = (function(){
       'ci-h3-video': 'Detailed video analysis — transcript, timeline and reading',
       'ci-lead-video': 'Each card expands to show the full transcript, the visual breakdown and the qualitative reading.',
       'ci-h3-photos': 'Static posts and carousels — photo by photo',
+
+      // ---- JAM dashboard: nav links ----
+      'jam-nav-resumen': 'Summary',
+      'jam-nav-audiencia': 'Audience',
+      'jam-nav-contenido': 'Content',
+      'jam-nav-formatos': 'Formats',
+      'jam-nav-evolucion': 'Evolution',
+      'jam-nav-cadencia': 'Days &amp; times',
+      'jam-nav-reels': 'Reels',
+      'jam-nav-top': 'Top content',
+      'jam-nav-facebook': 'Facebook',
+      'jam-nav-tabla': 'Master table',
+      'jam-nav-hallazgos': 'Findings',
+
+      // ---- JAM dashboard: level tags ----
+      'jam-lvl-1': 'Level 1',
+      'jam-lvl-2': 'Level 2',
+      'jam-lvl-3': 'Level 3',
+      'jam-lvl-4': 'Level 4',
+      'jam-lvl-5': 'Level 5',
+      'jam-lvl-5b': 'Level 5b',
+      'jam-lvl-5c': 'Level 5c',
+      'jam-lvl-6': 'Level 6',
+      'jam-lvl-7': 'Level 7',
+      'jam-lvl-8': 'Level 8',
+      'jam-lvl-9': 'Level 9',
+      'jam-lvl-sintesis': 'Synthesis',
+
+      // ---- JAM dashboard: section 1 (resumen) ----
+      'jam-h1-resumen': 'Instagram Audit · <span style="color:var(--accent)">@juventusacademymiami</span>',
+      'jam-h3-totales': 'Period totals and average per post',
+      'jam-p-totales': 'Totals depend on how much was published; averages let you compare real performance. Both are always shown together to avoid false conclusions.',
+      'jam-th-metrica': 'Metric',
+      'jam-th-total': 'Total',
+      'jam-th-prom-post': 'Avg./post',
+      'jam-th-mediana': 'Median',
+      'jam-th-fuente': 'Source',
+
+      // ---- JAM dashboard: section 2 (audiencia) ----
+      'jam-h2-audiencia': 'Audience',
+      'jam-p-audiencia': 'Follower demographics provided by Meta (<code>follower_demographics</code>, timeframe <code>this_month</code>, a snapshot from the moment of extraction). Meta only provides the current state: <strong>there is no historical series</strong> of demographics, so its evolution cannot be shown.',
+      'jam-h3-edad': 'Age distribution',
+      'jam-h3-genero': 'Gender distribution',
+      'jam-p-genero': 'Meta provides 3 categories: F (female), M (male) and U (undeclared). There are no additional categories in the API response.',
+      'jam-h3-ciudades': 'Top 15 cities',
+      'jam-h3-paises': 'Top 12 countries',
+      'jam-th-ciudad': 'City',
+      'jam-th-seguidores': 'Followers',
+      'jam-th-pct-total': '% of total',
+
+      // ---- JAM dashboard: section 3 (contenido) ----
+      'jam-h2-contenido': 'Content analysis by topic',
+      'jam-p-contenido': 'Automatic classification by keyword match in the caption. The rules are explicit and auditable (listed below); each post gets the first matching category. Posts with no match fall into <em>"Otros / No clasificable" (Other / Not classifiable)</em> instead of being forced into an invented category.',
+      'jam-th-tematica': 'Topic',
+      'jam-th-views-prom': 'Avg. views',
+      'jam-th-views-mediana': 'Median views',
+      'jam-th-alcance-prom': 'Avg. reach',
+      'jam-th-likes-prom': 'Avg. likes',
+      'jam-th-compart-prom': 'Avg. shares',
+      'jam-th-guard-prom': 'Avg. saves',
+      'jam-th-er-alcance': 'ER on reach',
+      'jam-h3-views-tematica': 'Average views by topic',
+
+      // ---- JAM dashboard: section 4 (formatos) ----
+      'jam-h2-formatos': 'Performance by format',
+      'jam-p-formatos': 'The distinction between total and average is critical here: the most-published format is not the one that performs best. The median is included because the view averages are skewed by an atypical viral post.',
+      'jam-th-formato': 'Format',
+      'jam-th-pct-posts': '% posts',
+      'jam-th-views-total': 'Total views',
+      'jam-h3-views-totales-fmt': 'TOTAL views by format',
+      'jam-p-views-totales-fmt': 'Reflects cumulative volume — influenced by how many pieces were published.',
+      'jam-h3-views-prom-fmt': 'AVERAGE and MEDIAN views by format',
+      'jam-p-views-prom-fmt': 'Reflects real performance per piece. This is the valid comparison.',
+
+      // ---- JAM dashboard: section 5 (evolucion) ----
+      'jam-h2-evolucion': 'Evolution over time',
+      'jam-p-evolucion': 'Monthly series built by aggregating per-post metrics. Account-level reach and profile visits come from a different source (<code>INSTAGRAM_GET_USER_INSIGHTS</code>) and are shown separately so measurement criteria aren&apos;t mixed.',
+      'jam-tab-alcance': 'Reach',
+      'jam-tab-comentarios': 'Comments',
+      'jam-tab-compartidos': 'Shares',
+      'jam-tab-guardados': 'Saves',
+      'jam-tab-interacciones': 'Interactions',
+      'jam-h3-volumen': 'Volume published by month and format',
+      'jam-h3-alcance-visitas': 'Reach and profile visits — account metrics',
+      'jam-p-alcance-visitas': 'Independent source: aggregate account reach (includes stories and ads, not just posts) in 30-day windows.',
+      'jam-h3-anos': 'Year 1 vs Year 2',
+      'jam-th-ano1': 'Year 1',
+      'jam-th-ano2': 'Year 2',
+      'jam-th-variacion': 'Change',
+      'jam-h3-meses-extremos': 'Extreme months',
+      'jam-h3-top5-meses': 'Top 5 months by views',
+      'jam-h3-bottom5-meses': 'Lowest 5 months by views',
+
+      // ---- JAM dashboard: section 5b (cadencia) ----
+      'jam-h2-cadencia': 'Days and times',
+      'jam-p-cadencia': 'Explicitly separates <strong>when the account posts most</strong> from <strong>when it performs best</strong>. The median is prioritized over the average because a single viral post completely skews the averages on days with few posts.',
+      'jam-h3-dow': 'Day of week: volume vs. performance',
+      'jam-th-dia': 'Day',
+      'jam-th-publicaciones': 'Posts',
+      'jam-h3-hora': 'Time of posting (Miami time, UTC−4)',
+      'jam-p-hora': 'Meta&apos;s timestamps come in UTC; converted to Miami time with a fixed −4h offset. <strong>Limitation:</strong> the real offset varies between EDT (−4) and EST (−5) depending on the time of year, so winter posts may be off by 1 hour.',
+
+      // ---- JAM dashboard: section 5c (reels) ----
+      'jam-h2-reels': 'Reels / Video-specific analysis',
+      'jam-p-reels': 'Section dedicated to the account&apos;s highest-volume format.',
+      'jam-note-duracion-reels': '<strong>Reel duration:</strong> <span class="pill na">Not available via API</span> — the Instagram endpoint does not expose video duration. However, it was measured indirectly in a previous analysis: frames were extracted at 1 fps from 100 reels, yielding duration in seconds. That data lives in the editing-style analysis (<code>Analisis Reels/Estilo_Edicion_Reels_JAM.html</code>) and found a typical duration of <strong>15–55 seconds</strong>, with outliers up to 276s in live-event coverage. It is not integrated here because it covers 100 reels, not the 57 from Year 2, which would prevent a clean cross-reference.',
+      'jam-h3-top12-reels': 'Top 12 Reels by views',
+
+      // ---- JAM dashboard: section 7 (top) ----
+      'jam-h2-top': 'Top content',
+      'jam-p-top': 'Each ranking uses <strong>a single metric</strong> as the sort criterion, with no arbitrary combinations. All thumbnails and links are real, pulled from the Meta API. Click the image to enlarge it.',
+      'jam-tab-engagement': 'Engagement',
+      'jam-tab-carruseles': 'Carousels',
+      'jam-tab-imagenes': 'Images',
+
+      // ---- JAM dashboard: section 6 (facebook) ----
+      'jam-h2-facebook': 'Instagram vs. Facebook',
+      'jam-note-facebook': '<strong>It was not possible to obtain Facebook data.</strong> When inventorying available connections, <strong>9 Instagram connections</strong> were found (1 active: <code>juventusacademymiami2</code>) and <strong>no Facebook or Meta Business Suite connection</strong>. Without an authorized Facebook page there is no access to followers, reach, impressions, posts or engagement on that platform. <br><br> As a result, <strong>this section is deliberately left empty</strong> and the Instagram vs. Facebook comparison <span class="pill na">cannot be built</span>. Filling it with estimates would violate the no-invented-data rule. <br><br> <strong>To enable it:</strong> connect the academy&apos;s Facebook page (permissions <code>pages_read_engagement</code> and <code>read_insights</code>). With that, this section can be generated with the same depth as the Instagram one.',
+
+      // ---- JAM dashboard: section 8 (tabla) ----
+      'jam-h2-tabla': 'Master content table',
+      'jam-p-tabla': 'The period&apos;s 243 posts with all their metrics. Searchable, filterable and sortable. Click any numeric header to sort; click the thumbnail to enlarge.',
+      'jam-ph-buscar': 'Search in caption...',
+      'jam-opt-todos-formatos': 'All formats',
+      'jam-opt-reel-video': 'Reel / Video',
+      'jam-opt-carrusel': 'Carousel',
+      'jam-opt-imagen': 'Image',
+      'jam-opt-todo-periodo': 'Entire period',
+      'jam-opt-ano1': 'Year 1 (2024-09 to 2025-09)',
+      'jam-opt-ano2': 'Year 2 (2025-09 to 2026-09)',
+      'jam-opt-ordenar-views': 'Sort by: Views',
+      'jam-opt-fecha': 'Date',
+      'jam-th-fecha': 'Date',
+      'jam-th-formato': 'Format',
+      'jam-th-coment': 'Comm.',
+      'jam-th-comp': 'Sh.',
+      'jam-th-guard': 'Saves',
+      'jam-th-link': 'Link',
+
+      // ---- JAM dashboard: section synthesis (hallazgos) ----
+      'jam-h2-hallazgos': 'Main findings',
+      'jam-p-hallazgos': 'Each finding indicates whether it is a <span class="pill dato">Data</span> point measured by Meta or my own <span class="pill interp">Interpretation</span>, with the numeric evidence behind it.',
+      'jam-h2-oportunidades': 'Opportunities identified',
+      'jam-p-oportunidades': 'Derived exclusively from this account&apos;s own data, not generic best practices.',
+
+      // ---- JAM dashboard: section 9 (metodologia, hidden — headings only) ----
+      'jam-h2-metodologia': 'Methodology and data quality',
+      'jam-h3-auditoria-integridad': 'Integrity audit',
+      'jam-h3-inconsistencias': 'Inconsistencies detected — reported, not corrected',
+      'jam-h3-inventario': 'Metric inventory: available, partial and unavailable',
     }
   };
 
@@ -2542,13 +2692,17 @@ window.__initJam = (function(){
   var done = false;
   return function(){
     if(done) return; done = true;
-const F=n=>n==null?'n/d':n>=1e6?(n/1e6).toFixed(2)+'M':n>=1e4?(n/1e3).toFixed(1)+'k':n.toLocaleString('es');
-const FF=n=>n==null?'n/d':n.toLocaleString('es');
-const TL={VIDEO:'Reel / Video',CAROUSEL_ALBUM:'Carrusel',IMAGE:'Imagen'};
-const TS={VIDEO:'Reel',CAROUSEL_ALBUM:'Carrusel',IMAGE:'Imagen'};
-const MN=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
-const fym=s=>{const[y,m]=s.split('-');return MN[+m-1]+' '+y.slice(2)};
-const fd=s=>{const[y,m,d]=s.split('-');return d+' '+MN[+m-1]+' '+y};
+function isEn(){return !!(window.I18N && window.I18N.lang==='en')}
+function L(es,en){return isEn()?en:es}
+const F=n=>n==null?(isEn()?'n/a':'n/d'):n>=1e6?(n/1e6).toFixed(2)+'M':n>=1e4?(n/1e3).toFixed(1)+'k':n.toLocaleString(isEn()?'en':'es');
+const FF=n=>n==null?(isEn()?'n/a':'n/d'):n.toLocaleString(isEn()?'en':'es');
+const TL=()=>isEn()?{VIDEO:'Reel / Video',CAROUSEL_ALBUM:'Carousel',IMAGE:'Image'}:{VIDEO:'Reel / Video',CAROUSEL_ALBUM:'Carrusel',IMAGE:'Imagen'};
+const TS=()=>isEn()?{VIDEO:'Reel',CAROUSEL_ALBUM:'Carousel',IMAGE:'Image'}:{VIDEO:'Reel',CAROUSEL_ALBUM:'Carrusel',IMAGE:'Imagen'};
+const MN_ES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const MN_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MN=()=>isEn()?MN_EN:MN_ES;
+const fym=s=>{const[y,m]=s.split('-');return MN()[+m-1]+' '+y.slice(2)};
+const fd=s=>{const[y,m,d]=s.split('-');return d+' '+MN()[+m-1]+' '+y};
 const ACC='#FEF200',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
 let D=null;
 
@@ -2571,6 +2725,16 @@ const gopt=(extra={})=>Object.assign({
     y:{grid:{color:'rgba(40,44,53,.5)'},ticks:{callback:v=>F(v)},beginAtZero:true}}
 },extra);
 
+/* Destroys any existing Chart.js instance bound to a canvas before drawing a
+   new one, so re-running build() on a language switch doesn't throw
+   "Canvas is already in use". */
+function mkChart(canvasId,cfg){
+  const el=document.getElementById(canvasId);
+  const prev=Chart.getChart(el);
+  if(prev)prev.destroy();
+  return new Chart(el,cfg);
+}
+
 /* ---------- LIGHTBOX ---------- */
 const lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
 function zoom(src){lbi.src=src;lb.classList.add('on')}
@@ -2579,22 +2743,25 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove(
 
 /* ---------- RANKING CARD ---------- */
 function card(p,i,metric){
-  const M={views:['Views','views'],reach:['Alcance','reach'],likes:['Likes','likes'],
+  const M=isEn()?{views:['Views','views'],reach:['Reach','reach'],likes:['Likes','likes'],
+    comments:['Comments','comments'],shares:['Shares','shares'],
+    saved:['Saves','saved'],er_reach:['ER on reach','er_reach']}
+   :{views:['Views','views'],reach:['Alcance','reach'],likes:['Likes','likes'],
     comments:['Comentarios','comments'],shares:['Compartidos','shares'],
     saved:['Guardados','saved'],er_reach:['ER sobre alcance','er_reach']};
   const key=metric.startsWith('views_')?'views':metric;
   const[lab,f]=M[key]||M.views;
-  const val=f==='er_reach'?(p.er_reach!=null?p.er_reach+'%':'n/d'):FF(p[f]);
+  const val=f==='er_reach'?(p.er_reach!=null?p.er_reach+'%':L('n/d','n/a')):FF(p[f]);
   const th=p.thumb
     ?`<img src="${p.thumb}" alt="" onclick="zoom('${p.thumb}')">`
-    :`<div class="noimg">Vista previa<br>no disponible</div>`;
+    :`<div class="noimg">${L('Vista previa<br>no disponible','Preview<br>not available')}</div>`;
   const play=p.type==='VIDEO'&&p.thumb?`<div class="play"><span>▶</span></div>`:'';
   const btn=p.permalink
-    ?`<a class="btn" href="${p.permalink}" target="_blank" rel="noopener">${p.type==='VIDEO'?'▶ Ver Reel en Instagram':'Ver publicación'}</a>`
-    :`<span class="btn off">Enlace no disponible</span>`;
-  const cap=p.caption_short?p.caption_short.replace(/</g,'&lt;'):'<em style="opacity:.55">Sin caption</em>';
+    ?`<a class="btn" href="${p.permalink}" target="_blank" rel="noopener">${p.type==='VIDEO'?L('▶ Ver Reel en Instagram','▶ View Reel on Instagram'):L('Ver publicación','View post')}</a>`
+    :`<span class="btn off">${L('Enlace no disponible','Link not available')}</span>`;
+  const cap=p.caption_short?p.caption_short.replace(/</g,'&lt;'):`<em style="opacity:.55">${L('Sin caption','No caption')}</em>`;
   return `<div class="rc">
-    <div class="rc-th"><div class="pos">#${i+1}</div><div class="fmt">${TS[p.type]}</div>${th}${play}</div>
+    <div class="rc-th"><div class="pos">#${i+1}</div><div class="fmt">${TS()[p.type]}</div>${th}${play}</div>
     <div class="rc-b">
       <div><div class="big">${val}<small>${lab}</small></div></div>
       <div class="mrow">
@@ -2610,6 +2777,7 @@ function card(p,i,metric){
 
 /* ---------- INIT ---------- */
 D=window.__DASH_DATA__;build();
+if (window.I18N && window.I18N.onChange) { window.I18N.onChange(function(){ build(); }); }
 
 function build(){
   const P={};D.posts.forEach(p=>P[p.id]=p);
@@ -2617,8 +2785,12 @@ function build(){
   const med=k=>{const a=D.posts.map(p=>p[k]).filter(v=>v!=null).sort((x,y)=>x-y);
     return a.length?Math.round(a[Math.floor(a.length/2)]):null};
 
-  document.getElementById('hdr-sub').innerHTML=
-    `<strong>${FF(D.account.followers)} seguidores</strong> · Período analizado:
+  document.getElementById('hdr-sub').innerHTML=isEn()?
+    `<strong>${FF(D.account.followers)} followers</strong> · Period analyzed:
+     <strong>${fd(D.period.start)} → ${fd(D.period.end)}</strong> (24 months, ${n} posts)
+     · Extracted: ${new Date(D.period.extracted_at).toLocaleString('en')}
+     · Source: official Meta API`
+    :`<strong>${FF(D.account.followers)} seguidores</strong> · Período analizado:
      <strong>${fd(D.period.start)} → ${fd(D.period.end)}</strong> (24 meses, ${n} publicaciones)
      · Extracción: ${new Date(D.period.extracted_at).toLocaleString('es')}
      · Fuente: API oficial de Meta`;
@@ -2629,31 +2801,32 @@ function build(){
   const arrow=v=>v==null?'':`<span class="${v>=0?'up':'dn'}">${v>=0?'▲':'▼'} ${Math.abs(v).toFixed(1)}%</span>`;
 
   const K=[
-    ['Seguidores',FF(D.account.followers),'Total actual — sin serie histórica','hl'],
-    ['Publicaciones',FF(n),`${yc.y1.posts} → ${yc.y2.posts} ${arrow(chg(yc.y1.posts,yc.y2.posts))}`,''],
-    ['Views totales',F(T.views),`Prom. ${FF(Math.round(T.views/n))} · ${arrow(chg(yc.y1.views,yc.y2.views))}`,'hl'],
-    ['Alcance total',F(T.reach),`Prom. ${FF(Math.round(T.reach/n))} · ${arrow(chg(yc.y1.reach,yc.y2.reach))}`,''],
-    ['Likes',FF(T.likes),`Prom. ${Math.round(T.likes/n)} · ${arrow(chg(yc.y1.likes,yc.y2.likes))}`,''],
-    ['Comentarios',FF(T.comments),`Prom. ${(T.comments/n).toFixed(1)} · ${arrow(chg(yc.y1.comments,yc.y2.comments))}`,''],
-    ['Compartidos',FF(T.shares),`Prom. ${(T.shares/n).toFixed(1)} · ${arrow(chg(yc.y1.shares,yc.y2.shares))}`,''],
-    ['Guardados',FF(T.saved),`Prom. ${(T.saved/n).toFixed(1)} · ${arrow(chg(yc.y1.saved,yc.y2.saved))}`,''],
-    ['Interacciones',FF(T.interactions),`Prom. ${Math.round(T.interactions/n)}`,''],
-    ['ER sobre alcance',(T.interactions/T.reach*100).toFixed(2)+'%','interacciones / alcance','hl'],
-    ['Reels / Videos',FF(D.by_format.find(f=>f.type==='VIDEO').n),'formato más publicado',''],
-    ['Carruseles',FF(D.by_format.find(f=>f.type==='CAROUSEL_ALBUM').n),'mejor rendimiento promedio',''],
-    ['Imágenes',FF(D.by_format.find(f=>f.type==='IMAGE').n),'',''],
-    ['Impresiones','No disponible','Meta deprecó esta métrica','na'],
-    ['Crecimiento seguidores','No disponible','La API no entrega histórico','na'],
-    ['Historias','No disponible','Expiran a 24 h','na'],
+    [L('Seguidores','Followers'),FF(D.account.followers),L('Total actual — sin serie histórica','Current total — no historical series'),'hl'],
+    [L('Publicaciones','Posts'),FF(n),`${yc.y1.posts} → ${yc.y2.posts} ${arrow(chg(yc.y1.posts,yc.y2.posts))}`,''],
+    [L('Views totales','Total views'),F(T.views),`${L('Prom.','Avg.')} ${FF(Math.round(T.views/n))} · ${arrow(chg(yc.y1.views,yc.y2.views))}`,'hl'],
+    [L('Alcance total','Total reach'),F(T.reach),`${L('Prom.','Avg.')} ${FF(Math.round(T.reach/n))} · ${arrow(chg(yc.y1.reach,yc.y2.reach))}`,''],
+    [L('Likes','Likes'),FF(T.likes),`${L('Prom.','Avg.')} ${Math.round(T.likes/n)} · ${arrow(chg(yc.y1.likes,yc.y2.likes))}`,''],
+    [L('Comentarios','Comments'),FF(T.comments),`${L('Prom.','Avg.')} ${(T.comments/n).toFixed(1)} · ${arrow(chg(yc.y1.comments,yc.y2.comments))}`,''],
+    [L('Compartidos','Shares'),FF(T.shares),`${L('Prom.','Avg.')} ${(T.shares/n).toFixed(1)} · ${arrow(chg(yc.y1.shares,yc.y2.shares))}`,''],
+    [L('Guardados','Saves'),FF(T.saved),`${L('Prom.','Avg.')} ${(T.saved/n).toFixed(1)} · ${arrow(chg(yc.y1.saved,yc.y2.saved))}`,''],
+    [L('Interacciones','Interactions'),FF(T.interactions),`${L('Prom.','Avg.')} ${Math.round(T.interactions/n)}`,''],
+    [L('ER sobre alcance','ER on reach'),(T.interactions/T.reach*100).toFixed(2)+'%',L('interacciones / alcance','interactions / reach'),'hl'],
+    [L('Reels / Videos','Reels / Videos'),FF(D.by_format.find(f=>f.type==='VIDEO').n),L('formato más publicado','most-published format'),''],
+    [L('Carruseles','Carousels'),FF(D.by_format.find(f=>f.type==='CAROUSEL_ALBUM').n),L('mejor rendimiento promedio','best average performance'),''],
+    [L('Imágenes','Images'),FF(D.by_format.find(f=>f.type==='IMAGE').n),'',''],
+    [L('Impresiones','Impressions'),L('No disponible','Not available'),L('Meta deprecó esta métrica','Meta deprecated this metric'),'na'],
+    [L('Crecimiento seguidores','Follower growth'),L('No disponible','Not available'),L('La API no entrega histórico','The API does not provide a historical series'),'na'],
+    [L('Historias','Stories'),L('No disponible','Not available'),L('Expiran a 24 h','Expire after 24h'),'na'],
   ];
   document.getElementById('kpi-main').innerHTML=K.map(([k,v,m,c])=>
     `<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m||'&nbsp;'}</div></div>`).join('');
 
   /* ---- Tabla totales ---- */
-  const TT=[['Views','views','Meta · INSIGHTS'],['Alcance','reach','Meta · INSIGHTS'],
-    ['Likes','likes','Meta · INSIGHTS'],['Comentarios','comments','Meta · INSIGHTS'],
-    ['Compartidos','shares','Meta · INSIGHTS'],['Guardados','saved','Meta · INSIGHTS'],
-    ['Interacciones totales','interactions','Meta · campo nativo']];
+  const srcInsights=L('Meta · INSIGHTS','Meta · INSIGHTS'),srcNative=L('Meta · campo nativo','Meta · native field');
+  const TT=[[L('Views','Views'),'views',srcInsights],[L('Alcance','Reach'),'reach',srcInsights],
+    [L('Likes','Likes'),'likes',srcInsights],[L('Comentarios','Comments'),'comments',srcInsights],
+    [L('Compartidos','Shares'),'shares',srcInsights],[L('Guardados','Saves'),'saved',srcInsights],
+    [L('Interacciones totales','Total interactions'),'interactions',srcNative]];
   document.querySelector('#t-tot tbody').innerHTML=TT.map(([l,k,s])=>
     `<tr><td><strong>${l}</strong></td><td class="num">${FF(T[k])}</td>
      <td class="num">${FF(Math.round(T[k]/n))}</td><td class="num">${FF(med(k))}</td>
@@ -2670,43 +2843,43 @@ function build(){
   const flCities=cities.filter(c=>c.key.includes('Florida')).reduce((s,x)=>s+x.value,0);
 
   document.getElementById('kpi-aud').innerHTML=[
-    ['Base demográfica',FF(tA),'seguidores con datos','hl'],
-    ['Edad dominante','35-44',`${(sum(ages.filter(a=>a.key==='35-44'))/tA*100).toFixed(1)}% del total`,'hl'],
-    ['35-54 años',`${(p3554/tA*100).toFixed(1)}%`,'franja de padres de familia','hl'],
-    ['13-17 años',`${(sum(ages.filter(a=>a.key==='13-17'))/tA*100).toFixed(1)}%`,'franja de jugadores juveniles',''],
-    ['Masculino',`${(gv('M')/tG*100).toFixed(1)}%`,FF(gv('M'))+' seguidores',''],
-    ['Femenino',`${(gv('F')/tG*100).toFixed(1)}%`,FF(gv('F'))+' seguidores',''],
-    ['No declarado',`${(gv('U')/tG*100).toFixed(1)}%`,FF(gv('U'))+' — Meta no lo resuelve',''],
-    ['Ciudad principal',cities[0].key.replace(', Florida',''),FF(cities[0].value)+' seguidores','hl'],
-    ['Estados Unidos',`${(flUS/sum(ctry)*100).toFixed(1)}%`,FF(flUS)+' seguidores',''],
-    ['Concentración Florida',`${(flCities/tA*100).toFixed(1)}%`,'de la base total, en ciudades de FL','hl'],
+    [L('Base demográfica','Demographic base'),FF(tA),L('seguidores con datos','followers with data'),'hl'],
+    [L('Edad dominante','Dominant age'),'35-44',`${(sum(ages.filter(a=>a.key==='35-44'))/tA*100).toFixed(1)}% ${L('del total','of total')}`,'hl'],
+    [L('35-54 años','Ages 35-54'),`${(p3554/tA*100).toFixed(1)}%`,L('franja de padres de familia','parent-age bracket'),'hl'],
+    [L('13-17 años','Ages 13-17'),`${(sum(ages.filter(a=>a.key==='13-17'))/tA*100).toFixed(1)}%`,L('franja de jugadores juveniles','youth-player age bracket'),''],
+    [L('Masculino','Male'),`${(gv('M')/tG*100).toFixed(1)}%`,FF(gv('M'))+L(' seguidores',' followers'),''],
+    [L('Femenino','Female'),`${(gv('F')/tG*100).toFixed(1)}%`,FF(gv('F'))+L(' seguidores',' followers'),''],
+    [L('No declarado','Undeclared'),`${(gv('U')/tG*100).toFixed(1)}%`,FF(gv('U'))+L(' — Meta no lo resuelve',' — Meta does not resolve this'),''],
+    [L('Ciudad principal','Top city'),cities[0].key.replace(', Florida',''),FF(cities[0].value)+L(' seguidores',' followers'),'hl'],
+    [L('Estados Unidos','United States'),`${(flUS/sum(ctry)*100).toFixed(1)}%`,FF(flUS)+L(' seguidores',' followers'),''],
+    [L('Concentración Florida','Florida concentration'),`${(flCities/tA*100).toFixed(1)}%`,L('de la base total, en ciudades de FL','of the total base, in FL cities'),'hl'],
   ].map(([k,v,m,c])=>`<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m}</div></div>`).join('');
 
-  new Chart(document.getElementById('c-age'),{type:'bar',
-    data:{labels:ages.map(a=>a.key),datasets:[{label:'Seguidores',data:ages.map(a=>a.value),
+  mkChart('c-age',{type:'bar',
+    data:{labels:ages.map(a=>a.key),datasets:[{label:L('Seguidores','Followers'),data:ages.map(a=>a.value),
       backgroundColor:ages.map(a=>['35-44','45-54'].includes(a.key)?ACC:'#4D5560'),borderRadius:4}]},
     options:gopt({plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>
       `${FF(c.parsed.y)} (${(c.parsed.y/tA*100).toFixed(1)}%)`}}}})});
 
-  new Chart(document.getElementById('c-gen'),{type:'doughnut',
-    data:{labels:['Masculino','Femenino','No declarado'],
+  mkChart('c-gen',{type:'doughnut',
+    data:{labels:[L('Masculino','Male'),L('Femenino','Female'),L('No declarado','Undeclared')],
       datasets:[{data:[gv('M'),gv('F'),gv('U')],backgroundColor:[BLU,'#A88BE0','#4D5560'],borderWidth:0}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'58%',
       plugins:{legend:{position:'bottom',labels:{padding:13}},
         tooltip:{callbacks:{label:c=>`${c.label}: ${FF(c.parsed)} (${(c.parsed/tG*100).toFixed(1)}%)`}}}}});
 
   const c15=cities.slice(0,15);
-  new Chart(document.getElementById('c-city'),{type:'bar',
+  mkChart('c-city',{type:'bar',
     data:{labels:c15.map(c=>c.key.replace(', Florida','').replace(', Capital District','')),
-      datasets:[{label:'Seguidores',data:c15.map(c=>c.value),
+      datasets:[{label:L('Seguidores','Followers'),data:c15.map(c=>c.value),
         backgroundColor:c15.map(c=>c.key.includes('Florida')?ACC:'#4D5560'),borderRadius:4}]},
     options:gopt({indexAxis:'y',plugins:{legend:{display:false}},
       scales:{x:{ticks:{callback:v=>F(v)},grid:{color:'rgba(40,44,53,.5)'},beginAtZero:true},
         y:{grid:{display:false}}}})});
 
   const k12=ctry.slice(0,12);
-  new Chart(document.getElementById('c-ctry'),{type:'bar',
-    data:{labels:k12.map(c=>c.key),datasets:[{label:'Seguidores',data:k12.map(c=>c.value),
+  mkChart('c-ctry',{type:'bar',
+    data:{labels:k12.map(c=>c.key),datasets:[{label:L('Seguidores','Followers'),data:k12.map(c=>c.value),
       backgroundColor:k12.map(c=>c.key==='US'?ACC:'#4D5560'),borderRadius:4}]},
     options:gopt({plugins:{legend:{display:false}},scales:{y:{type:'logarithmic',
       ticks:{callback:v=>F(v)}},x:{grid:{display:false}}}})});
@@ -2715,7 +2888,28 @@ function build(){
     `<tr><td>${c.key}</td><td class="num">${FF(c.value)}</td>
      <td class="num">${(c.value/tA*100).toFixed(2)}%</td></tr>`).join('');
 
-  document.getElementById('aud-read').innerHTML=`
+  document.getElementById('aud-read').innerHTML=isEn()?`
+    <div class="note g"><span class="pill dato">Data</span> <strong>56.1% of the audience is
+    between 35 and 54 years old</strong> (${FF(p3554)} of ${FF(tA)}), while the 13-17 bracket —the age
+    of the players— represents only 3.5%.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> The account isn't speaking to
+    kids: it's speaking to <strong>the parents who make the enrollment decision and pay</strong>. This
+    is consistent with a youth academy business and validates targeting ad spend at adults aged 30-55
+    rather than at the player's own age. It also implies that the content that works is probably the
+    kind a parent shares with pride, not the kind a teenager consumes.</div>
+    <div class="note g"><span class="pill dato">Data</span> <strong>Doral concentrates
+    ${FF(cities[0].value)} followers, ${(cities[0].value/cities[1].value).toFixed(1)}× more than Miami
+    (${FF(cities[1].value)})</strong>, despite being a much smaller city. Florida cities together add up
+    to ${(flCities/tA*100).toFixed(1)}% of the base.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> The audience is
+    <strong>hyperlocal</strong>, concentrated within the radius of the physical locations. The
+    ${(100-flUS/sum(ctry)*100).toFixed(1)}% international share (Venezuela, Brazil, Italy, Colombia) is
+    probably Juventus brand affinity rather than an actionable market. For enrollment ad spend, the
+    budget should be geographically concentrated, not spread thin.</div>
+    <div class="note"><span class="pill na">Caveat</span> 21.4% of followers have gender
+    "undeclared" (U) per Meta. The real male/female split could shift if those
+    5,604 followers were resolved.</div>`
+   :`
     <div class="note g"><span class="pill dato">Dato</span> <strong>El 56,1% de la audiencia tiene
     entre 35 y 54 años</strong> (${FF(p3554)} de ${FF(tA)}), mientras que la franja 13-17 —la edad de
     los jugadores— representa solo el 3,5%.</div>
@@ -2746,16 +2940,32 @@ function build(){
      <td class="num">${t.likes_avg}</td><td class="num">${t.shares_avg}</td>
      <td class="num">${t.saved_avg}</td><td class="num">${t.er_reach}%</td></tr>`).join('');
 
-  new Chart(document.getElementById('c-topic'),{type:'bar',
+  mkChart('c-topic',{type:'bar',
     data:{labels:tp.map(t=>t.topic),datasets:[
-      {label:'Views promedio',data:tp.map(t=>t.views_avg),backgroundColor:ACC,borderRadius:4},
-      {label:'Views mediana',data:tp.map(t=>t.views_median),backgroundColor:'#4D5560',borderRadius:4}]},
+      {label:L('Views promedio','Average views'),data:tp.map(t=>t.views_avg),backgroundColor:ACC,borderRadius:4},
+      {label:L('Views mediana','Median views'),data:tp.map(t=>t.views_median),backgroundColor:'#4D5560',borderRadius:4}]},
     options:gopt({indexAxis:'y',scales:{x:{ticks:{callback:v=>F(v)},
       grid:{color:'rgba(40,44,53,.5)'},beginAtZero:true},y:{grid:{display:false}}}})});
 
   const conv=tp.find(t=>t.topic.includes('Convocatoria')),tor=tp.find(t=>t.topic.includes('Torneo'));
   const fich=tp.find(t=>t.topic.includes('Fichaje'));
-  document.getElementById('topic-read').innerHTML=`
+  document.getElementById('topic-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill dato">Data</span> <strong>"Convocatoria / Tryouts" content
+    is the second most-published topic (${conv.n} posts) but has the lowest ER of any
+    topic (${conv.er_reach}%)</strong>, versus ${tor.er_reach}% for Tournament/Juve Cup
+    and ${fich.er_reach}% for Signings.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> There's a mismatch between
+    effort and result: a lot of direct-recruitment content is published, and it's exactly the kind
+    that generates the least interaction per person reached. Achievement content (signings) and
+    event content (tournaments) engage more. <strong>The actionable read isn't to stop posting
+    tryout announcements, but to wrap them in achievement narrative</strong> instead of presenting
+    them as an administrative notice — which matches what was already observed in the visual-identity
+    analysis, where the "TRANSFER / CALLED UP" format is the best-performing one historically.</div>
+    <div class="note"><span class="pill na">Caveat</span> ${tp.find(t=>t.topic.includes('Otros')).n}
+    of ${n} posts (20%) went unclassified, and "Testimonio/Entrevista" only has
+    ${tp.find(t=>t.topic.includes('Testimonio')).n} cases — an insufficient sample for reliable
+    conclusions about that category.</div>`
+   :`
     <div class="note d"><span class="pill dato">Dato</span> <strong>El contenido de
     "Convocatoria / Tryouts" es el segundo más publicado (${conv.n} posts) pero tiene el ER más bajo
     de todas las temáticas (${conv.er_reach}%)</strong>, frente al ${tor.er_reach}% de Torneo/Juve Cup
@@ -2775,26 +2985,46 @@ function build(){
   /* ---- FORMATOS ---- */
   const fm=D.by_format,mxA=Math.max(...fm.map(f=>f.views_avg)),mnA=Math.min(...fm.map(f=>f.views_avg));
   document.querySelector('#t-fmt tbody').innerHTML=fm.map(f=>
-    `<tr><td><strong>${TL[f.type]}</strong></td><td class="num">${f.n}</td>
+    `<tr><td><strong>${TL()[f.type]}</strong></td><td class="num">${f.n}</td>
      <td class="num">${f.pct_of_posts}%</td><td class="num">${FF(f.views_total)}</td>
      <td class="num ${f.views_avg===mxA?'best':f.views_avg===mnA?'worst':''}">${FF(f.views_avg)}</td>
      <td class="num">${FF(f.views_median)}</td><td class="num">${FF(f.reach_avg)}</td>
      <td class="num">${f.likes_avg}</td><td class="num">${f.shares_avg}</td>
      <td class="num">${f.saved_avg}</td><td class="num">${f.er_reach}%</td></tr>`).join('');
 
-  new Chart(document.getElementById('c-ft'),{type:'bar',
-    data:{labels:fm.map(f=>TL[f.type]),datasets:[{label:'Views totales',
+  mkChart('c-ft',{type:'bar',
+    data:{labels:fm.map(f=>TL()[f.type]),datasets:[{label:L('Views totales','Total views'),
       data:fm.map(f=>f.views_total),backgroundColor:[BLU,GRN,ORG],borderRadius:4}]},
     options:gopt({plugins:{legend:{display:false}}})});
 
-  new Chart(document.getElementById('c-fa'),{type:'bar',
-    data:{labels:fm.map(f=>TL[f.type]),datasets:[
-      {label:'Views promedio',data:fm.map(f=>f.views_avg),backgroundColor:ACC,borderRadius:4},
-      {label:'Views mediana',data:fm.map(f=>f.views_median),backgroundColor:'#4D5560',borderRadius:4}]},
+  mkChart('c-fa',{type:'bar',
+    data:{labels:fm.map(f=>TL()[f.type]),datasets:[
+      {label:L('Views promedio','Average views'),data:fm.map(f=>f.views_avg),backgroundColor:ACC,borderRadius:4},
+      {label:L('Views mediana','Median views'),data:fm.map(f=>f.views_median),backgroundColor:'#4D5560',borderRadius:4}]},
     options:gopt()});
 
   const vid=fm.find(f=>f.type==='VIDEO'),car=fm.find(f=>f.type==='CAROUSEL_ALBUM'),img=fm.find(f=>f.type==='IMAGE');
-  document.getElementById('fmt-read').innerHTML=`
+  document.getElementById('fmt-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill dato">Data</span> <strong>Reels are the most-published
+    format (${vid.n} of ${n}, ${vid.pct_of_posts}%) and the worst-performing on average:
+    ${FF(vid.views_avg)} views per piece versus ${FF(car.views_avg)} for carousels</strong>
+    — carousels perform ${(car.views_avg/vid.views_avg).toFixed(1)}× better per post.
+    The median confirms the pattern (${FF(car.views_median)} vs ${FF(vid.views_median)}), so
+    it isn't an outlier effect.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> This is probably the
+    single most actionable finding in the report: <strong>there's an inverted allocation of
+    effort</strong>. The format that consumes the most production time (video) is receiving the
+    bulk of the volume and delivering the lowest return per piece. Looking only at total views,
+    reels and carousels look comparable; only the average reveals the real gap.</div>
+    <div class="note g"><span class="pill dato">Data</span> On engagement over reach the order
+    flips: carousel ${car.er_reach}% · reel ${vid.er_reach}% · image ${img.er_reach}%.
+    The carousel leads here too, and the single image —despite decent reach— is the one that
+    generates the least interaction proportionally.</div>
+    <div class="note"><span class="pill na">Measurement caveat</span> <code>views</code> does not
+    measure exactly the same thing on video (plays) as on image or carousel (post views).
+    The comparison is the one Meta provides, but it's worth reading alongside reach, which is
+    homogeneous: there the carousel also wins (${FF(car.reach_avg)} vs ${FF(vid.reach_avg)}).</div>`
+   :`
     <div class="note d"><span class="pill dato">Dato</span> <strong>Los Reels son el formato más
     publicado (${vid.n} de ${n}, ${vid.pct_of_posts}%) y el de peor rendimiento promedio:
     ${FF(vid.views_avg)} views por pieza frente a ${FF(car.views_avg)} de los carruseles</strong>
@@ -2817,62 +3047,83 @@ function build(){
 
   /* ---- EVOLUCIÓN ---- */
   const M=D.monthly,lbls=M.map(m=>fym(m.ym));
-  let evc=null;
   function drawEv(metric){
     const isER=metric==='er_reach';
-    if(evc)evc.destroy();
-    evc=new Chart(document.getElementById('c-ev'),{type:'line',
-      data:{labels:lbls,datasets:[{label:({views:'Views',reach:'Alcance',likes:'Likes',
+    const metricLabels=isEn()?{views:'Views',reach:'Reach',likes:'Likes',
+        comments:'Comments',shares:'Shares',saved:'Saves',
+        interactions:'Interactions',er_reach:'ER %'}
+      :{views:'Views',reach:'Alcance',likes:'Likes',
         comments:'Comentarios',shares:'Compartidos',saved:'Guardados',
-        interactions:'Interacciones',er_reach:'ER %'})[metric],
+        interactions:'Interacciones',er_reach:'ER %'};
+    mkChart('c-ev',{type:'line',
+      data:{labels:lbls,datasets:[{label:metricLabels[metric],
         data:M.map(m=>m[metric]),borderColor:ACC,backgroundColor:'rgba(245,217,10,.11)',
         fill:true,tension:.32,pointRadius:3,pointBackgroundColor:ACC,borderWidth:2.2}]},
       options:gopt({scales:{x:{grid:{display:false}},
         y:{beginAtZero:true,ticks:{callback:v=>isER?v+'%':F(v)},grid:{color:'rgba(40,44,53,.5)'}}},
         plugins:{legend:{display:false},tooltip:{callbacks:{
           label:c=>`${c.dataset.label}: ${isER?c.parsed.y+'%':FF(c.parsed.y)}`,
-          afterLabel:c=>`${M[c.dataIndex].posts} publicaciones ese mes`}}}})});
+          afterLabel:c=>`${M[c.dataIndex].posts} ${L('publicaciones ese mes','posts that month')}`}}}})});
   }
-  drawEv('views');
+  let currentEvMetric='views';
+  drawEv(currentEvMetric);
   document.querySelectorAll('#tb-ev .tab').forEach(b=>b.onclick=()=>{
     document.querySelectorAll('#tb-ev .tab').forEach(x=>x.classList.remove('on'));
-    b.classList.add('on');drawEv(b.dataset.m)});
+    b.classList.add('on');currentEvMetric=b.dataset.m;drawEv(currentEvMetric)});
 
-  new Chart(document.getElementById('c-vol'),{type:'bar',
+  mkChart('c-vol',{type:'bar',
     data:{labels:lbls,datasets:[
-      {label:'Reels',data:M.map(m=>m.VIDEO),backgroundColor:BLU,borderRadius:4},
-      {label:'Carruseles',data:M.map(m=>m.CAROUSEL_ALBUM),backgroundColor:GRN,borderRadius:4},
-      {label:'Imágenes',data:M.map(m=>m.IMAGE),backgroundColor:ORG,borderRadius:4}]},
+      {label:L('Reels','Reels'),data:M.map(m=>m.VIDEO),backgroundColor:BLU,borderRadius:4},
+      {label:L('Carruseles','Carousels'),data:M.map(m=>m.CAROUSEL_ALBUM),backgroundColor:GRN,borderRadius:4},
+      {label:L('Imágenes','Images'),data:M.map(m=>m.IMAGE),backgroundColor:ORG,borderRadius:4}]},
     options:gopt({scales:{x:{stacked:true,grid:{display:false}},
       y:{stacked:true,beginAtZero:true,ticks:{callback:v=>v}}}})});
 
   const am=D.account_monthly.filter(x=>!x.error);
-  new Chart(document.getElementById('c-acct'),{type:'line',
+  mkChart('c-acct',{type:'line',
     data:{labels:am.map(x=>fym(x.since.slice(0,7))),datasets:[
-      {label:'Alcance de cuenta',data:am.map(x=>x.reach),borderColor:ACC,
+      {label:L('Alcance de cuenta','Account reach'),data:am.map(x=>x.reach),borderColor:ACC,
        backgroundColor:'rgba(254,242,0,.10)',fill:true,tension:.32,pointRadius:2.5,yAxisID:'y'},
-      {label:'Visitas al perfil',data:am.map(x=>x.profile_views),borderColor:PUR,
+      {label:L('Visitas al perfil','Profile visits'),data:am.map(x=>x.profile_views),borderColor:PUR,
        tension:.32,pointRadius:2.5,yAxisID:'y1'},
-      {label:'Clics al sitio web',data:am.map(x=>x.website_clicks),borderColor:GRN,
+      {label:L('Clics al sitio web','Website clicks'),data:am.map(x=>x.website_clicks),borderColor:GRN,
        tension:.32,pointRadius:2.5,yAxisID:'y1'}]},
     options:gopt({scales:{x:{grid:{display:false}},
-      y:{position:'left',beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:'Alcance'}},
+      y:{position:'left',beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:L('Alcance','Reach')}},
       y1:{position:'right',beginAtZero:true,grid:{drawOnChartArea:false},
-        ticks:{callback:v=>F(v)},title:{display:true,text:'Visitas / clics'}}}})});
+        ticks:{callback:v=>F(v)},title:{display:true,text:L('Visitas / clics','Visits / clicks')}}}})});
 
   /* ---- Año 1 vs Año 2 ---- */
   document.getElementById('yc-sub').textContent=`${yc.y1_label}  vs.  ${yc.y2_label}`;
-  const YR=[['Publicaciones','posts'],['Reels','videos'],['Carruseles','carousels'],
-    ['Imágenes','images'],['Views','views'],['Views promedio','views_avg'],['Alcance','reach'],
-    ['Likes','likes'],['Comentarios','comments'],['Guardados','saved'],
-    ['Compartidos','shares'],['Interacciones','interactions'],['ER alcance','er_reach']];
+  const YR=[[L('Publicaciones','Posts'),'posts'],[L('Reels','Reels'),'videos'],[L('Carruseles','Carousels'),'carousels'],
+    [L('Imágenes','Images'),'images'],[L('Views','Views'),'views'],[L('Views promedio','Average views'),'views_avg'],[L('Alcance','Reach'),'reach'],
+    [L('Likes','Likes'),'likes'],[L('Comentarios','Comments'),'comments'],[L('Guardados','Saves'),'saved'],
+    [L('Compartidos','Shares'),'shares'],[L('Interacciones','Interactions'),'interactions'],[L('ER alcance','ER on reach'),'er_reach']];
   document.querySelector('#t-yc tbody').innerHTML=YR.map(([l,k])=>{
     const a=yc.y1[k],b=yc.y2[k],c=chg(a,b);
     const suf=k==='er_reach'?'%':'';
     return `<tr><td><strong>${l}</strong></td><td class="num">${FF(a)}${suf}</td>
       <td class="num">${FF(b)}${suf}</td><td class="num">${arrow(c)}</td></tr>`}).join('');
 
-  document.getElementById('yc-read').innerHTML=`
+  document.getElementById('yc-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill dato">Data</span> <strong>Year 2 published
+    ${(chg(yc.y1.posts,yc.y2.posts)).toFixed(1)}% more content (${yc.y2.posts} vs ${yc.y1.posts})
+    but got ${Math.abs(chg(yc.y1.views,yc.y2.views)).toFixed(1)}% fewer views and
+    ${Math.abs(chg(yc.y1.reach,yc.y2.reach)).toFixed(1)}% less reach.</strong> Average views
+    per post fell ${Math.abs(chg(yc.y1.views_avg,yc.y2.views_avg)).toFixed(1)}%
+    (${FF(yc.y1.views_avg)} → ${FF(yc.y2.views_avg)}).</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> More volume didn't produce
+    more results; per-piece performance deteriorated. <strong>Important methodological note:</strong>
+    Year 1 includes the viral post from November 2024 (363,411 views, 21% of all that year's views).
+    If that outlier is excluded, the real year-over-year drop is much smaller. This table should not
+    be read as "the account got 32% worse" without that caveat.</div>
+    <div class="note g"><span class="pill dato">Data</span> Two metrics did improve:
+    <strong>shares +${chg(yc.y1.shares,yc.y2.shares).toFixed(1)}%</strong>
+    (${FF(yc.y1.shares)} → ${FF(yc.y2.shares)}) and comments
+    +${chg(yc.y1.comments,yc.y2.comments).toFixed(1)}%. ER on reach stayed nearly flat
+    (${yc.y1.er_reach}% → ${yc.y2.er_reach}%), which indicates the quality of interaction
+    from people who saw the content didn't degrade: what dropped was distribution.</div>`
+   :`
     <div class="note d"><span class="pill dato">Dato</span> <strong>El Año 2 publicó
     ${(chg(yc.y1.posts,yc.y2.posts)).toFixed(1)}% más contenido (${yc.y2.posts} vs ${yc.y1.posts})
     pero obtuvo ${Math.abs(chg(yc.y1.views,yc.y2.views)).toFixed(1)}% menos views y
@@ -2894,34 +3145,52 @@ function build(){
   const ms=M.slice().sort((a,b)=>b.views-a.views);
   const mrow=m=>`<tr><td><strong>${fym(m.ym)}</strong></td>
     <td class="num">${m.posts} posts</td><td class="num">${F(m.views)} views</td>
-    <td class="num">${F(m.reach)} alcance</td><td class="num">${m.er_reach}% ER</td></tr>`;
+    <td class="num">${F(m.reach)} ${L('alcance','reach')}</td><td class="num">${m.er_reach}% ER</td></tr>`;
   document.getElementById('t-mtop').innerHTML=ms.slice(0,5).map(mrow).join('');
   document.getElementById('t-mbot').innerHTML=ms.slice(-5).reverse().map(mrow).join('');
 
   /* ---- DÍA / HORA ---- */
   const dw=D.by_dow;
-  new Chart(document.getElementById('c-dow'),{type:'bar',
+  mkChart('c-dow',{type:'bar',
     data:{labels:dw.map(d=>d.dow),datasets:[
-      {label:'Publicaciones (volumen)',data:dw.map(d=>d.n),backgroundColor:'#4D5560',
+      {label:L('Publicaciones (volumen)','Posts (volume)'),data:dw.map(d=>d.n),backgroundColor:'#4D5560',
        borderRadius:4,yAxisID:'y1',order:2},
-      {type:'line',label:'Views mediana (rendimiento)',data:dw.map(d=>d.views_median),
+      {type:'line',label:L('Views mediana (rendimiento)','Median views (performance)'),data:dw.map(d=>d.views_median),
        borderColor:ACC,backgroundColor:ACC,tension:.3,pointRadius:4,yAxisID:'y',order:1,borderWidth:2.5},
-      {type:'line',label:'Views promedio',data:dw.map(d=>d.views_avg),borderColor:RED,
+      {type:'line',label:L('Views promedio','Average views'),data:dw.map(d=>d.views_avg),borderColor:RED,
        borderDash:[5,4],tension:.3,pointRadius:3,yAxisID:'y',order:1,borderWidth:1.8}]},
     options:gopt({scales:{x:{grid:{display:false}},
       y:{position:'left',beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:'Views'}},
       y1:{position:'right',beginAtZero:true,grid:{drawOnChartArea:false},
-        title:{display:true,text:'N.º publicaciones'}}}})});
+        title:{display:true,text:L('N.º publicaciones','No. of posts')}}}})});
 
   const mxMed=Math.max(...dw.filter(d=>d.views_median).map(d=>d.views_median));
   document.querySelector('#t-dow tbody').innerHTML=dw.map(d=>
     `<tr><td><strong>${d.dow}</strong></td><td class="num">${d.n}</td>
-     <td class="num">${d.views_avg?FF(d.views_avg):'n/d'}</td>
-     <td class="num ${d.views_median===mxMed?'best':''}">${d.views_median?FF(d.views_median):'n/d'}</td>
-     <td class="num">${d.er_reach!=null?d.er_reach+'%':'n/d'}</td></tr>`).join('');
+     <td class="num">${d.views_avg?FF(d.views_avg):L('n/d','n/a')}</td>
+     <td class="num ${d.views_median===mxMed?'best':''}">${d.views_median?FF(d.views_median):L('n/d','n/a')}</td>
+     <td class="num">${d.er_reach!=null?d.er_reach+'%':L('n/d','n/a')}</td></tr>`).join('');
 
   const sat=dw.find(d=>d.dow==='Sabado');
-  document.getElementById('dow-read').innerHTML=`
+  document.getElementById('dow-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill na">Statistical trap</span> <strong>Saturday looks like
+    the best day with ${FF(sat.views_avg)} average views, but its median is only
+    ${FF(sat.views_median)}</strong> — barely above the rest of the days. The difference is explained
+    by a single viral post published on a Saturday and by having only ${sat.n} posts in the sample.
+    <strong>It isn't a pattern, it's an outlier.</strong> Reporting "posting on Saturday multiplies
+    views by 5×" would be a false conclusion.</div>
+    <div class="note g"><span class="pill dato">Data</span> Using the median, which is robust to
+    outliers, <strong>the days are notably uniform</strong>: every median falls between
+    ${FF(Math.min(...dw.filter(d=>d.views_median).map(d=>d.views_median)))} and ${FF(mxMed)} views.
+    Sunday has the best ER (${dw.find(d=>d.dow==='Domingo').er_reach}%) but with only
+    ${dw.find(d=>d.dow==='Domingo').n} posts.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> With this data
+    <strong>there is no evidence that publish day determines performance</strong> on this account.
+    Volume is concentrated Monday through Friday (${dw.slice(0,5).reduce((s,d)=>s+d.n,0)} of
+    ${n} posts), and the weekend is under-used, but there isn't enough data either to claim that
+    moving to the weekend would improve results. It would be a hypothesis to test, not a
+    supported recommendation.</div>`
+   :`
     <div class="note d"><span class="pill na">Trampa estadística</span> <strong>El sábado aparenta
     ser el mejor día con ${FF(sat.views_avg)} views promedio, pero su mediana es solo
     ${FF(sat.views_median)}</strong> — apenas por encima del resto de días. La diferencia se explica
@@ -2941,15 +3210,15 @@ function build(){
     no una recomendación respaldada.</div>`;
 
   const hh=D.by_hour;
-  new Chart(document.getElementById('c-hour'),{type:'bar',
+  mkChart('c-hour',{type:'bar',
     data:{labels:hh.map(h=>String(h.hour_miami).padStart(2,'0')+':00'),datasets:[
-      {label:'Views mediana',data:hh.map(h=>h.views_median),backgroundColor:ACC,borderRadius:4,order:2},
-      {type:'line',label:'N.º publicaciones',data:hh.map(h=>h.n),borderColor:BLU,
+      {label:L('Views mediana','Median views'),data:hh.map(h=>h.views_median),backgroundColor:ACC,borderRadius:4,order:2},
+      {type:'line',label:L('N.º publicaciones','No. of posts'),data:hh.map(h=>h.n),borderColor:BLU,
        tension:.3,pointRadius:3,yAxisID:'y1',order:1,borderWidth:2}]},
     options:gopt({scales:{x:{grid:{display:false}},
-      y:{beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:'Views mediana'}},
+      y:{beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:L('Views mediana','Median views')}},
       y1:{position:'right',beginAtZero:true,grid:{drawOnChartArea:false},
-        title:{display:true,text:'N.º posts'}}}})});
+        title:{display:true,text:L('N.º posts','No. of posts')}}}})});
 
   /* ---- REELS ---- */
   const rv=D.posts.filter(p=>p.type==='VIDEO').sort((a,b)=>b.views-a.views);
@@ -2957,24 +3226,34 @@ function build(){
   const rmed=rvv[Math.floor(rvv.length/2)];
   const best=k=>rv.slice().sort((a,b)=>b[k]-a[k])[0];
   document.getElementById('kpi-reel').innerHTML=[
-    ['Total Reels',FF(vid.n),`${vid.pct_of_posts}% del contenido`,'hl'],
-    ['Views totales',F(vid.views_total),'',''],
-    ['Views promedio',FF(vid.views_avg),'el más bajo de los 3 formatos','hl'],
-    ['Views mediana',FF(rmed),'menos sensible a outliers',''],
-    ['Alcance promedio',FF(vid.reach_avg),'',''],
-    ['ER sobre alcance',vid.er_reach+'%','',''],
-    ['Compartidos prom.',vid.shares_avg,'',''],
-    ['Guardados prom.',vid.saved_avg,'',''],
-    ['Máx. views',F(rv[0].views),fd(rv[0].date),''],
-    ['Máx. likes',FF(best('likes').likes),fd(best('likes').date),''],
-    ['Máx. comentarios',FF(best('comments').comments),fd(best('comments').date),''],
-    ['Máx. compartidos',FF(best('shares').shares),fd(best('shares').date),''],
-    ['Duración','No disponible','La API no expone este campo','na'],
+    [L('Total Reels','Total Reels'),FF(vid.n),`${vid.pct_of_posts}% ${L('del contenido','of content')}`,'hl'],
+    [L('Views totales','Total views'),F(vid.views_total),'',''],
+    [L('Views promedio','Average views'),FF(vid.views_avg),L('el más bajo de los 3 formatos','the lowest of the 3 formats'),'hl'],
+    [L('Views mediana','Median views'),FF(rmed),L('menos sensible a outliers','less sensitive to outliers'),''],
+    [L('Alcance promedio','Average reach'),FF(vid.reach_avg),'',''],
+    [L('ER sobre alcance','ER on reach'),vid.er_reach+'%','',''],
+    [L('Compartidos prom.','Avg. shares'),vid.shares_avg,'',''],
+    [L('Guardados prom.','Avg. saves'),vid.saved_avg,'',''],
+    [L('Máx. views','Max. views'),F(rv[0].views),fd(rv[0].date),''],
+    [L('Máx. likes','Max. likes'),FF(best('likes').likes),fd(best('likes').date),''],
+    [L('Máx. comentarios','Max. comments'),FF(best('comments').comments),fd(best('comments').date),''],
+    [L('Máx. compartidos','Max. shares'),FF(best('shares').shares),fd(best('shares').date),''],
+    [L('Duración','Duration'),L('No disponible','Not available'),L('La API no expone este campo','The API does not expose this field'),'na'],
   ].map(([k,v,m,c])=>`<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m||'&nbsp;'}</div></div>`).join('');
   document.getElementById('rk-reel').innerHTML=rv.slice(0,12).map((p,i)=>card(p,i,'views')).join('');
 
   /* ---- RANKINGS ---- */
-  const RN={views:'Ordenado por <strong>views</strong> (reproducciones o visualizaciones del post según formato).',
+  const RN=isEn()?{views:'Sorted by <strong>views</strong> (plays or post views, depending on format).',
+    reach:'Sorted by <strong>reach</strong>: unique accounts that saw the post. This is the most homogeneous metric across formats.',
+    likes:'Sorted by <strong>likes</strong> per Meta Insights.',
+    comments:'Sorted by <strong>comments</strong>. Absolute values are low on this account (average of 3.4 per post).',
+    shares:'Sorted by <strong>shares</strong>: a good indicator of content the audience considers worth forwarding.',
+    saved:'Sorted by <strong>saves</strong>: indicates value as future reference (schedules, prices, information).',
+    er_reach:'Sorted by <strong>ER = interactions / reach</strong>. Posts with less than 500 reach are excluded so a post with minimal reach doesn\'t dominate the ranking with unrealistic percentages.',
+    views_carousel:'Only <strong>carousels</strong>, sorted by views.',
+    views_image:'Only <strong>single images</strong>, sorted by views.',
+    views_video:'Only <strong>Reels / videos</strong>, sorted by views.'}
+   :{views:'Ordenado por <strong>views</strong> (reproducciones o visualizaciones del post según formato).',
     reach:'Ordenado por <strong>alcance</strong>: cuentas únicas que vieron la publicación. Es la métrica más homogénea entre formatos.',
     likes:'Ordenado por <strong>likes</strong> según Meta Insights.',
     comments:'Ordenado por <strong>comentarios</strong>. Los valores absolutos son bajos en esta cuenta (media de 3,4 por post).',
@@ -2989,14 +3268,15 @@ function build(){
     document.getElementById('rk-grid').innerHTML=
       D.rankings[k].map((id,i)=>card(P[id],i,k)).join('');
   }
-  drawRk('views');
+  let currentRk='views';
+  drawRk(currentRk);
   document.querySelectorAll('#tb-rk .tab').forEach(b=>b.onclick=()=>{
     document.querySelectorAll('#tb-rk .tab').forEach(x=>x.classList.remove('on'));
-    b.classList.add('on');drawRk(b.dataset.r)});
+    b.classList.add('on');currentRk=b.dataset.r;drawRk(currentRk)});
 
   /* ---- TABLA MAESTRA ---- */
   const topics=[...new Set(D.posts.map(p=>p.topic))].sort();
-  document.getElementById('f-topic').innerHTML='<option value="">Todas las temáticas</option>'+
+  document.getElementById('f-topic').innerHTML=`<option value="">${L('Todas las temáticas','All topics')}</option>`+
     topics.map(t=>`<option value="${t}">${t}</option>`).join('');
   let sortK='views',sortD=-1;
   function renderT(){
@@ -3009,21 +3289,21 @@ function build(){
     rows.sort((a,b)=>{
       if(sortK==='date')return sortD*((a.date<b.date?-1:1));
       const x=a[sortK]??-1,y=b[sortK]??-1;return sortD*(x-y)});
-    document.getElementById('cnt').textContent=`${rows.length} de ${n} publicaciones`;
+    document.getElementById('cnt').textContent=isEn()?`${rows.length} of ${n} posts`:`${rows.length} de ${n} publicaciones`;
     document.querySelector('#t-all tbody').innerHTML=rows.map(p=>{
       const th=p.thumb?`<img class="thumb-sm" src="${p.thumb}" onclick="zoom('${p.thumb}')">`
-        :`<span style="font-size:10px;color:var(--txt3)">n/d</span>`;
+        :`<span style="font-size:10px;color:var(--txt3)">${L('n/d','n/a')}</span>`;
       const cap=(p.caption_short||'').replace(/</g,'&lt;').slice(0,80);
       return `<tr><td>${th}</td><td style="white-space:nowrap">${p.date}</td>
-        <td><span class="tp">${TS[p.type]}</span></td>
+        <td><span class="tp">${TS()[p.type]}</span></td>
         <td style="font-size:11px">${p.topic}</td>
         <td style="color:var(--txt3);max-width:260px">${cap||'—'}</td>
         <td class="num">${FF(p.views)}</td><td class="num">${FF(p.reach)}</td>
         <td class="num">${FF(p.likes)}</td><td class="num">${FF(p.comments)}</td>
         <td class="num">${FF(p.shares)}</td><td class="num">${FF(p.saved)}</td>
-        <td class="num">${p.er_reach!=null?p.er_reach:'n/d'}</td>
-        <td>${p.permalink?`<a class="lnk" href="${p.permalink}" target="_blank" rel="noopener">abrir ↗</a>`
-          :'<span style="color:var(--txt3);font-size:11px">no disp.</span>'}</td></tr>`}).join('');
+        <td class="num">${p.er_reach!=null?p.er_reach:L('n/d','n/a')}</td>
+        <td>${p.permalink?`<a class="lnk" href="${p.permalink}" target="_blank" rel="noopener">${L('abrir ↗','open ↗')}</a>`
+          :`<span style="color:var(--txt3);font-size:11px">${L('no disp.','n/a')}</span>`}</td></tr>`}).join('');
   }
   ['q','f-type','f-topic','f-year'].forEach(id=>
     document.getElementById(id).addEventListener('input',renderT));
@@ -3031,7 +3311,7 @@ function build(){
     sortK=e.target.value;sortD=sortK==='date'?-1:-1;renderT()});
   document.querySelectorAll('#t-all th').forEach((th,i)=>{
     const map={5:'views',6:'reach',7:'likes',8:'comments',9:'shares',10:'saved',11:'er_reach',1:'date'};
-    if(map[i]){th.style.cursor='pointer';th.title='Clic para ordenar';
+    if(map[i]){th.style.cursor='pointer';th.title=L('Clic para ordenar','Click to sort');
       th.onclick=()=>{if(sortK===map[i])sortD*=-1;else{sortK=map[i];sortD=-1}renderT()}}});
   renderT();
 
@@ -3041,7 +3321,55 @@ function build(){
     const t=v.reduce((s,x)=>s+x,0);const k=Math.ceil(v.length*.05);
     return{n:k,pct:(v.slice(0,k).reduce((s,x)=>s+x,0)/t*100).toFixed(1)}})();
 
-  document.getElementById('finds').innerHTML=[
+  const FINDS=isEn()?[
+    ['Reels get the most effort and deliver the lowest return per piece','dato',
+     `The ${vid.n} Reels (${vid.pct_of_posts}% of content) average ${FF(vid.views_avg)} views,
+      versus ${FF(car.views_avg)} for the ${car.n} carousels. The median confirms the pattern
+      (${FF(vid.views_median)} vs ${FF(car.views_median)}), ruling out an outlier effect.`,
+     `Evidence: format table · carousel/reel ratio = ${(car.views_avg/vid.views_avg).toFixed(2)}×`],
+    ['The real audience is parents aged 35-54, not the youth players','dato',
+     `${(p3554/tA*100).toFixed(1)}% of the ${FF(tA)} followers with demographic data are between
+      35 and 54 years old. The 13-17 bracket —the age of the academy's players— is only
+      ${(sum(ages.filter(a=>a.key==='13-17'))/tA*100).toFixed(1)}%.`,
+     `Evidence: Meta's follower_demographics (breakdown=age)`],
+    ['The audience is hyperconcentrated in Doral, not Miami','dato',
+     `Doral contributes ${FF(cities[0].value)} followers against ${FF(cities[1].value)} for Miami
+      (${(cities[0].value/cities[1].value).toFixed(1)}× more), despite being far smaller.
+      Florida cities add up to ${(flCities/tA*100).toFixed(1)}% of the base.`,
+     `Evidence: Meta's follower_demographics (breakdown=city)`],
+    ['Publishing more didn\'t produce more results','dato',
+     `Year 2 increased volume by ${chg(yc.y1.posts,yc.y2.posts).toFixed(1)}%
+      (${yc.y1.posts}→${yc.y2.posts} posts) but views fell
+      ${Math.abs(chg(yc.y1.views,yc.y2.views)).toFixed(1)}% and reach
+      ${Math.abs(chg(yc.y1.reach,yc.y2.reach)).toFixed(1)}%.`,
+     `Mandatory caveat: Year 1 contains the viral post from Nov-2024 (${FF(top1.views)} views,
+      ${(top1.views/yc.y1.views*100).toFixed(0)}% of that year's views). Excluding it, the actual
+      drop is substantially smaller. This should not be read as "the account got 32% worse."`],
+    ['Direct-recruitment content is the least engaging','dato',
+     `"Convocatoria / Tryouts" is the 2nd most-published topic (${conv.n} posts) and has the lowest
+      ER of all (${conv.er_reach}%), versus ${fich.er_reach}% for Signings and
+      ${tor.er_reach}% for Tournaments.`,
+     `Evidence: topic table · classification by regex over captions`],
+    ['Performance is extremely concentrated','dato',
+     `The top ${pareto.n} posts (5% of the total) account for ${pareto.pct}% of all
+      views in the period. A single post (Nov-2024) contributes
+      ${(top1.views/T.views*100).toFixed(1)}% of the entire 24-month total.`,
+     `Evidence: sorted views distribution`],
+    ['Publish day does not explain performance','interp',
+     `Medians by day of week are uniform (between
+      ${FF(Math.min(...dw.filter(d=>d.views_median).map(d=>d.views_median)))} and ${FF(mxMed)} views).
+      The apparent Saturday spike (${FF(sat.views_avg)} average) disappears when using the median
+      (${FF(sat.views_median)}): it's an outlier with only ${sat.n} posts.`,
+     `Caveat: this is an unobserved relationship, not a disproven causation. With more weekend
+      data a pattern could emerge.`],
+    ['Interaction quality held even as distribution fell','dato',
+     `ER on reach went from ${yc.y1.er_reach}% to ${yc.y2.er_reach}% (a
+      ${chg(yc.y1.er_reach,yc.y2.er_reach).toFixed(1)}% change), and shares rose
+      +${chg(yc.y1.shares,yc.y2.shares).toFixed(1)}%. What dropped was reach, not the response
+      from people who saw the content.`,
+     `Associated interpretation: this points more toward a change in algorithmic distribution or
+      format mix than a loss of content quality.`],
+  ]:[
     ['Los Reels reciben el mayor esfuerzo y entregan el menor rendimiento por pieza','dato',
      `Los ${vid.n} Reels (${vid.pct_of_posts}% del contenido) promedian ${FF(vid.views_avg)} views,
       frente a ${FF(car.views_avg)} de los ${car.n} carruseles. La mediana confirma el patrón
@@ -3089,12 +3417,44 @@ function build(){
       de quien vio el contenido.`,
      `Interpretación asociada: apunta más a un cambio de distribución del algoritmo o de mezcla de
       formatos que a una pérdida de calidad del contenido.`],
-  ].map(([t,tp,p,ev])=>
-    `<div class="find"><h4>${t} <span class="pill ${tp==='dato'?'dato':'interp'}">${tp==='dato'?'Dato':'Interpretación'}</span></h4>
+  ];
+  document.getElementById('finds').innerHTML=FINDS.map(([t,tpv,p,ev])=>
+    `<div class="find"><h4>${t} <span class="pill ${tpv==='dato'?'dato':'interp'}">${tpv==='dato'?L('Dato','Data'):L('Interpretación','Interpretation')}</span></h4>
      <p>${p}</p><div class="ev">${ev}</div></div>`).join('');
 
   /* ---- OPORTUNIDADES ---- */
-  document.getElementById('opps').innerHTML=[
+  const OPPS=isEn()?[
+    ['Rebalance the format mix toward carousels',
+     `Carousels deliver ${(car.views_avg/vid.views_avg).toFixed(1)}× more views per piece and
+      lead in ER (${car.er_reach}%), but make up only ${car.pct_of_posts}% of published content.
+      Inverting the current ratio (${vid.n} reels vs ${car.n} carousels) is the
+      lever with the strongest numerical backing in the entire report.`],
+    ['Turn tryout announcements into achievement posts',
+     `Tryout/enrollment content has the worst ER (${conv.er_reach}%), while signings reach
+      ${fich.er_reach}%. A proven format for this already exists on the account
+      (the "TRANSFER / CALLED UP" template identified in the visual-identity analysis).
+      The opportunity is to use that template to communicate enrollment, instead of
+      plain informational flyers.`],
+    ['Geographically segment ad spend within the Doral radius',
+     `Doral concentrates ${(cities[0].value/tA*100).toFixed(1)}% of the base and Florida cities
+      ${(flCities/tA*100).toFixed(1)}%. The ${(100-flUS/sum(ctry)*100).toFixed(1)}% international
+      share (Venezuela, Brazil, Italy) is brand affinity, not an enrollment market.
+      Excluding it from acquisition-campaign targeting avoids spend with no possible return.`],
+    ['Aim creatives at the parents, not the kids',
+     `With ${(p3554/tA*100).toFixed(1)}% of the audience aged 35-54, messages competing for
+      teenage attention are misdirected. The communication angle with the most backing
+      is the benefits a parent evaluates: development, safety, their child's growth.`],
+    ['Lean into tournament content, which already proved it can scale',
+     `"Torneo / Juve Cup" is the most-published topic (${tor.n} posts) with
+      ${FF(tor.views_avg)} average views and an ER of ${tor.er_reach}%, and includes the
+      most-viewed post of the 24 months. It's the only type of content on the account that has
+      demonstrated real mass-reach capacity.`],
+    ['Start logging follower history starting today',
+     `The KPI most sought after in an audit like this —community growth— couldn't be built because
+      Meta only provides the current total. Capturing <code>followers_count</code> periodically
+      (weekly) would make this series available for the next audit. It's an instrumentation gap,
+      not an analysis gap.`],
+  ]:[
     ['Rebalancear la mezcla de formatos hacia carruseles',
      `Los carruseles rinden ${(car.views_avg/vid.views_avg).toFixed(1)}× más views por pieza y
       lideran el ER (${car.er_reach}%), pero solo representan el ${car.pct_of_posts}% del contenido
@@ -3125,25 +3485,74 @@ function build(){
       Meta solo entrega el total actual. Capturar <code>followers_count</code> de forma periódica
       (semanal) permitiría tener esta serie disponible en la próxima auditoría. Es una brecha de
       instrumentación, no de análisis.`],
-  ].map(([t,p])=>`<div class="find"><h4>${t}</h4><p>${p}</p></div>`).join('');
+  ];
+  document.getElementById('opps').innerHTML=OPPS.map(([t,p])=>`<div class="find"><h4>${t}</h4><p>${p}</p></div>`).join('');
 
   /* ---- AUDITORÍA ---- */
   const A=D.audit;
   document.getElementById('kpi-audit').innerHTML=[
-    ['Registros',FF(A.total_records),'publicaciones procesadas',''],
-    ['IDs únicos',FF(A.unique_ids),'',''],
-    ['Duplicados',FF(A.duplicates),A.duplicates===0?'ninguno detectado':'REVISAR',A.duplicates?'':'hl'],
-    ['Cobertura Insights','100%','243/243 con métricas completas','hl'],
-    ['Miniaturas',`${A.thumbs_ok}/${A.total_records}`,A.thumbs_missing===0?'todas descargadas':'faltan '+A.thumbs_missing,'hl'],
-    ['Enlaces',`${A.total_records-A.permalink_missing}/${A.total_records}`,'permalinks oficiales de Meta','hl'],
-    ['Discrepancias likes',FF(A.likes_discrepancies),'scraping vs Meta — ver abajo',A.likes_discrepancies?'':'hl'],
-    ['Alcance > views',FF(A.reach_gt_views),'imposible lógico: ninguno','hl'],
-    ['Views en cero',FF(A.views_zero),'ninguno','hl'],
-    ['Errores API cuenta',FF(A.account_monthly_errors.length),'ventanas mensuales fallidas',''],
+    [L('Registros','Records'),FF(A.total_records),L('publicaciones procesadas','posts processed'),''],
+    [L('IDs únicos','Unique IDs'),FF(A.unique_ids),'',''],
+    [L('Duplicados','Duplicates'),FF(A.duplicates),A.duplicates===0?L('ninguno detectado','none detected'):L('REVISAR','REVIEW'),A.duplicates?'':'hl'],
+    [L('Cobertura Insights','Insights coverage'),'100%',L('243/243 con métricas completas','243/243 with complete metrics'),'hl'],
+    [L('Miniaturas','Thumbnails'),`${A.thumbs_ok}/${A.total_records}`,A.thumbs_missing===0?L('todas descargadas','all downloaded'):L('faltan ','missing ')+A.thumbs_missing,'hl'],
+    [L('Enlaces','Links'),`${A.total_records-A.permalink_missing}/${A.total_records}`,L('permalinks oficiales de Meta','official Meta permalinks'),'hl'],
+    [L('Discrepancias likes','Like discrepancies'),FF(A.likes_discrepancies),L('scraping vs Meta — ver abajo','scraping vs Meta — see below'),A.likes_discrepancies?'':'hl'],
+    [L('Alcance > views','Reach > views'),FF(A.reach_gt_views),L('imposible lógico: ninguno','logical impossibility: none'),'hl'],
+    [L('Views en cero','Zero views'),FF(A.views_zero),L('ninguno','none'),'hl'],
+    [L('Errores API cuenta','Account API errors'),FF(A.account_monthly_errors.length),L('ventanas mensuales fallidas','failed monthly windows'),''],
   ].map(([k,v,m,c])=>`<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m}</div></div>`).join('');
 
   const dd=A.likes_discrepancy_detail;
-  document.getElementById('audit-notes').innerHTML=`
+  document.getElementById('audit-notes').innerHTML=isEn()?`
+    <div class="note w"><strong>1. Like-count discrepancy between two Meta sources
+    (${A.likes_discrepancies} posts).</strong><br>
+    The earlier scraping file (<code>jam_all_posts.jsonl</code>, field <code>like_count</code>)
+    and the Insights endpoint (<code>likes</code>) return different values on
+    ${A.likes_discrepancies} of ${A.total_records} posts.
+    <br><br><strong>What I found:</strong> in the ${A.likes_discrepancies} cases the Insights value
+    is <em>higher</em>, with differences of +2 to +${Math.max(...dd.map(x=>x.diff))} likes.
+    <strong>All affected posts are from September 2026</strong>, the most recent
+    in the dataset.
+    <br><br><strong>Interpretation:</strong> this doesn't look like a data error but a time lag —
+    the scraping was done on Sep 17, and those posts kept accumulating likes until the
+    Insights extraction. <strong>What should be checked:</strong> confirm by re-querying
+    both sources now; if the gap grows, the lag is confirmed.
+    <br><br><strong>Decision applied:</strong> the dashboard uses the
+    <strong>Insights</strong> value (more recent) for all figures, and the original file was
+    <em>neither corrected nor hidden</em>. Full detail:
+    <div class="tw" style="margin-top:11px;background:transparent">
+      <table style="min-width:auto"><thead><tr><th>Date</th><th class="num">Scraping</th>
+      <th class="num">Insights</th><th class="num">Diff.</th><th>Post</th></tr></thead><tbody>
+      ${dd.map(x=>`<tr><td>${x.date}</td><td class="num">${x.scrape}</td>
+        <td class="num">${x.meta}</td><td class="num" style="color:var(--warn)">+${x.diff}</td>
+        <td>${x.permalink?`<a class="lnk" href="${x.permalink}" target="_blank">${L('abrir ↗','open ↗')}</a>`:L('n/d','n/a')}</td></tr>`).join('')}
+      </tbody></table></div></div>
+
+    <div class="note w"><strong>2. One monthly account-metrics window failed
+    (${A.account_monthly_errors.length} of 25).</strong><br>
+    The window <code>${A.account_monthly_errors.map(e=>e.since+' → '+e.until).join(', ')}</code>
+    returned a Meta API error: <em>"since param is not valid. Metrics data is available for
+    the last 2 years"</em>. This is Meta's hard retention limit, not a process failure.
+    <strong>What should be checked:</strong> nothing recoverable — that data no longer exists on
+    Meta's side. <strong>Decision:</strong> the account-metrics chart omits that window instead
+    of interpolating an invented value.</div>
+
+    <div class="note g"><strong>3. Validations passed with no issues.</strong><br>
+    No duplicates (${A.unique_ids} unique IDs across ${A.total_records} records) ·
+    no posts with reach greater than views (a logical impossibility) ·
+    no zero views · no dates outside the declared range ·
+    ${A.total_records-A.permalink_missing}/${A.total_records} official links present ·
+    ${A.thumbs_ok}/${A.total_records} thumbnails downloaded from Meta's CDN.</div>
+
+    <div class="note"><strong>4. A difference in criteria between sources, not an error.</strong><br>
+    Per-post reach (the sum of <code>reach</code> across the 243 posts =
+    ${FF(T.reach)}) does not match aggregate account reach
+    (${FF(am.reduce((s,x)=>s+(x.reach||0),0))}). <strong>This is not an inconsistency:</strong>
+    account reach counts unique people per window and includes stories and ads, while the
+    per-post sum counts each post separately and the same person can appear in several.
+    That's why both figures are shown in separate sections and never added together.</div>`
+   :`
     <div class="note w"><strong>1. Discrepancia de likes entre dos fuentes de Meta
     (${A.likes_discrepancies} publicaciones).</strong><br>
     El archivo de scraping previo (<code>jam_all_posts.jsonl</code>, campo <code>like_count</code>)
@@ -3193,7 +3602,29 @@ function build(){
     Por eso ambas cifras se muestran en secciones distintas y nunca se suman entre sí.</div>`;
 
   /* ---- INVENTARIO ---- */
-  document.getElementById('t-inv').innerHTML=[
+  const INV=isEn()?[
+    ['Views / plays','ok','Complete — 243/243 · <code>INSTAGRAM_GET_IG_MEDIA_INSIGHTS</code>'],
+    ['Reach','ok','Complete — 243/243 · metric declared "estimated" by Meta'],
+    ['Likes','ok','Complete — 243/243 · dual source, see discrepancies'],
+    ['Comments','ok','Complete — 243/243 · full agreement between both sources'],
+    ['Saves','ok','Complete — 243/243'],
+    ['Shares','ok','Complete — 243/243'],
+    ['Total interactions','ok','Complete — 243/243 · native Meta field'],
+    ['Demographics: age, gender, city, country','ok','Complete — current snapshot, no history'],
+    ['Account reach and visits by month','partial','Partial — 24 of 25 windows (1 outside Meta\'s 2-year limit)'],
+    ['Profile visits per post','partial','Partial — 143/243 (Meta does not provide it for video)'],
+    ['Followers (current total)','ok','Available — 26,771 · <code>INSTAGRAM_GET_USER_INFO</code>'],
+    ['Thumbnails and images','ok','Complete — 243/243 downloaded from Meta\'s CDN'],
+    ['Post links','ok','Complete — 243/243 official permalinks'],
+    ['Follower growth (series)','no','Not available — the API does not expose follower history'],
+    ['Impressions','no','Not available — metric deprecated by Meta'],
+    ['Stories','no','Not available — expire after 24h, no history'],
+    ['Video duration','no','Not available via API — measured indirectly in another analysis'],
+    ['Retention / watch time','no','Not available — requires permissions the current connection lacks'],
+    ['Link clicks per post','no','Not available — only at the account level (website_clicks)'],
+    ['Facebook data','no','Could not be obtained — no authorized Facebook connection exists'],
+    ['Audience compared against content','partial','Partial — demographics are a global snapshot, not segmentable per post'],
+  ]:[
     ['Views / reproducciones','ok','Completo — 243/243 · <code>INSTAGRAM_GET_IG_MEDIA_INSIGHTS</code>'],
     ['Alcance (reach)','ok','Completo — 243/243 · métrica declarada "estimada" por Meta'],
     ['Likes','ok','Completo — 243/243 · doble fuente, ver discrepancias'],
@@ -3215,16 +3646,19 @@ function build(){
     ['Clics en enlaces por publicación','no','No disponible — solo a nivel de cuenta (website_clicks)'],
     ['Datos de Facebook','no','No se pudo obtener — no existe conexión de Facebook autorizada'],
     ['Audiencia comparada con contenido','partial','Parcial — la demografía es un snapshot global, no segmentable por publicación'],
-  ].map(([m,s,f])=>{
-    const P={ok:['pill dato','Disponible'],partial:['pill interp','Parcial'],no:['pill na','No disponible']}[s];
-    return `<tr><td><strong>${m}</strong></td><td><span class="${P[0]}">${P[1]}</span></td>
+  ];
+  document.getElementById('t-inv').innerHTML=INV.map(([m,s,f])=>{
+    const PL=isEn()
+      ?{ok:['pill dato','Available'],partial:['pill interp','Partial'],no:['pill na','Not available']}[s]
+      :{ok:['pill dato','Disponible'],partial:['pill interp','Parcial'],no:['pill na','No disponible']}[s];
+    return `<tr><td><strong>${m}</strong></td><td><span class="${PL[0]}">${PL[1]}</span></td>
       <td style="font-size:13px;color:var(--txt2)">${f}</td></tr>`}).join('');
 
   document.getElementById('rules').innerHTML=D.topic_rules.map(r=>
     `<div style="margin-bottom:7px;font-size:13px"><strong>${r.name}</strong><br>
      <code style="font-size:11px">${r.pattern.replace(/</g,'&lt;')}</code></div>`).join('')+
-    `<div style="margin-bottom:7px;font-size:13px"><strong>Otros / No clasificable</strong><br>
-     <span style="font-size:11px;color:var(--txt3)">Sin coincidencia en ninguna regla anterior</span></div>`;
+    `<div style="margin-bottom:7px;font-size:13px"><strong>${L('Otros / No clasificable','Other / Not classifiable')}</strong><br>
+     <span style="font-size:11px;color:var(--txt3)">${L('Sin coincidencia en ninguna regla anterior','No match with any rule above')}</span></div>`;
 
   /* ---- NAV ACTIVA ---- */
   const secs=[...document.querySelectorAll('section')];
