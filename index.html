@@ -1686,7 +1686,6 @@ h3.sec{
     <div class="shell-tabs" role="tablist" aria-label="Secciones del informe">
       <button class="shell-tab" role="tab" id="t-nuestras" aria-controls="tab-nuestras" aria-selected="true" data-panel="tab-nuestras">Cuentas nuestras<span class="badge">7</span></button>
       <button class="shell-tab" role="tab" id="t-competencia" aria-controls="tab-competencia" aria-selected="false" data-panel="tab-competencia">Cuentas competencia<span class="badge">15</span></button>
-      <button class="shell-tab" role="tab" id="t-conclusiones" aria-controls="tab-conclusiones" aria-selected="false" data-panel="tab-conclusiones">Conclusiones</button>
     </div>
   </div>
 </header>
@@ -1748,7 +1747,7 @@ h3.sec{
 
   <div class="grid kpis" id="kpi-main"></div>
 
-  <div class="note w" style="margin-top:18px">
+  <div class="note w" style="margin-top:18px" hidden>
     <strong>Alcance de esta auditoría.</strong> Todas las cifras de esta página provienen de la
     <strong>API oficial de Meta</strong> (Instagram Graph API vía Composio), no de estimaciones.
     Las métricas no disponibles se marcan explícitamente como
@@ -1828,8 +1827,8 @@ h3.sec{
 
   <div id="topic-read"></div>
 
-  <h3>Reglas de clasificación aplicadas</h3>
-  <div class="card"><div id="rules"></div>
+  <h3 hidden>Reglas de clasificación aplicadas</h3>
+  <div class="card" hidden><div id="rules"></div>
   <p class="mini" style="margin-top:10px"><strong>Limitación declarada:</strong> la clasificación se
   basa solo en el texto del caption, no en análisis visual del contenido. Un post cuyo caption no
   menciona el tema quedará mal clasificado o sin clasificar. Las categorías "contenido emocional",
@@ -2338,7 +2337,7 @@ h3.sec{
   });
   var saved = null;
   try{ saved = localStorage.getItem('unifiedTab'); }catch(e){}
-  if(saved && document.getElementById(saved)) show(saved); else show('tab-nuestras');
+  if(saved && saved !== 'tab-conclusiones' && document.getElementById(saved)) show(saved); else show('tab-nuestras');
 
   // ----- own-account picker -----
   var ACCOUNTS = [
