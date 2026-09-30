@@ -20,7 +20,7 @@
 #tab-nuestras, #tab-conclusiones{
   --bg:#0c0d10; --surface:#15171c; --surface2:#1c1f26; --line:#282c35;
   --txt:#eceef2; --txt2:#9aa3b2; --txt3:#6b7383;
-  --accent:#A87A2D; --ok:#39d98a; --bad:#ff6b6b; --info:#5aa9ff; --warn:#ffa94d;
+  --accent:#F5D90A; --ok:#39d98a; --bad:#ff6b6b; --info:#5aa9ff; --warn:#ffa94d;
 }
 
 
@@ -437,7 +437,7 @@
 #tab-competencia{
     --grass-0:#0d0f0c; --grass-1:#141812; --grass-2:#1c211a; --line-1:#2a3025; --line-2:#3a4232;
     --chalk:#f3f1e8; --chalk-dim:#9aa08f; --chalk-dimmer:#6b7263;
-    --gold:#C9A34E; --gold-deep:#7A5620; --pitch-green:#3f7a52; --pitch-green-deep:#2d5a3d;
+    --gold:#d4a72c; --gold-deep:#a87a1f; --pitch-green:#3f7a52; --pitch-green-deep:#2d5a3d;
     --card-red:#c0392b; --sky:#5b8bb0;
     --font-display:'Juventus Fans','Oswald','Arial Narrow',sans-serif;
     --font-body:'Inter', -apple-system, sans-serif;
@@ -899,16 +899,16 @@
 /* Design system lifted from the Athletum platform (plataforma/athletum-hub.html):
    Anton for display, Inter for UI, Roboto Mono for figures; 4px radius;
    masthead on brand-ink with the brand colour as the only accent.
-   --brand is the yellow sampled from LOGOS/LOGO ATHLETUM.jpg (#A87A2D);
-   --brand-2 is the platform's softer #C9A34E, used where full-strength
+   --brand is the yellow sampled from LOGOS/LOGO ATHLETUM.jpg (#FEF200);
+   --brand-2 is the platform's softer #FFC72C, used where full-strength
    yellow would vibrate against large dark fills. */
 :root{
   /* --- COLOR: one brand yellow, one ink, one neutral ramp, four states --- */
-  --brand:#A87A2D; --brand-2:#C9A34E; --brand-deep:#7A5620; --brand-ink:#101214;
+  --brand:#FEF200; --brand-2:#FFC72C; --brand-deep:#D9A400; --brand-ink:#101214;
   --bg:#0C0E10; --surface:#16191C; --surface2:#1F2327;
   --line:#2E3338; --line-strong:#3D444B;
   --txt:#F4F4F2; --txt2:#B9BDC1; --txt3:#8D9297;
-  --accent:#A87A2D;
+  --accent:#FEF200;
   --ok:#46B877; --ok-bg:#13291D; --ok-ink:#46B877;
   --warn:#F0AC3A; --warn-bg:#2B2113; --warn-ink:#F0AC3A;
   --bad:#EC6A52; --bad-bg:#2E1815; --bad-ink:#EC6A52;
@@ -917,7 +917,7 @@
   /* --- CHART: brand yellow leads, neutrals support, states only for
          good/bad. Series colours are tints of the brand and the cool
          neutral so no chart introduces a colour the UI doesn't already use. */
-  --c1:#A87A2D; --c2:#6295EA; --c3:#46B877; --c4:#F0AC3A;
+  --c1:#FEF200; --c2:#6295EA; --c3:#46B877; --c4:#F0AC3A;
   --c5:#8D9297; --c6:#A88BE0; --c7:#EC6A52; --c8:#4D5560;
   --grid:#232830; --axis:#8D9297;
 
@@ -1023,7 +1023,7 @@ button,select,input,textarea{font-family:inherit;font-size:inherit}
 #tab-nuestras, #tab-conclusiones{
   --bg:#0C0E10; --surface:#16191C; --surface2:#1F2327; --line:#2E3338;
   --txt:#F4F4F2; --txt2:#B9BDC1; --txt3:#8D9297;
-  --accent:#A87A2D; --ok:#46B877; --bad:#EC6A52; --info:#6295EA; --warn:#F0AC3A;
+  --accent:#FEF200; --ok:#46B877; --bad:#EC6A52; --info:#6295EA; --warn:#F0AC3A;
   font-family:var(--ui);
 }
 #tab-nuestras h1, #tab-nuestras h2{
@@ -1041,7 +1041,7 @@ button,select,input,textarea{font-family:inherit;font-size:inherit}
 /* The competitor report's own gold/green palette is replaced by the
    Athletum yellow so the accent is the same across all three tabs. */
 #tab-competencia{
-  --gold:#A87A2D; --gold-deep:#7A5620;
+  --gold:#FEF200; --gold-deep:#D9A400;
   --grass-0:#0C0E10; --grass-1:#16191C; --grass-2:#1F2327;
   --line-1:#2E3338; --line-2:#3A4046;
   --chalk:#F4F4F2; --chalk-dim:#B9BDC1; --chalk-dimmer:#8D9297;
@@ -2672,7 +2672,7 @@ const MN_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','
 const MN=()=>isEn()?MN_EN:MN_ES;
 const fym=s=>{const[y,m]=s.split('-');return MN()[+m-1]+' '+y.slice(2)};
 const fd=s=>{const[y,m,d]=s.split('-');return d+' '+MN()[+m-1]+' '+y};
-const ACC='#A87A2D',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
+const ACC='#FEF200',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
 let D=null;
 
 Chart.defaults.color='#8D9297';
@@ -4117,7 +4117,7 @@ const MN_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','
 const MN=()=>isEn()?MN_EN:MN_ES;
 const fym=s=>{const[y,m]=s.split('-');return MN()[+m-1]+' '+y.slice(2)};
 const fd=s=>{const[y,m,d]=s.split('-');return d+' '+MN()[+m-1]+' '+y};
-const ACC='#A87A2D',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
+const ACC='#FEF200',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
 let D=null;
 
 Chart.defaults.color='#8D9297';
@@ -5564,7 +5564,7 @@ const MN_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','
 const MN=()=>isEn()?MN_EN:MN_ES;
 const fym=s=>{const[y,m]=s.split('-');return MN()[+m-1]+' '+y.slice(2)};
 const fd=s=>{const[y,m,d]=s.split('-');return d+' '+MN()[+m-1]+' '+y};
-const ACC='#A87A2D',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
+const ACC='#FEF200',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
 let D=null;
 
 Chart.defaults.color='#8D9297';
@@ -7055,7 +7055,7 @@ const MN_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','
 const MN=()=>isEn()?MN_EN:MN_ES;
 const fym=s=>{const[y,m]=s.split('-');return MN()[+m-1]+' '+y.slice(2)};
 const fd=s=>{const[y,m,d]=s.split('-');return d+' '+MN()[+m-1]+' '+y};
-const ACC='#A87A2D',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
+const ACC='#FEF200',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
 let D=null;
 
 Chart.defaults.color='#8D9297';
