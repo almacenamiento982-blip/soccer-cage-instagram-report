@@ -5,9 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Informe Instagram — JAM y Competencia</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;700&family=Oswald:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
+@font-face{
+  font-family:'Juventus Fans';
+  src:url('fonts/Juventus-Fans-Bold.ttf') format('truetype');
+  font-weight:700;
+  font-display:swap;
+}
 /* ============================================================
    JAM DASHBOARD STYLES (scope: #tab-nuestras)
    ============================================================ */
@@ -433,7 +439,7 @@
     --chalk:#f3f1e8; --chalk-dim:#9aa08f; --chalk-dimmer:#6b7263;
     --gold:#d4a72c; --gold-deep:#a87a1f; --pitch-green:#3f7a52; --pitch-green-deep:#2d5a3d;
     --card-red:#c0392b; --sky:#5b8bb0;
-    --font-display:'Oswald', 'Arial Narrow', sans-serif;
+    --font-display:'Juventus Fans','Oswald','Arial Narrow',sans-serif;
     --font-body:'Inter', -apple-system, sans-serif;
     --font-mono:'Space Mono', monospace;
   }
@@ -535,7 +541,7 @@
 
   
 #tab-competencia .sb-num{
-    font-family:var(--font-display); font-size:34px; font-weight:700; color:var(--chalk);
+    font-family:var(--font-mono); font-size:32px; font-weight:700; color:var(--chalk);
     font-variant-numeric:tabular-nums; line-height:1; letter-spacing:-.5px;
   }
 
@@ -632,7 +638,7 @@
 
   
 #tab-competencia .handle-cell .rank-badge{
-    font-family:var(--font-display); font-size:14px; font-weight:600; color:var(--grass-0);
+    font-family:var(--font-mono); font-size:12px; font-weight:700; color:var(--grass-0);
     background:var(--chalk-dimmer); width:24px; height:24px; border-radius:50%;
     display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
@@ -714,7 +720,7 @@
 #tab-competencia .scout-stat{text-align:right}
 
   
-#tab-competencia .scout-stat .v{font-family:var(--font-display); font-size:26px; font-weight:700; font-variant-numeric:tabular-nums}
+#tab-competencia .scout-stat .v{font-family:var(--font-mono); font-size:24px; font-weight:700; font-variant-numeric:tabular-nums}
 
   
 #tab-competencia .scout-stat .l{font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:var(--chalk-dimmer); margin-top:2px}
@@ -743,7 +749,7 @@
 
   
 #tab-competencia .play-badge{
-    position:absolute; top:10px; left:10px; font-family:var(--font-display); font-size:13px; font-weight:700;
+    position:absolute; top:10px; left:10px; font-family:var(--font-mono); font-size:13px; font-weight:700;
     background:var(--gold); color:var(--grass-0); width:26px; height:26px; border-radius:50%;
     display:flex; align-items:center; justify-content:center; z-index:2;
     box-shadow:0 3px 10px -2px rgba(0,0,0,0.5);
@@ -803,7 +809,7 @@
 #tab-competencia .play{aspect-ratio:4/5}
 
     
-#tab-competencia .play[data-rank="1"] .play-badge{width:26px; height:26px; padding:0; border-radius:50%; font-family:var(--font-display); font-size:13px}
+#tab-competencia .play[data-rank="1"] .play-badge{width:26px; height:26px; padding:0; border-radius:50%; font-family:var(--font-mono); font-size:13px}
 
     
 #tab-competencia .play[data-rank="1"] .play-badge::before{content:none}
@@ -934,7 +940,8 @@
   --sh-1:0 1px 2px rgba(0,0,0,.4);
   --sh-2:0 8px 24px -8px rgba(0,0,0,.55);
 
-  --display:'Anton',Impact,'Arial Narrow',sans-serif;
+  --display:'Juventus Fans','Anton',Impact,'Arial Narrow',sans-serif;
+  --display-num:'Roboto Mono',ui-monospace,Menlo,monospace;
   --ui:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   --mono:'Roboto Mono',ui-monospace,Menlo,monospace;
 }
@@ -1025,7 +1032,7 @@ button,select,input,textarea{font-family:inherit;font-size:inherit}
 }
 #tab-nuestras .lvl{font-family:var(--mono);letter-spacing:.16em;color:var(--brand)}
 #tab-nuestras .kpi .v, #tab-nuestras .kpi .k{font-variant-numeric:tabular-nums}
-#tab-nuestras .kpi .v{font-family:var(--display);font-weight:400;letter-spacing:.01em}
+#tab-nuestras .kpi .v{font-family:var(--display-num);font-weight:400;letter-spacing:.01em}
 #tab-nuestras .card, #tab-nuestras .kpi, #tab-nuestras .tw{border-radius:var(--r)}
 #tab-nuestras .nav-links a{font-family:var(--ui);border-radius:var(--r) var(--r) 0 0}
 #tab-nuestras .nav-links a.on{background:var(--brand);color:var(--brand-ink)}
@@ -1038,7 +1045,7 @@ button,select,input,textarea{font-family:inherit;font-size:inherit}
   --grass-0:#0C0E10; --grass-1:#16191C; --grass-2:#1F2327;
   --line-1:#2E3338; --line-2:#3A4046;
   --chalk:#F4F4F2; --chalk-dim:#B9BDC1; --chalk-dimmer:#8D9297;
-  --font-display:'Anton',Impact,'Arial Narrow',sans-serif;
+  --font-display:'Juventus Fans','Anton',Impact,'Arial Narrow',sans-serif;
   --font-body:'Inter',system-ui,-apple-system,sans-serif;
   --font-mono:'Roboto Mono',ui-monospace,Menlo,monospace;
   /* shell components (.ptitle, .hcard) reach for these names */
@@ -1077,7 +1084,7 @@ button,select,input,textarea{font-family:inherit;font-size:inherit}
   background:var(--surface);border:1px solid var(--line);
   border-left:4px solid var(--brand);border-radius:var(--r);padding:12px 15px;
 }
-.hcard .fig{font-family:var(--display);font-size:var(--fs-kpi-sm);line-height:1;color:var(--txt)}
+.hcard .fig{font-family:var(--display-num);font-size:var(--fs-kpi-sm);line-height:1;color:var(--txt)}
 .hcard .lb{
   font-family:var(--mono);font-size:var(--fs-micro);font-weight:700;letter-spacing:.09em;
   text-transform:uppercase;color:var(--txt3);
@@ -1321,7 +1328,7 @@ h3.sec{
   padding:var(--s4);box-shadow:none;
 }
 #tab-nuestras .kpi .v{
-  font-family:var(--display);font-weight:400;font-size:var(--fs-kpi);
+  font-family:var(--display-num);font-weight:400;font-size:var(--fs-kpi);
   line-height:1;letter-spacing:.005em;color:var(--txt);
   margin:var(--s2) 0 var(--s1);font-variant-numeric:tabular-nums;
 }
@@ -1423,7 +1430,7 @@ h3.sec{
   transform:none;border-color:var(--line-strong);box-shadow:var(--sh-2);
 }
 #tab-nuestras .rc .big{
-  font-family:var(--display);font-weight:400;font-size:var(--fs-kpi-sm);
+  font-family:var(--display-num);font-weight:400;font-size:var(--fs-kpi-sm);
   line-height:1;color:var(--txt);font-variant-numeric:tabular-nums;
 }
 #tab-nuestras .rc .big small{
@@ -1545,7 +1552,7 @@ h3.sec{
   border-left:3px solid var(--gold);border-radius:var(--r);padding:var(--s3) var(--s4);
 }
 #tab-competencia .ci-kpi .v{
-  font-family:var(--font-display);font-weight:400;font-size:28px;
+  font-family:var(--font-mono);font-weight:700;font-size:28px;
   color:var(--chalk);line-height:1;font-variant-numeric:tabular-nums;
 }
 #tab-competencia .ci-kpi .l{
@@ -8054,7 +8061,7 @@ entries.forEach((acc, i) => {
   const tr = document.createElement('tr');
   const lowSample = acc.n_with_likes < 10;
   tr.innerHTML = `
-    <td><span class="rank-badge" style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--line-2);font-family:var(--font-display);font-size:12px;">${i+1}</span></td>
+    <td><span class="rank-badge" style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--line-2);font-family:var(--font-mono);font-size:12px;font-weight:700;">${i+1}</span></td>
     <td>
       <div class="handle-name">${esc(acc.name)} ${acc.internal ? '<span class="tag internal">interno</span>' : ''} ${lowSample ? '<span class="tag low">baja muestra</span>' : ''}</div>
       <a class="handle-at" href="https://www.instagram.com/${esc(acc.handle)}/" target="_blank" rel="noopener">@${esc(acc.handle)}</a>
