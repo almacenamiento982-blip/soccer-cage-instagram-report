@@ -3635,6 +3635,1451 @@ function build(){
 </script>
 
 
+  <div id="acct-juventuscampsmx" hidden>
+    <div class="shell-wrap" style="padding-bottom:0">
+      <div class="backbar">
+        <button class="backbtn" data-back-to-accts>&larr; Todas las cuentas</button>
+        <span class="who">Viendo el informe completo de <b>@juventuscampsmx</b> · datos vía API de Meta</span>
+      </div>
+    </div>
+    <nav>
+  <div class="nav-in">
+    <div class="brand">⚫⚪ <b>JAM</b> Analytics</div>
+    <div class="nav-links" id="juventuscampsmx-nl">
+      <a href="#resumen" class="on" data-i18n="jam-nav-resumen">Resumen</a>
+      <a href="#audiencia" data-i18n="jam-nav-audiencia">Audiencia</a>
+      <a href="#contenido" data-i18n="jam-nav-contenido">Contenido</a>
+      <a href="#formatos" data-i18n="jam-nav-formatos">Formatos</a>
+      <a href="#evolucion" data-i18n="jam-nav-evolucion">Evolución</a>
+      <a href="#cadencia" data-i18n="jam-nav-cadencia">Días y horas</a>
+      <a href="#reels" data-i18n="jam-nav-reels">Reels</a>
+      <a href="#top" data-i18n="jam-nav-top">Top contenidos</a>
+      <a href="#facebook" data-i18n="jam-nav-facebook">Facebook</a>
+      <a href="#tabla" data-i18n="jam-nav-tabla">Tabla maestra</a>
+      <a href="#hallazgos" data-i18n="jam-nav-hallazgos">Hallazgos</a>
+    </div>
+  </div>
+    </nav>
+    <div class="wrap">
+
+<!-- ============ NIVEL 1 ============ -->
+<section id="juventuscampsmx-resumen">
+  <div class="lvl" data-i18n="jam-lvl-1">Nivel 1</div>
+  <h1 data-i18n="jam-h1-resumen-juventuscampsmx">Auditoría de Instagram · <span style="color:var(--accent)">@juventuscampsmx</span></h1>
+  <p class="sub" id="juventuscampsmx-hdr-sub"></p>
+
+  <div class="grid kpis" id="juventuscampsmx-kpi-main"></div>
+
+  <div class="note w" style="margin-top:18px" hidden>
+    <strong>Alcance de esta auditoría.</strong> Todas las cifras de esta página provienen de la
+    <strong>API oficial de Meta</strong> (Instagram Graph API vía Composio), no de estimaciones.
+    Las métricas no disponibles se marcan explícitamente como
+    <span class="pill na">No disponible</span> y nunca se rellenan con aproximaciones.
+    Convención usada en todo el informe: <span class="pill dato">Dato</span> = cifra medida por Meta ·
+    <span class="pill interp">Interpretación</span> = lectura analítica mía sobre esos datos.
+  </div>
+
+  <h3 data-i18n="jam-h3-totales">Totales del período y promedio por publicación</h3>
+  <p class="sub" data-i18n="jam-p-totales">Los totales dependen del volumen publicado; los promedios permiten comparar
+  rendimiento real. Ambos se muestran siempre juntos para evitar conclusiones falsas.</p>
+  <div class="tw">
+    <table id="juventuscampsmx-t-tot"><thead><tr>
+      <th data-i18n="jam-th-metrica">Métrica</th><th class="num" data-i18n="jam-th-total">Total</th><th class="num" data-i18n="jam-th-prom-post">Prom./publicación</th>
+      <th class="num" data-i18n="jam-th-mediana">Mediana</th><th data-i18n="jam-th-fuente">Fuente</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<!-- ============ NIVEL 2 ============ -->
+<section id="juventuscampsmx-audiencia">
+  <div class="lvl" data-i18n="jam-lvl-2">Nivel 2</div>
+  <h2 data-i18n="jam-h2-audiencia">Audiencia</h2>
+  <p class="sub" data-i18n="jam-p-audiencia">Demografía de seguidores entregada por Meta
+  (<code>follower_demographics</code>, timeframe <code>this_month</code>, snapshot del momento de
+  extracción). Meta solo entrega el estado actual: <strong>no existe serie histórica</strong> de
+  demografía, por lo que no es posible mostrar su evolución.</p>
+
+  <div class="grid kpis" id="juventuscampsmx-kpi-aud"></div>
+
+  <div class="c2" style="margin-top:16px">
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-edad">Distribución por edad</h3>
+      <div class="ch sm"><canvas id="juventuscampsmx-c-age"></canvas></div></div>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-genero">Distribución por género</h3>
+      <div class="ch sm"><canvas id="juventuscampsmx-c-gen"></canvas></div>
+      <p class="mini" data-i18n="jam-p-genero">Meta entrega 3 categorías: F (femenino), M (masculino) y U (no declarado /
+      undeclared). No existen categorías adicionales en la respuesta de la API.</p></div>
+  </div>
+
+  <div class="c2" style="margin-top:14px">
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-ciudades">Top 15 ciudades</h3>
+      <div class="ch"><canvas id="juventuscampsmx-c-city"></canvas></div></div>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-paises">Top 12 países</h3>
+      <div class="ch"><canvas id="juventuscampsmx-c-ctry"></canvas></div></div>
+  </div>
+
+  <div class="tw" style="margin-top:14px">
+    <table><thead><tr><th data-i18n="jam-th-ciudad">Ciudad</th><th class="num" data-i18n="jam-th-seguidores">Seguidores</th><th class="num" data-i18n="jam-th-pct-total">% del total</th></tr></thead>
+    <tbody id="juventuscampsmx-t-city"></tbody></table>
+  </div>
+
+  <div id="juventuscampsmx-aud-read"></div>
+</section>
+
+<!-- ============ NIVEL 3 ============ -->
+<section id="juventuscampsmx-contenido">
+  <div class="lvl" data-i18n="jam-lvl-3">Nivel 3</div>
+  <h2 data-i18n="jam-h2-contenido">Análisis de contenido por temática</h2>
+  <p class="sub" data-i18n="jam-p-contenido">Clasificación automática por coincidencia de palabras clave en el caption.
+  Las reglas son explícitas y auditables (se listan abajo); cada publicación recibe la primera
+  categoría que coincide. Los posts sin coincidencia quedan en
+  <em>"Otros / No clasificable"</em> en lugar de forzarlos a una categoría inventada.</p>
+
+  <div class="tw">
+    <table id="juventuscampsmx-t-topic"><thead><tr>
+      <th data-i18n="jam-th-tematica">Temática</th><th class="num">N</th><th class="num" data-i18n="jam-th-views-prom">Views prom.</th>
+      <th class="num" data-i18n="jam-th-views-mediana">Views mediana</th><th class="num" data-i18n="jam-th-alcance-prom">Alcance prom.</th>
+      <th class="num" data-i18n="jam-th-likes-prom">Likes prom.</th><th class="num" data-i18n="jam-th-compart-prom">Compart. prom.</th>
+      <th class="num" data-i18n="jam-th-guard-prom">Guard. prom.</th><th class="num" data-i18n="jam-th-er-alcance">ER alcance</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3 style="margin-top:0" data-i18n="jam-h3-views-tematica">Views promedio por temática</h3>
+    <div class="ch"><canvas id="juventuscampsmx-c-topic"></canvas></div>
+  </div>
+
+  <div id="juventuscampsmx-topic-read"></div>
+
+  <h3 hidden>Reglas de clasificación aplicadas</h3>
+  <div class="card" hidden><div id="juventuscampsmx-rules"></div>
+  <p class="mini" style="margin-top:10px"><strong>Limitación declarada:</strong> la clasificación se
+  basa solo en el texto del caption, no en análisis visual del contenido. Un post cuyo caption no
+  menciona el tema quedará mal clasificado o sin clasificar. Las categorías "contenido emocional",
+  "educativo" o "entretenimiento" que suelen pedirse <span class="pill na">no se incluyen</span>:
+  no son determinables de forma objetiva desde el caption sin criterio subjetivo.</p></div>
+</section>
+
+<!-- ============ NIVEL 4 ============ -->
+<section id="juventuscampsmx-formatos">
+  <div class="lvl" data-i18n="jam-lvl-4">Nivel 4</div>
+  <h2 data-i18n="jam-h2-formatos">Rendimiento por formato</h2>
+  <p class="sub" data-i18n="jam-p-formatos">La distinción entre total y promedio es crítica aquí: el formato más publicado
+  no es el que mejor rinde. Se incluye la mediana porque los promedios de views están
+  distorsionados por un post viral atípico.</p>
+
+  <div class="tw">
+    <table id="juventuscampsmx-t-fmt"><thead><tr>
+      <th data-i18n="jam-th-formato">Formato</th><th class="num">N</th><th class="num" data-i18n="jam-th-pct-posts">% posts</th>
+      <th class="num" data-i18n="jam-th-views-total">Views total</th><th class="num" data-i18n="jam-th-views-prom">Views prom.</th><th class="num" data-i18n="jam-th-views-mediana">Views mediana</th>
+      <th class="num" data-i18n="jam-th-alcance-prom">Alcance prom.</th><th class="num" data-i18n="jam-th-likes-prom">Likes prom.</th>
+      <th class="num" data-i18n="jam-th-compart-prom">Compart. prom.</th><th class="num" data-i18n="jam-th-guard-prom">Guard. prom.</th><th class="num" data-i18n="jam-th-er-alcance">ER alcance</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+
+  <div class="c2" style="margin-top:14px">
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-views-totales-fmt">Views TOTALES por formato</h3>
+      <div class="ch sm"><canvas id="juventuscampsmx-c-ft"></canvas></div>
+      <p class="mini" data-i18n="jam-p-views-totales-fmt">Refleja volumen acumulado — influido por cuántas piezas se publicaron.</p></div>
+    <div class="card"><h3 style="margin-top:0" data-i18n="jam-h3-views-prom-fmt">Views PROMEDIO y MEDIANA por formato</h3>
+      <div class="ch sm"><canvas id="juventuscampsmx-c-fa"></canvas></div>
+      <p class="mini" data-i18n="jam-p-views-prom-fmt">Refleja rendimiento real por pieza. Esta es la comparación válida.</p></div>
+  </div>
+
+  <div id="juventuscampsmx-fmt-read"></div>
+</section>
+
+<!-- ============ NIVEL 5 ============ -->
+<section id="juventuscampsmx-evolucion">
+  <div class="lvl" data-i18n="jam-lvl-5">Nivel 5</div>
+  <h2 data-i18n="jam-h2-evolucion">Evolución temporal</h2>
+  <p class="sub" data-i18n="jam-p-evolucion">Series mensuales construidas agregando las métricas por publicación.
+  El alcance y las visitas al perfil a nivel de cuenta provienen de una fuente distinta
+  (<code>INSTAGRAM_GET_USER_INSIGHTS</code>) y se muestran por separado para no mezclar criterios
+  de medición.</p>
+
+  <div class="tabs" id="juventuscampsmx-tb-ev">
+    <button class="tab on" data-m="views">Views</button>
+    <button class="tab" data-m="reach" data-i18n="jam-tab-alcance">Alcance</button>
+    <button class="tab" data-m="likes">Likes</button>
+    <button class="tab" data-m="comments" data-i18n="jam-tab-comentarios">Comentarios</button>
+    <button class="tab" data-m="shares" data-i18n="jam-tab-compartidos">Compartidos</button>
+    <button class="tab" data-m="saved" data-i18n="jam-tab-guardados">Guardados</button>
+    <button class="tab" data-m="interactions" data-i18n="jam-tab-interacciones">Interacciones</button>
+    <button class="tab" data-m="er_reach">ER (%)</button>
+  </div>
+  <div class="card"><div class="ch"><canvas id="juventuscampsmx-c-ev"></canvas></div></div>
+
+  <div class="card" style="margin-top:14px">
+    <h3 style="margin-top:0" data-i18n="jam-h3-volumen">Volumen publicado por mes y formato</h3>
+    <div class="ch"><canvas id="juventuscampsmx-c-vol"></canvas></div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3 style="margin-top:0" data-i18n="jam-h3-alcance-visitas">Alcance y visitas al perfil — métricas de cuenta</h3>
+    <p class="mini" style="margin-bottom:12px" data-i18n="jam-p-alcance-visitas">Fuente independiente: alcance agregado de la cuenta
+    (incluye stories y anuncios, no solo publicaciones) en ventanas de 30 días.</p>
+    <div class="ch"><canvas id="juventuscampsmx-c-acct"></canvas></div>
+  </div>
+
+  <h3 data-i18n="jam-h3-anos">Año 1 vs Año 2</h3>
+  <p class="sub" id="juventuscampsmx-yc-sub"></p>
+  <div class="tw">
+    <table id="juventuscampsmx-t-yc"><thead><tr>
+      <th data-i18n="jam-th-metrica">Métrica</th><th class="num" data-i18n="jam-th-ano1">Año 1</th><th class="num" data-i18n="jam-th-ano2">Año 2</th><th class="num" data-i18n="jam-th-variacion">Variación</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+  <div id="juventuscampsmx-yc-read"></div>
+
+  <h3 data-i18n="jam-h3-meses-extremos">Meses extremos</h3>
+  <div class="c2">
+    <div class="card"><h3 style="margin-top:0;color:var(--ok)" data-i18n="jam-h3-top5-meses">Top 5 meses por views</h3>
+      <div class="tw" style="border:0"><table><tbody id="juventuscampsmx-t-mtop"></tbody></table></div></div>
+    <div class="card"><h3 style="margin-top:0;color:var(--bad)" data-i18n="jam-h3-bottom5-meses">5 meses más bajos por views</h3>
+      <div class="tw" style="border:0"><table><tbody id="juventuscampsmx-t-mbot"></tbody></table></div></div>
+  </div>
+</section>
+
+<!-- ============ CADENCIA ============ -->
+<section id="juventuscampsmx-cadencia">
+  <div class="lvl" data-i18n="jam-lvl-5b">Nivel 5b</div>
+  <h2 data-i18n="jam-h2-cadencia">Días y horarios</h2>
+  <p class="sub" data-i18n="jam-p-cadencia">Separa explícitamente <strong>cuándo se publica más</strong> de
+  <strong>cuándo funciona mejor</strong>. Se prioriza la mediana sobre el promedio porque un solo
+  post viral distorsiona por completo los promedios en días con pocas publicaciones.</p>
+
+  <div class="card">
+    <h3 style="margin-top:0" data-i18n="jam-h3-dow">Día de la semana: volumen vs. rendimiento</h3>
+    <div class="ch"><canvas id="juventuscampsmx-c-dow"></canvas></div>
+  </div>
+
+  <div class="tw" style="margin-top:14px">
+    <table id="juventuscampsmx-t-dow"><thead><tr>
+      <th data-i18n="jam-th-dia">Día</th><th class="num" data-i18n="jam-th-publicaciones">Publicaciones</th><th class="num" data-i18n="jam-th-views-prom">Views prom.</th>
+      <th class="num" data-i18n="jam-th-views-mediana">Views mediana</th><th class="num" data-i18n="jam-th-er-alcance">ER alcance</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+  <div id="juventuscampsmx-dow-read"></div>
+
+  <div class="card" style="margin-top:14px">
+    <h3 style="margin-top:0" data-i18n="jam-h3-hora">Hora de publicación (hora de Miami, UTC−4)</h3>
+    <div class="ch"><canvas id="juventuscampsmx-c-hour"></canvas></div>
+    <p class="mini" data-i18n="jam-p-hora">Los timestamps de Meta vienen en UTC; se convirtieron a hora de Miami con offset
+    fijo de −4h. <strong>Limitación:</strong> el offset real varía entre EDT (−4) y EST (−5) según la
+    época del año, por lo que las publicaciones de invierno pueden tener 1 hora de desviación.</p>
+  </div>
+</section>
+
+<!-- ============ REELS ============ -->
+<section id="juventuscampsmx-reels">
+  <div class="lvl" data-i18n="jam-lvl-5c">Nivel 5c</div>
+  <h2 data-i18n="jam-h2-reels">Análisis específico de Reels / Video</h2>
+  <p class="sub" data-i18n="jam-p-reels">Sección dedicada al formato con mayor volumen de publicación de la cuenta.</p>
+  <div class="grid kpis" id="juventuscampsmx-kpi-reel"></div>
+
+  <div class="note w" style="margin-top:16px" data-i18n="jam-note-duracion-reels">
+    <strong>Duración de los Reels:</strong> <span class="pill na">No disponible vía API</span> —
+    el endpoint de Instagram no expone la duración del video. Sin embargo, sí se midió de forma
+    indirecta en un análisis previo: se extrajeron frames a 1 fps de 100 reels, lo que da la duración
+    en segundos. Ese dato vive en el análisis de estilo de edición
+    (<code>Analisis Reels/Estilo_Edicion_Reels_JAM.html</code>) y arrojó una duración típica de
+    <strong>15–55 segundos</strong>, con outliers de hasta 276 s en coberturas de evento en vivo.
+    No se integra aquí porque cubre 100 reels y no los 57 del Año 2, lo que impediría un cruce limpio.
+  </div>
+
+  <h3 data-i18n="jam-h3-top12-reels">Top 12 Reels por views</h3>
+  <div class="grid rk" id="juventuscampsmx-rk-reel"></div>
+</section>
+
+<!-- ============ NIVEL 7 ============ -->
+<section id="juventuscampsmx-top">
+  <div class="lvl" data-i18n="jam-lvl-7">Nivel 7</div>
+  <h2 data-i18n="jam-h2-top">Top de contenidos</h2>
+  <p class="sub" data-i18n="jam-p-top">Cada ranking usa <strong>una sola métrica</strong> como criterio de ordenamiento,
+  sin combinaciones arbitrarias. Todas las miniaturas y enlaces son reales, obtenidos de la API de
+  Meta. Clic en la imagen para ampliarla.</p>
+
+  <div class="tabs" id="juventuscampsmx-tb-rk">
+    <button class="tab on" data-r="views">Views</button>
+    <button class="tab" data-r="reach" data-i18n="jam-tab-alcance">Alcance</button>
+    <button class="tab" data-r="likes">Likes</button>
+    <button class="tab" data-r="comments" data-i18n="jam-tab-comentarios">Comentarios</button>
+    <button class="tab" data-r="shares" data-i18n="jam-tab-compartidos">Compartidos</button>
+    <button class="tab" data-r="saved" data-i18n="jam-tab-guardados">Guardados</button>
+    <button class="tab" data-r="er_reach" data-i18n="jam-tab-engagement">Engagement</button>
+    <button class="tab" data-r="views_carousel" data-i18n="jam-tab-carruseles">Carruseles</button>
+    <button class="tab" data-r="views_image" data-i18n="jam-tab-imagenes">Imágenes</button>
+    <button class="tab" data-r="views_video">Reels</button>
+  </div>
+  <div id="juventuscampsmx-rk-note" class="note" style="margin-top:0"></div>
+  <div class="grid rk" id="juventuscampsmx-rk-grid"></div>
+</section>
+
+<!-- ============ NIVEL 6 ============ -->
+<section id="juventuscampsmx-facebook">
+  <div class="lvl" data-i18n="jam-lvl-6">Nivel 6</div>
+  <h2 data-i18n="jam-h2-facebook">Instagram vs. Facebook</h2>
+  <div class="note d" data-i18n="jam-note-facebook">
+    <strong>No fue posible obtener datos de Facebook.</strong>
+    Al inventariar las conexiones disponibles se encontraron <strong>9 conexiones de Instagram</strong>
+    (1 activa: <code>juventusacademymiami2</code>) y <strong>ninguna conexión de Facebook o Meta
+    Business Suite</strong>. Sin una página de Facebook autorizada no hay acceso a seguidores,
+    alcance, impresiones, publicaciones ni engagement de esa plataforma.
+    <br><br>
+    En consecuencia, <strong>esta sección queda vacía de forma deliberada</strong> y la comparación
+    Instagram vs. Facebook <span class="pill na">no se puede construir</span>. Rellenarla con
+    estimaciones violaría la regla de no inventar datos.
+    <br><br>
+    <strong>Para habilitarla:</strong> conectar la página de Facebook de la academia (permisos
+    <code>pages_read_engagement</code> y <code>read_insights</code>). Con eso, esta sección puede
+    generarse con la misma profundidad que la de Instagram.
+  </div>
+</section>
+
+<!-- ============ NIVEL 8 ============ -->
+<section id="juventuscampsmx-tabla">
+  <div class="lvl" data-i18n="jam-lvl-8">Nivel 8</div>
+  <h2 data-i18n="jam-h2-tabla">Tabla maestra de contenidos</h2>
+  <p class="sub" data-i18n="jam-p-tabla">Las 243 publicaciones del período con todas sus métricas. Buscable, filtrable y
+  ordenable. Clic en cualquier encabezado numérico para ordenar; clic en la miniatura para ampliar.</p>
+
+  <div class="flt">
+    <input type="search" id="juventuscampsmx-q" placeholder="Buscar en caption..." data-i18n-placeholder="jam-ph-buscar">
+    <select id="juventuscampsmx-f-type"><option value="" data-i18n="jam-opt-todos-formatos">Todos los formatos</option>
+      <option value="VIDEO" data-i18n="jam-opt-reel-video">Reel / Video</option>
+      <option value="CAROUSEL_ALBUM" data-i18n="jam-opt-carrusel">Carrusel</option>
+      <option value="IMAGE" data-i18n="jam-opt-imagen">Imagen</option></select>
+    <select id="juventuscampsmx-f-topic"><option value="">Todas las temáticas</option></select>
+    <select id="juventuscampsmx-f-year"><option value="" data-i18n="jam-opt-todo-periodo">Todo el período</option>
+      <option value="1" data-i18n="jam-opt-ano1">Año 1 (2024-09 a 2025-09)</option>
+      <option value="2" data-i18n="jam-opt-ano2">Año 2 (2025-09 a 2026-09)</option></select>
+    <select id="juventuscampsmx-f-sort">
+      <option value="views" data-i18n="jam-opt-ordenar-views">Ordenar: Views</option>
+      <option value="reach" data-i18n="jam-tab-alcance">Alcance</option><option value="likes">Likes</option>
+      <option value="comments" data-i18n="jam-tab-comentarios">Comentarios</option><option value="shares" data-i18n="jam-tab-compartidos">Compartidos</option>
+      <option value="saved" data-i18n="jam-tab-guardados">Guardados</option><option value="er_reach">ER</option>
+      <option value="date" data-i18n="jam-opt-fecha">Fecha</option></select>
+    <span class="mini" id="juventuscampsmx-cnt"></span>
+  </div>
+
+  <div class="tw" style="max-height:640px;overflow-y:auto">
+    <table id="juventuscampsmx-t-all"><thead><tr>
+      <th></th><th data-i18n="jam-th-fecha">Fecha</th><th data-i18n="jam-th-formato">Formato</th><th data-i18n="jam-th-tematica">Temática</th><th>Caption</th>
+      <th class="num">Views</th><th class="num" data-i18n="jam-tab-alcance">Alcance</th><th class="num">Likes</th>
+      <th class="num" data-i18n="jam-th-coment">Coment.</th><th class="num" data-i18n="jam-th-comp">Comp.</th><th class="num" data-i18n="jam-th-guard">Guard.</th>
+      <th class="num">ER%</th><th data-i18n="jam-th-link">Link</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<!-- ============ HALLAZGOS ============ -->
+<section id="juventuscampsmx-hallazgos">
+  <div class="lvl" data-i18n="jam-lvl-sintesis">Síntesis</div>
+  <h2 data-i18n="jam-h2-hallazgos">Principales hallazgos</h2>
+  <p class="sub" data-i18n="jam-p-hallazgos">Cada hallazgo indica si es un <span class="pill dato">Dato</span> medido por Meta
+  o una <span class="pill interp">Interpretación</span> mía, con la evidencia numérica que lo respalda.</p>
+  <div id="juventuscampsmx-finds"></div>
+
+  <h2 style="margin-top:44px" data-i18n="jam-h2-oportunidades">Oportunidades detectadas</h2>
+  <p class="sub" data-i18n="jam-p-oportunidades">Derivadas exclusivamente de los datos de esta cuenta, no de buenas prácticas genéricas.</p>
+  <div id="juventuscampsmx-opps"></div>
+</section>
+
+<!-- ============ NIVEL 9 ============ -->
+<section id="juventuscampsmx-metodologia" hidden>
+  <div class="lvl" data-i18n="jam-lvl-9">Nivel 9</div>
+  <h2 data-i18n="jam-h2-metodologia">Metodología y calidad de los datos</h2>
+
+  <h3 data-i18n="jam-h3-auditoria-integridad">Auditoría de integridad</h3>
+  <div class="grid kpis" id="juventuscampsmx-kpi-audit"></div>
+
+  <h3 data-i18n="jam-h3-inconsistencias">Inconsistencias detectadas — reportadas, no corregidas</h3>
+  <div id="juventuscampsmx-audit-notes"></div>
+
+  <h3 data-i18n="jam-h3-inventario">Inventario de métricas: disponibles, parciales y no disponibles</h3>
+  <div class="tw">
+    <table><thead><tr><th>Métrica</th><th>Estado</th><th>Fuente / motivo</th></tr></thead>
+    <tbody id="juventuscampsmx-t-inv"></tbody></table>
+  </div>
+
+  <h3>Fórmulas utilizadas</h3>
+  <div class="card">
+    <p style="margin:0 0 10px"><strong>Engagement Rate sobre alcance</strong> — métrica principal
+    usada en todo el informe:</p>
+    <p style="margin:0 0 14px"><code>ER = total_interactions / reach × 100</code></p>
+    <p class="mini" style="margin:0 0 14px">Se eligió el alcance como denominador (no los seguidores)
+    porque mide el engagement sobre quienes <em>realmente vieron</em> la publicación. Es más honesto
+    que dividir por seguidores, que penaliza artificialmente a las cuentas grandes e ignora el alcance
+    de no-seguidores. <code>total_interactions</code> es un campo nativo de Meta (likes + comentarios
+    + guardados + compartidos, menos las acciones deshechas), no una suma calculada por mí.</p>
+    <p style="margin:0 0 10px"><strong>Promedio y mediana:</strong> <code>promedio = suma / n</code>,
+    <code>mediana = valor central ordenado</code>. Se reportan ambas porque un post viral
+    (363,411 views) distorsiona los promedios. En rankings por día de semana con pocas
+    publicaciones, la mediana es la única lectura fiable.</p>
+    <p style="margin:0"><strong>Variación Año 1 vs Año 2:</strong>
+    <code>((Año2 − Año1) / Año1) × 100</code>, con ventanas de duración equivalente (~12 meses cada una).</p>
+  </div>
+
+  <h3>Trazabilidad de las fuentes</h3>
+  <div class="tw">
+    <table><thead><tr><th>Dato</th><th>Endpoint / origen</th><th>Naturaleza</th></tr></thead>
+    <tbody>
+      <tr><td>Views, alcance, guardados, compartidos, interacciones</td>
+        <td><code>INSTAGRAM_GET_IG_MEDIA_INSIGHTS</code></td><td>Medido por Meta</td></tr>
+      <tr><td>Likes, comentarios (por publicación)</td>
+        <td><code>INSTAGRAM_GET_IG_MEDIA_INSIGHTS</code> + <code>jam_all_posts.jsonl</code></td>
+        <td>Medido por Meta (doble fuente, ver discrepancias)</td></tr>
+      <tr><td>Demografía de seguidores</td>
+        <td><code>INSTAGRAM_GET_USER_INSIGHTS</code> (<code>follower_demographics</code>)</td>
+        <td>Medido por Meta (estimado, según su propia documentación)</td></tr>
+      <tr><td>Alcance y visitas de cuenta por mes</td>
+        <td><code>INSTAGRAM_GET_USER_INSIGHTS</code> (period=day, total_value)</td>
+        <td>Medido por Meta (estimado)</td></tr>
+      <tr><td>Seguidores, bio, media_count</td>
+        <td><code>INSTAGRAM_GET_USER_INFO</code></td><td>Medido por Meta</td></tr>
+      <tr><td>Miniaturas e imágenes</td>
+        <td><code>INSTAGRAM_GET_IG_MEDIA</code> (media_url / thumbnail_url)</td>
+        <td>Archivo original descargado del CDN de Meta</td></tr>
+      <tr><td>Enlaces a publicaciones</td><td>campo <code>permalink</code> de Meta</td>
+        <td>URL oficial, ninguna construida manualmente</td></tr>
+      <tr><td>Clasificación temática</td><td>Regex sobre el caption (reglas publicadas arriba)</td>
+        <td><strong>Calculado por mí</strong> — no es un dato de Meta</td></tr>
+      <tr><td>ER, promedios, medianas, variaciones</td><td>Cálculo propio sobre datos de Meta</td>
+        <td><strong>Calculado por mí</strong> (fórmulas arriba)</td></tr>
+      <tr><td>Día de semana y hora local</td><td>Derivado del <code>timestamp</code> UTC de Meta</td>
+        <td><strong>Calculado por mí</strong> (offset fijo −4h)</td></tr>
+    </tbody></table>
+  </div>
+
+  <h3>Limitaciones que afectan la lectura del informe</h3>
+  <div class="card">
+    <ol style="margin:0;padding-left:20px;font-size:13px;color:var(--txt2)">
+      <li style="margin-bottom:9px"><strong>Sin Facebook.</strong> No hay conexión disponible; los
+      Niveles de comparación entre plataformas no existen en este informe.</li>
+      <li style="margin-bottom:9px"><strong>Sin histórico de seguidores.</strong> La API entrega el
+      total actual (26.771) pero no la serie temporal. <em>El crecimiento de seguidores mes a mes,
+      que suele ser el KPI principal de un informe así, no se puede construir.</em> Para tenerlo
+      a futuro hay que capturar el total periódicamente desde ahora.</li>
+      <li style="margin-bottom:9px"><strong>Sin impresiones.</strong> Meta deprecó
+      <code>impressions</code> para contenido nuevo; solo entrega <code>reach</code> (cuentas únicas).
+      Por eso no hay columna de impresiones ni cálculo de frecuencia.</li>
+      <li style="margin-bottom:9px"><strong>Sin historias.</strong> Expiran a 24 h y no existe
+      histórico recuperable.</li>
+      <li style="margin-bottom:9px"><strong>Métricas "estimadas" por Meta.</strong> La propia
+      documentación de Meta declara <code>reach</code>, <code>accounts_engaged</code> y la demografía
+      como estimados y "en desarrollo". No son censos exactos.</li>
+      <li style="margin-bottom:9px"><strong><code>views</code> no es comparable entre formatos de
+      forma ingenua.</strong> En video cuenta reproducciones; en imagen y carrusel Meta lo usa como
+      equivalente a visualizaciones del post. Se reporta igual porque es el dato que Meta entrega,
+      pero la comparación directa video vs. imagen tiene esa salvedad de criterio de medición.</li>
+      <li style="margin-bottom:9px"><strong>Clasificación temática por caption.</strong> 49 de 243
+      posts (20%) quedaron sin clasificar. No se analizó el contenido visual.</li>
+      <li><strong>Un mes con error de API.</strong> La ventana 2024-09-17 a 2024-10-17 de métricas de
+      cuenta falló (límite de 2 años de Meta); se reporta abajo en lugar de interpolarla.</li>
+    </ol>
+  </div>
+
+  <h3>Reproducibilidad</h3>
+  <div class="card">
+    <p style="margin:0;font-size:13px;color:var(--txt2)">Datos crudos y scripts disponibles en:</p>
+    <p style="margin:8px 0 0"><span class="tag">Datos Instagram (raw)/insights_24m.jsonl</span>
+    <span class="tag">Datos Instagram (raw)/account_insights.json</span>
+    <span class="tag">Datos Instagram (raw)/thumbs_map.json</span>
+    <span class="tag">Dashboard Instagram/data.json</span>
+    <span class="tag">dashboard_assets/thumbs/ (243 imágenes)</span></p>
+  </div>
+</section>
+
+    </div>
+<div id="juventuscampsmx-lb"><span class="x">&times;</span><img id="juventuscampsmx-lbi" alt="Vista ampliada de la publicación"></div>
+  </div>
+
+<script id="dash-data-juventuscampsmx" type="application/json">{"generated_at": "2026-09-30T02:27:28.645493+00:00", "account": {"username": "juventuscampsmx", "name": "Juventus Camps Mexico", "followers": 3097, "follows": 16, "media_count_total": 73, "website": "https://www.juventuscampsmx.com", "biography": "⚽️ Campamentos Oficiales de @juventus en 🇲🇽 \n👥 Para niños y niñas de 6 a 16 años\n🔗 Registros abiertos para 2026"}, "period": {"start": "2025-02-27", "end": "2026-08-07", "extracted_at": "2026-09-30T02:27:28.645522+00:00", "n_posts": 34}, "totals": {"views": 252958, "reach": 117297, "likes": 1985, "comments": 138, "saved": 177, "shares": 540, "interactions": 2881}, "posts": [{"id": "18490889719053813", "date": "2025-02-27", "ym": "2025-02", "dow": 3, "hour": 19, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DGljBCiymaZ/", "caption": "Estamos muy felices de volver a México 🇲🇽\n\n📍Cancún, Mérida, Veracruz, Puebla, Guadalajara y Ciudad de México \n\n🔗 Regístrate en juventuscampsmx.com \n\n#juventus #universidaddeoriente #cancun #meridamexico #cdmx #guadalajara #puebla #veracruz", "caption_short": "Estamos muy felices de volver a México 🇲🇽\n\n📍Cancún, Mérida, Veracruz, Puebla, Guadalajara y Ciudad de México \n\n🔗 Regístr", "topic": "Otros / No clasificable", "views": 4671, "reach": 3815, "likes": 77, "comments": 1, "saved": 8, "shares": 35, "interactions": 121, "er_reach": 3.17, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18490889719053813.jpg", "thumb_note": null, "like_count_scrape": 77, "likes_discrepancy": null}, {"id": "18032957597553845", "date": "2025-03-05", "ym": "2025-03", "dow": 2, "hour": 16, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DG0xM1mOmYV/", "caption": "Entrena con coaches certificados por la UEFA sin salir de México! 🔥\n\nLos Juventus Training Camps te traen la metodología oficial de Juventus. \n\n¡Prepárate para entrenar con los mejores este verano! ☀️⚡\n\n🔗 juventuscampsmx.com", "caption_short": "Entrena con coaches certificados por la UEFA sin salir de México! 🔥\n\nLos Juventus Training Camps te traen la metodología", "topic": "Otros / No clasificable", "views": 3859, "reach": 3225, "likes": 17, "comments": 0, "saved": 2, "shares": 5, "interactions": 24, "er_reach": 0.74, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18032957597553845.jpg", "thumb_note": null, "like_count_scrape": 17, "likes_discrepancy": null}, {"id": "18021035309674375", "date": "2025-03-07", "ym": "2025-03", "dow": 4, "hour": 16, "type": "IMAGE", "permalink": "https://www.instagram.com/p/DG53oiJOPTp/", "caption": "¡SEIS CIUDADES, UN SOLO ESTILO! ⚽🇮🇹\n\nEntrena con coaches de Juventus y vive la metodología de la Vecchia Signora en México. 🇲🇽\n\n¡Inscríbete ahora! 🔗 juventuscampsmx.com", "caption_short": "¡SEIS CIUDADES, UN SOLO ESTILO! ⚽🇮🇹\n\nEntrena con coaches de Juventus y vive la metodología de la Vecchia Signora en Méxi", "topic": "Otros / No clasificable", "views": 13576, "reach": 5637, "likes": 63, "comments": 16, "saved": 19, "shares": 52, "interactions": 150, "er_reach": 2.66, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18021035309674375.jpg", "thumb_note": null, "like_count_scrape": 63, "likes_discrepancy": null}, {"id": "18058851380085246", "date": "2025-03-13", "ym": "2025-03", "dow": 3, "hour": 17, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DHJgLf9u6Ly/", "caption": "¡Vive la Experiencia Juventus en México! ⚽🔥 \n\nEntrena con la metodología oficial de la Juventus, mejora tu nivel y vive 5 días inolvidables con entrenadores certificados de Italia. ¡Tú puedes ser seleccionado para entrenar en Turín! 🇮🇹🏆\n\nInscripciones abiertas. Visita nuestra página web juventuscampsmx.com", "caption_short": "¡Vive la Experiencia Juventus en México! ⚽🔥 \n\nEntrena con la metodología oficial de la Juventus, mejora tu nivel y vive ", "topic": "Otros / No clasificable", "views": 17998, "reach": 6316, "likes": 53, "comments": 1, "saved": 17, "shares": 64, "interactions": 136, "er_reach": 2.15, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18058851380085246.jpg", "thumb_note": null, "like_count_scrape": 53, "likes_discrepancy": null}, {"id": "18025436801418648", "date": "2025-03-20", "ym": "2025-03", "dow": 3, "hour": 18, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DHboeMcOz1E/", "caption": "💬 Experiencia real, entrenamiento de élite! ⚽🔥\n\nEl Juventus Training Camp 2024 en México fue una experiencia única para muchos jugadores, donde mejoraron su técnica, hicieron amigos y entrenaron con la metodología oficial de Juventus.\n\n¡No te quedes fuera en 2025! Asegura tu lugar y vive el fútbol como nunca antes.\n\n🔗 Visita nuestro sitio web: juventuscampsmx.com", "caption_short": "💬 Experiencia real, entrenamiento de élite! ⚽🔥\n\nEl Juventus Training Camp 2024 en México fue una experiencia única para ", "topic": "Programa / Horarios", "views": 8988, "reach": 5260, "likes": 61, "comments": 1, "saved": 5, "shares": 27, "interactions": 95, "er_reach": 1.81, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18025436801418648.jpg", "thumb_note": null, "like_count_scrape": 61, "likes_discrepancy": null}, {"id": "17882674389269521", "date": "2025-04-02", "ym": "2025-04", "dow": 2, "hour": 15, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DH8yfleO8Y3/", "caption": "", "caption_short": "", "topic": "Otros / No clasificable", "views": 3273, "reach": 2480, "likes": 32, "comments": 0, "saved": 2, "shares": 13, "interactions": 47, "er_reach": 1.9, "thumb": null, "thumb_note": "sin miniatura", "like_count_scrape": 32, "likes_discrepancy": null}, {"id": "17887894824232518", "date": "2025-04-08", "ym": "2025-04", "dow": 1, "hour": 17, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DIMX30YOeXt/", "caption": "En Juventus Camps, ofrecemos un entrenamiento integral tanto para jugadores de campo como para porteros. 🏆⚽\n\n¡No importa tu posición, aquí mejorarás tu nivel con la metodología oficial de la Juventus!\n\n📍 Descubre las ciudades que visitaremos y asegura tu lugar en la más cercana.\n\n🔗 Inscríbete ahora! 👉 juventuscampsmx.com", "caption_short": "En Juventus Camps, ofrecemos un entrenamiento integral tanto para jugadores de campo como para porteros. 🏆⚽\n\n¡No importa", "topic": "Otros / No clasificable", "views": 16725, "reach": 6801, "likes": 39, "comments": 0, "saved": 3, "shares": 40, "interactions": 82, "er_reach": 1.21, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/17887894824232518.jpg", "thumb_note": null, "like_count_scrape": 39, "likes_discrepancy": null}, {"id": "18037069913265432", "date": "2025-04-16", "ym": "2025-04", "dow": 2, "hour": 17, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DIjvFjtOzKi/", "caption": "🔥 The hype is real! 🔥⚽\n\n¡Estamos a menos de 3 meses de vivir la experiencia Juventus Camps México! 🇮🇹🇲🇽🏆\n\nLos cupos se están llenando rápido, así que asegura tu lugar cuanto antes. ⏳⚡\n\n🔗 Inscríbete ahora: juventuscampsmx.com", "caption_short": "🔥 The hype is real! 🔥⚽\n\n¡Estamos a menos de 3 meses de vivir la experiencia Juventus Camps México! 🇮🇹🇲🇽🏆\n\nLos cupos se e", "topic": "Otros / No clasificable", "views": 7924, "reach": 2504, "likes": 56, "comments": 0, "saved": 1, "shares": 0, "interactions": 57, "er_reach": 2.28, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18037069913265432.jpg", "thumb_note": null, "like_count_scrape": 56, "likes_discrepancy": null}, {"id": "18505330279004954", "date": "2025-05-07", "ym": "2025-05", "dow": 2, "hour": 17, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DJXDHoTOZV8/", "caption": "", "caption_short": "", "topic": "Otros / No clasificable", "views": 4633, "reach": 3549, "likes": 11, "comments": 2, "saved": 0, "shares": 6, "interactions": 19, "er_reach": 0.54, "thumb": null, "thumb_note": "sin miniatura", "like_count_scrape": 11, "likes_discrepancy": null}, {"id": "18042265622568303", "date": "2025-05-13", "ym": "2025-05", "dow": 1, "hour": 18, "type": "IMAGE", "permalink": "https://www.instagram.com/p/DJmoQRHINRW/", "caption": "¿Necesitas más razones? 😏\n\n🔗 Entra a juventuscampsmx.com, revisa las ciudades que visitaremos este año e inscríbete ya. ¡Los cupos son limitados!\n\n#JuventusCampsMexico", "caption_short": "¿Necesitas más razones? 😏\n\n🔗 Entra a juventuscampsmx.com, revisa las ciudades que visitaremos este año e inscríbete ya. ", "topic": "Otros / No clasificable", "views": 13088, "reach": 3975, "likes": 23, "comments": 8, "saved": 7, "shares": 23, "interactions": 61, "er_reach": 1.53, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18042265622568303.jpg", "thumb_note": null, "like_count_scrape": 23, "likes_discrepancy": null}, {"id": "18103068055523855", "date": "2025-05-21", "ym": "2025-05", "dow": 2, "hour": 17, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DJ7G1gNK6_C/", "caption": "⚽🇮🇹 ¡JUVENTUS FC regresa a México y tú puedes ser parte! 🇲🇽🔥\n\nEntrena durante 5 días con entrenadores oficiales de Juventus, vive una experiencia única y gana la oportunidad de viajar a Italia para entrenar en la sede del club. 🏆✈️\n\n📍 Cancún, Mérida, Puebla, Guadalajara, Veracruz y Ciudad de México\n🔗 Inscríbete ahora en juventuscampsmx.com", "caption_short": "⚽🇮🇹 ¡JUVENTUS FC regresa a México y tú puedes ser parte! 🇲🇽🔥\n\nEntrena durante 5 días con entrenadores oficiales de Juven", "topic": "Otros / No clasificable", "views": 4094, "reach": 2831, "likes": 38, "comments": 2, "saved": 6, "shares": 10, "interactions": 58, "er_reach": 2.05, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18103068055523855.jpg", "thumb_note": null, "like_count_scrape": 38, "likes_discrepancy": null}, {"id": "17859993240422080", "date": "2025-05-28", "ym": "2025-05", "dow": 2, "hour": 1, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DKLawvKtiio/", "caption": "🇲🇽⚽ Del campo en La Mixtequilla... ¡a las instalaciones de la Juventus en Italia! 🇮🇹🔥\nJuan Román Cano Santiago fue uno de los seleccionados en los Juventus Camps México 2024 para viajar a Turín y entrenar en la sede oficial del club.\n\n🚀 Este año tú también podrías ser el próximo.�\n\nDescubre las ciudades donde estaremos en 2025 e inscríbete: juventuscampsmx.com 🔗", "caption_short": "🇲🇽⚽ Del campo en La Mixtequilla... ¡a las instalaciones de la Juventus en Italia! 🇮🇹🔥\nJuan Román Cano Santiago fue uno d", "topic": "Otros / No clasificable", "views": 11960, "reach": 3182, "likes": 117, "comments": 6, "saved": 11, "shares": 21, "interactions": 156, "er_reach": 4.9, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/17859993240422080.jpg", "thumb_note": null, "like_count_scrape": 117, "likes_discrepancy": null}, {"id": "18510829504039730", "date": "2025-06-05", "ym": "2025-06", "dow": 3, "hour": 19, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DKh-KDtu7es/", "caption": "¡La cuenta regresiva empezó! 🕒\n\nAsegura tu lugar hoy mismo y vive la Experiencia Juventus en territorio Mexicano. \n\n 👉Más información en: juventuscampsmx.com", "caption_short": "¡La cuenta regresiva empezó! 🕒\n\nAsegura tu lugar hoy mismo y vive la Experiencia Juventus en territorio Mexicano. \n\n 👉Má", "topic": "Otros / No clasificable", "views": 4757, "reach": 3504, "likes": 34, "comments": 0, "saved": 3, "shares": 1, "interactions": 38, "er_reach": 1.08, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18510829504039730.jpg", "thumb_note": null, "like_count_scrape": 34, "likes_discrepancy": null}, {"id": "18047523599570151", "date": "2025-06-11", "ym": "2025-06", "dow": 2, "hour": 19, "type": "IMAGE", "permalink": "https://www.instagram.com/p/DKxX365uH4u/", "caption": "No es solo fútbol. Es formación, diversión y oportunidades reales. ✅\n\n 👉 Swipe para descubrir por qué este campamento es único.\n\n🔗 Inscríbete ya en juventuscampsmx.com", "caption_short": "No es solo fútbol. Es formación, diversión y oportunidades reales. ✅\n\n 👉 Swipe para descubrir por qué este campamento es", "topic": "Otros / No clasificable", "views": 10990, "reach": 2738, "likes": 22, "comments": 5, "saved": 9, "shares": 6, "interactions": 42, "er_reach": 1.53, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18047523599570151.jpg", "thumb_note": null, "like_count_scrape": 22, "likes_discrepancy": null}, {"id": "17933994375061933", "date": "2025-07-15", "ym": "2025-07", "dow": 1, "hour": 16, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DMImtbKOYLW/", "caption": "¡Se acabó la espera! ⚽🔥\n\nJuventus Training Camps México arrancó ayer en Ciudad de México, donde más de 70 niños y niñas comenzaron a vivir la experiencia Juventus junto a entrenadores oficiales del club 🇮🇹🖤🤍\n\nEsto recién comienza...\n\n📍PRÓXIMAS PARADAS:\n➡️ Cancún y Mérida | 21 al 25 de julio\n➡️ Veracruz y Guadalajara | 28 de julio al 1 de agosto\n\n¡Aún estás a tiempo de inscribirte y vivir una semana de fútbol de alto nivel!\n\n🔗 Regístrate ahora en juventuscampsmx.com", "caption_short": "¡Se acabó la espera! ⚽🔥\n\nJuventus Training Camps México arrancó ayer en Ciudad de México, donde más de 70 niños y niñas ", "topic": "Otros / No clasificable", "views": 10739, "reach": 2689, "likes": 84, "comments": 1, "saved": 2, "shares": 8, "interactions": 95, "er_reach": 3.53, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/17933994375061933.jpg", "thumb_note": null, "like_count_scrape": 84, "likes_discrepancy": null}, {"id": "18047515754559791", "date": "2025-07-21", "ym": "2025-07", "dow": 0, "hour": 20, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DMYhMnWugF7/", "caption": "🇲🇽⚽ ¡La Juventus Training Experience en Italia ya tiene representante desde CDMX!\n\nTras una increíble semana de campamento, el viernes anunciamos al ganador que vivirá esta aventura única en la primavera 2026.\n\n🎉 ¡Felicidades a LUIS RIVAS, ganador del Juventus Training Experience CDMX!\n\n¡Nos vemos en Italia! 🇮🇹🖤🤍", "caption_short": "🇲🇽⚽ ¡La Juventus Training Experience en Italia ya tiene representante desde CDMX!\n\nTras una increíble semana de campamen", "topic": "Otros / No clasificable", "views": 5873, "reach": 3159, "likes": 119, "comments": 9, "saved": 2, "shares": 16, "interactions": 146, "er_reach": 4.62, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18047515754559791.jpg", "thumb_note": null, "like_count_scrape": 119, "likes_discrepancy": null}, {"id": "18378241222125052", "date": "2025-07-28", "ym": "2025-07", "dow": 0, "hour": 16, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DMqH-RvuMtg/", "caption": "🇲🇽 ¡Seguimos rodando con los Juventus Training Camps! ⚽\n\nLa semana pasada vivimos una experiencia increíble en Mérida con decenas de jugadores entrenando al estilo Juventus. 💪\n\n¡Y esto no para!", "caption_short": "🇲🇽 ¡Seguimos rodando con los Juventus Training Camps! ⚽\n\nLa semana pasada vivimos una experiencia increíble en Mérida co", "topic": "Otros / No clasificable", "views": 9138, "reach": 2745, "likes": 84, "comments": 2, "saved": 0, "shares": 3, "interactions": 89, "er_reach": 3.24, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18378241222125052.jpg", "thumb_note": null, "like_count_scrape": 84, "likes_discrepancy": null}, {"id": "18314001004214071", "date": "2025-07-30", "ym": "2025-07", "dow": 2, "hour": 14, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DMvBcNDOtH_/", "caption": "¡Guadalajara en modo bianconero⚪⚫!\n\nEsta semana vivimos toda la pasión, disciplina y diversión del Juventus Training Camp en tierras tapatías.\n\nGracias a todos los jugadores y familias por formar parte de esta experiencia única. 💪🏻", "caption_short": "¡Guadalajara en modo bianconero⚪⚫!\n\nEsta semana vivimos toda la pasión, disciplina y diversión del Juventus Training Cam", "topic": "Programa / Horarios", "views": 9079, "reach": 3103, "likes": 79, "comments": 2, "saved": 9, "shares": 4, "interactions": 94, "er_reach": 3.03, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18314001004214071.jpg", "thumb_note": null, "like_count_scrape": 79, "likes_discrepancy": null}, {"id": "18143290255371231", "date": "2025-08-04", "ym": "2025-08", "dow": 0, "hour": 16, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DM8MY6sObtG/", "caption": "🏆 ¡Felicidades a Daniel Ochoa!\nGanador del Juventus Training Experience en Italia 🇮🇹⚽\n\nDespués de una semana increíble en el Juventus Camp Guadalajara, Daniel ha sido seleccionado para vivir una experiencia única entrenando en la casa del club en Turín durante la primavera de 2026.\n\n¡Nos llena de orgullo que represente a México en este viaje soñado!", "caption_short": "🏆 ¡Felicidades a Daniel Ochoa!\nGanador del Juventus Training Experience en Italia 🇮🇹⚽\n\nDespués de una semana increíble e", "topic": "Programa / Horarios", "views": 12091, "reach": 4816, "likes": 142, "comments": 4, "saved": 14, "shares": 13, "interactions": 174, "er_reach": 3.61, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18143290255371231.jpg", "thumb_note": null, "like_count_scrape": 142, "likes_discrepancy": null}, {"id": "18047845097267754", "date": "2025-08-06", "ym": "2025-08", "dow": 2, "hour": 15, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DNBMjwwO0ux/", "caption": "🎉 Santiago Cruz, ganador del Juventus Training Experience ⚽🇮🇹\n\nGracias a su destacado rendimiento durante el campamento de Juventus en Cancún, Santiago ha sido seleccionado para vivir una experiencia única: entrenar en Italia en la primavera de 2026 y conocer de cerca la ciudad que vio nacer a la Juventus FC.\n\n¡Felicidades, Santiago! El camino hacia tus sueños apenas comienza. 🖤🤍", "caption_short": "🎉 Santiago Cruz, ganador del Juventus Training Experience ⚽🇮🇹\n\nGracias a su destacado rendimiento durante el campamento ", "topic": "Otros / No clasificable", "views": 7328, "reach": 5154, "likes": 119, "comments": 14, "saved": 8, "shares": 15, "interactions": 157, "er_reach": 3.05, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18047845097267754.jpg", "thumb_note": null, "like_count_scrape": 119, "likes_discrepancy": null}, {"id": "18166128283413072", "date": "2026-04-01", "ym": "2026-04", "dow": 2, "hour": 21, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DWmo_z4EjgD/", "caption": "⚽🔥 Este verano vive la experiencia de entrenar con la metodología oficial de Juventus FC.\n\nFuerza, disciplina, pasión y mentalidad ganadora 💪🇮🇹 \nEso es lo que cada niño vivirá en una semana intensiva junto a entrenadores oficiales, desarrollando técnica, táctica y confianza dentro y fuera de la cancha.\n\n✨ Una experiencia única para niños y jóvenes que aman el fútbol y quieren llevar su juego al siguiente nivel.\n\n📍 Cupos limitados \n🌐 Inscripciones abiertas en: https://www.juventuscampsmx.com\n\n#JuventusCamps #SummerCamp #Futbol #Juventus #entrenamientoelite", "caption_short": "⚽🔥 Este verano vive la experiencia de entrenar con la metodología oficial de Juventus FC.\n\nFuerza, disciplina, pasión y ", "topic": "Otros / No clasificable", "views": 2993, "reach": 2480, "likes": 20, "comments": 2, "saved": 4, "shares": 9, "interactions": 36, "er_reach": 1.45, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18166128283413072.jpg", "thumb_note": null, "like_count_scrape": 20, "likes_discrepancy": null}, {"id": "18071782592290831", "date": "2026-04-27", "ym": "2026-04", "dow": 0, "hour": 20, "type": "IMAGE", "permalink": "https://www.instagram.com/p/DXpgfP8Et-6/", "caption": "¡El mejor regalo del Día del Niño está aquí!\nHaz que vivan una experiencia única entrenando al estilo Juventus y aprovecha nuestro descuento especial por tiempo limitado.\n\nInscríbete hoy y usa el código: JUVEKID\n\nLos lugares son LIMITADOS y se están acabando rápido.\nNo dejes pasar la oportunidad de que formen parte de esta experiencia inolvidable.\n\nRegístrate ahora en:\nwww.juventuscampsmx.com\n\n#JuventusCamps #JuventusTrainingCamps #JuventusMexico", "caption_short": "¡El mejor regalo del Día del Niño está aquí!\nHaz que vivan una experiencia única entrenando al estilo Juventus y aprovec", "topic": "Otros / No clasificable", "views": 4108, "reach": 2270, "likes": 12, "comments": 2, "saved": 4, "shares": 2, "interactions": 20, "er_reach": 0.88, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18071782592290831.jpg", "thumb_note": null, "like_count_scrape": 12, "likes_discrepancy": null}, {"id": "18101286587090733", "date": "2026-05-18", "ym": "2026-05", "dow": 0, "hour": 19, "type": "IMAGE", "permalink": "https://www.instagram.com/p/DYfdFFCRRbh/", "caption": "¿Tu hijo sueña con vivir el fútbol de otra manera?\n\nMás de 120 niños ya son parte de la experiencia Juventus Summer Camp MX 2026 y todavía están abiertas las inscripciones.\n\nDurante 5 días entrenarán con una metodología inspirada en uno de los clubes más importantes del mundo, desarrollando:\n• Técnica individual\n• Mentalidad competitiva\n• Confianza dentro y fuera de la cancha\n• Trabajo en equipo\n• Intensidad y disciplina deportiva\n\nAdemás, podrán competir por la oportunidad de viajar a Italia.\n\nCupos limitados por ciudad.\nInscripciones abiertas para niños y jóvenes de 6 a 17 años.\n\nRegistra a tu hijo aquí:\nhttps://www.juventuscampsmx.com/\n\n#JuventusCampMX #JuventusSummerCamp #Juventus #FootballCamp #SoccerCamp", "caption_short": "¿Tu hijo sueña con vivir el fútbol de otra manera?\n\nMás de 120 niños ya son parte de la experiencia Juventus Summer Camp", "topic": "Programa / Horarios", "views": 4895, "reach": 3340, "likes": 36, "comments": 12, "saved": 5, "shares": 19, "interactions": 72, "er_reach": 2.16, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18101286587090733.jpg", "thumb_note": null, "like_count_scrape": 36, "likes_discrepancy": null}, {"id": "17929025832292663", "date": "2026-05-19", "ym": "2026-05", "dow": 1, "hour": 23, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DYidMRgtZk4/", "caption": "Inscribe a tu hijo al Juventus Training Camp México y déjalo vivir 5 días de fútbol, aprendizaje y diversión.\n\nEdades de 6 a 17 años | Cupos limitados\nwww.juventuscampsmx.com\n\n#juventus #juventustrainingcamps #universidaddeoriente #colegiosanangel #futbol", "caption_short": "Inscribe a tu hijo al Juventus Training Camp México y déjalo vivir 5 días de fútbol, aprendizaje y diversión.\n\nEdades de", "topic": "Programa / Horarios", "views": 3259, "reach": 2656, "likes": 30, "comments": 4, "saved": 4, "shares": 2, "interactions": 41, "er_reach": 1.54, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/17929025832292663.jpg", "thumb_note": null, "like_count_scrape": 30, "likes_discrepancy": null}, {"id": "18094350788522144", "date": "2026-06-01", "ym": "2026-06", "dow": 0, "hour": 16, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DZDKbYAOjfF/", "caption": "Estamos a solo unos días de arrancar el JUVENTUS SUMMER CAMP MÉXICO 2026 🏟️⚽ y la cancha ya está casi lista. Si querías que tus hijos entrenaran bajo la metodología de uno de los clubes más grandes del mundo... ¡ESTA ES TU ÚLTIMA OPORTUNIDAD! 😱\n🚨 QUEDAN MUY POCOS LUGARES DISPONIBLES 🚨\nNo dejes que se queden fuera de esta experiencia inolvidable. ¡El silbatazo inicial está por sonar! 🏁\n🔗 Inscríbete YA antes de que se cierren los cupos: www.juventuscampsmx.com\n⚪⚫ ¡Viste los colores, vive el sueño! ⚪⚫\n\n#juventus #juventustrainingcamps #universidaddeoriente #colegiosanangel #mexico", "caption_short": "Estamos a solo unos días de arrancar el JUVENTUS SUMMER CAMP MÉXICO 2026 🏟️⚽ y la cancha ya está casi lista. Si querías ", "topic": "Programa / Horarios", "views": 3061, "reach": 2322, "likes": 35, "comments": 1, "saved": 3, "shares": 29, "interactions": 70, "er_reach": 3.01, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18094350788522144.jpg", "thumb_note": null, "like_count_scrape": 35, "likes_discrepancy": null}, {"id": "17891391900483333", "date": "2026-06-05", "ym": "2026-06", "dow": 4, "hour": 19, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DZNyXG5iY9X/", "caption": "⚽🔥 ¡Estamos a nada de comenzar!\n\nLa cuenta regresiva ha iniciado y los últimos lugares siguen disponibles.\n\nEste verano, tu hijo podrá entrenar con coaches oficiales de Juventus Italia, vivir una experiencia internacional y desarrollar su juego con la metodología oficial de Juventus.\n\n⏳ No te quedes fuera.\n📍 Cupos limitados.\n🌐 Inscríbete hoy: www.juventuscampsmx.com", "caption_short": "⚽🔥 ¡Estamos a nada de comenzar!\n\nLa cuenta regresiva ha iniciado y los últimos lugares siguen disponibles.\n\nEste verano,", "topic": "Otros / No clasificable", "views": 3018, "reach": 2659, "likes": 20, "comments": 2, "saved": 2, "shares": 4, "interactions": 31, "er_reach": 1.17, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/17891391900483333.jpg", "thumb_note": null, "like_count_scrape": 20, "likes_discrepancy": null}, {"id": "18141328651545414", "date": "2026-07-01", "ym": "2026-07", "dow": 2, "hour": 18, "type": "IMAGE", "permalink": "https://www.instagram.com/p/DaQqtY0xaVa/", "caption": "¡GANÓ MÉXICO Y NOSOTROS LO CELEBRAMOS EN GRANDE!\n\nPor tiempo limitado, los primeros 20 inscritos al Juventus Summer Camp tendrán precio especial de celebración:\n\n$7,500 MXN pagando por transferencia\n\nCupo limitado únicamente para los primeros 20 lugares.\n\nPara apartar tu lugar, conecta con tu asesor asignado o mándanos WhatsApp directo:\n\n221 355 7863\n221 101 3490\n\nNo dejes pasar esta promoción especial.\nEntrena, aprende y vive la experiencia Juventus este verano. \n\n#futbol #mexicocampeón #ysisí #juve #promo", "caption_short": "¡GANÓ MÉXICO Y NOSOTROS LO CELEBRAMOS EN GRANDE!\n\nPor tiempo limitado, los primeros 20 inscritos al Juventus Summer Camp", "topic": "Programa / Horarios", "views": 5125, "reach": 2563, "likes": 38, "comments": 4, "saved": 5, "shares": 14, "interactions": 64, "er_reach": 2.5, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18141328651545414.jpg", "thumb_note": null, "like_count_scrape": 38, "likes_discrepancy": null}, {"id": "18018289775697113", "date": "2026-07-02", "ym": "2026-07", "dow": 3, "hour": 1, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DaRZgmzNCMr/", "caption": "Vive la oportunidad de entrenar con la metodología de uno de los clubes más grandes del mundo. 🇮🇹⚽\n\nEn menos de dos semanas comienza el **Juventus Training Camp** y la cuenta regresiva ya empezó.\n\n🔥 Entrenamientos de alto nivel\n🏆 Metodología oficial Juventus\n🌍 Una experiencia internacional\n⚽ Un verano que puede marcar la diferencia\n\nLos lugares son limitados.\nEste puede ser el momento de dar el siguiente paso.\n\n📩 Escríbenos y asegura tu lugar hoy:\nWhatsApp: 221 355 7863 / 221 101 3490\n🌐 www.juventuscampsmx.com\n\n#JuventusTrainingCamp #FootballCamp #Futbol #Verano2026 #entrenacomolosgrandes", "caption_short": "Vive la oportunidad de entrenar con la metodología de uno de los clubes más grandes del mundo. 🇮🇹⚽\n\nEn menos de dos sema", "topic": "Programa / Horarios", "views": 2521, "reach": 2147, "likes": 30, "comments": 4, "saved": 6, "shares": 8, "interactions": 48, "er_reach": 2.24, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18018289775697113.jpg", "thumb_note": null, "like_count_scrape": 30, "likes_discrepancy": null}, {"id": "18109392899068201", "date": "2026-07-15", "ym": "2026-07", "dow": 2, "hour": 18, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/Da0sUNeRU3Q/", "caption": "Monterrey fue solo el comienzo. 🇮🇹⚽️\n\nVivimos una inauguración llena de emoción, energía y pasión por el futbol, encabezada por la Rectora del Consorcio Educativo de Oriente, Mtra. Aída Ordóñez Muñoz, quien dio la bienvenida a esta gran experiencia.\n\nAgradecemos especialmente a la Universidad de Oriente por hacer posible este proyecto y por seguir impulsando iniciativas que generan oportunidades, aprendizaje y experiencias inolvidables para nuestros jugadores. 🙌\n\nAhora continuamos nuestro recorrido por México. 🇲🇽\n\n📍La próxima semana nos vemos en Mérida y Ciudad de México.\n📍Y cerramos esta gran gira en Guadalajara.\n\n¡Nos vemos muy pronto en la cancha!\n\nForza Juve. ⚪⚫\n\n#JuventusTrainingCamp #JuventusAcademy #FutbolBase #Verano2026 #ForzaJuve", "caption_short": "Monterrey fue solo el comienzo. 🇮🇹⚽️\n\nVivimos una inauguración llena de emoción, energía y pasión por el futbol, encabez", "topic": "Otros / No clasificable", "views": 3826, "reach": 2341, "likes": 48, "comments": 0, "saved": 2, "shares": 19, "interactions": 71, "er_reach": 3.03, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18109392899068201.jpg", "thumb_note": null, "like_count_scrape": 48, "likes_discrepancy": null}, {"id": "18470237611129374", "date": "2026-07-20", "ym": "2026-07", "dow": 0, "hour": 17, "type": "IMAGE", "permalink": "https://www.instagram.com/p/DbBe835x0p_/", "caption": "", "caption_short": "", "topic": "Otros / No clasificable", "views": 19423, "reach": 8861, "likes": 154, "comments": 8, "saved": 8, "shares": 22, "interactions": 199, "er_reach": 2.25, "thumb": null, "thumb_note": "sin miniatura", "like_count_scrape": 154, "likes_discrepancy": null}, {"id": "18101162255231506", "date": "2026-07-22", "ym": "2026-07", "dow": 2, "hour": 23, "type": "VIDEO", "permalink": "https://www.instagram.com/reel/DbHPUrTOlnU/", "caption": "⚽🇮🇹 ¡Ya estamos en nuestra segunda semana del Juventus Training Camp!\n\nEsta vez vivimos la emoción de manera simultánea en CDMX y Mérida, acompañando a cada jugador mientras aprende, se esfuerza y fortalece sus habilidades dentro y fuera de la cancha. 🖤🤍\n\nNos emociona ver su crecimiento, su pasión por el fútbol y la energía con la que disfrutan cada entrenamiento.\n\nY esto continúa… la próxima semana estaremos en Guadalajara!🔥⚽\n\nSeguimos formando grandes jugadores y creando experiencias inolvidables.\n\n#JuventusTrainingCamp #JuventusCampsMX #CDMX #Mérida #Guadalajara", "caption_short": "⚽🇮🇹 ¡Ya estamos en nuestra segunda semana del Juventus Training Camp!\n\nEsta vez vivimos la emoción de manera simultánea ", "topic": "Programa / Horarios", "views": 2821, "reach": 1912, "likes": 42, "comments": 1, "saved": 1, "shares": 7, "interactions": 54, "er_reach": 2.82, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18101162255231506.jpg", "thumb_note": null, "like_count_scrape": 42, "likes_discrepancy": null}, {"id": "18022770140886490", "date": "2026-07-29", "ym": "2026-07", "dow": 2, "hour": 22, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/DbZKg9BERnu/", "caption": "🏆🇮🇹 ¡Felicidades! 🇮🇹⚽\n\nCon mucho orgullo anunciamos que Santiago Pérez es el ganador de la Juventus Experience Italy de nuestra edición Mérida.\n\nDurante toda la semana demostró compromiso, disciplina, actitud y pasión por el fútbol, cualidades que lo hicieron destacar dentro y fuera de la cancha.\n\nAhora le espera una experiencia inolvidable en Italia, donde tendrá la oportunidad de seguir creciendo junto a uno de los clubes más importantes del mundo.\n\n¡Enhorabuena, Santiago! Todo el equipo de Juventus Training Camp México te desea el mayor de los éxitos en esta increíble aventura. ¡Estamos seguros de que representarás a México con mucho orgullo! ⚫⚪🇲🇽\n\n#juventustrainingcamp #juventusexperience #forzajuve🏳️🏴 #mérida", "caption_short": "🏆🇮🇹 ¡Felicidades! 🇮🇹⚽\n\nCon mucho orgullo anunciamos que Santiago Pérez es el ganador de la Juventus Experience Italy de ", "topic": "Programa / Horarios", "views": 6149, "reach": 2027, "likes": 88, "comments": 8, "saved": 1, "shares": 19, "interactions": 122, "er_reach": 6.02, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18022770140886490.jpg", "thumb_note": null, "like_count_scrape": 88, "likes_discrepancy": null}, {"id": "18363150166214390", "date": "2026-08-02", "ym": "2026-08", "dow": 6, "hour": 22, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/Dbjhh4lj7Uf/", "caption": "✨ El talento sigue brillando en el Juventus Training Camp. ⚫⚪🇮🇹\n\nHoy reconocemos a Enrique Baranda, ganador de la Juventus Experience Italy en nuestra sede Ciudad de México. 🏆\n\nSu compromiso, actitud y desempeño a lo largo del campamento lo hicieron acreedor a esta increíble oportunidad de representar a México y vivir una experiencia única junto a Juventus en Italia. 🇮🇹⚽\n\nEstamos muy orgullosos de todo el esfuerzo que demostró durante esta semana y emocionados por verlo dar este gran paso.\n\n¡Muchas felicidades, Enrique! Disfruta cada momento de esta gran aventura. 💛\n\n#juventustrainingcamp #juventusexperienceitaly #forzajuventus #cdmx", "caption_short": "✨ El talento sigue brillando en el Juventus Training Camp. ⚫⚪🇮🇹\n\nHoy reconocemos a Enrique Baranda, ganador de la Juvent", "topic": "Programa / Horarios", "views": 4610, "reach": 1698, "likes": 68, "comments": 4, "saved": 2, "shares": 11, "interactions": 88, "er_reach": 5.18, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18363150166214390.jpg", "thumb_note": null, "like_count_scrape": 68, "likes_discrepancy": null}, {"id": "18174346120382349", "date": "2026-08-07", "ym": "2026-08", "dow": 4, "hour": 16, "type": "CAROUSEL_ALBUM", "permalink": "https://www.instagram.com/p/Dbvs9ikji8Q/", "caption": "🏆⚫ ¡Un nuevo talento emprenderá el camino hacia Italia! 🇮🇹⚪\n\n¡Muchas felicidades Valentín García! 🎉, ganador de la Juventus Experience Italy en nuestra sede de Guadalajara. 🇲🇽✈️🇮🇹\n\nSu compromiso, entrega y desempeño durante el Juventus Training Camp lo hicieron destacar entre los participantes, ganándose la oportunidad de vivir una experiencia única junto a uno de los clubes más importantes del mundo.\n\nEstamos seguros de que representará a México con pasión y dejará huella en esta gran aventura.\n\n¡Muchas felicidades, Valentín! Todo el equipo de Juventus Training Camp México te desea el mayor de los éxitos. ¡Disfruta cada instante de esta increíble experiencia! 🖤🤍\n\n#juventustrainingcamp #juventusexperienceitaly #juventus #guadalajara #forzajuve", "caption_short": "🏆⚫ ¡Un nuevo talento emprenderá el camino hacia Italia! 🇮🇹⚪\n\n¡Muchas felicidades Valentín García! 🎉, ganador de la Juven", "topic": "Programa / Horarios", "views": 6365, "reach": 2538, "likes": 94, "comments": 12, "saved": 2, "shares": 13, "interactions": 124, "er_reach": 4.89, "thumb": "Cuentas/juventuscampsmx/dashboard_assets/thumbs/18174346120382349.jpg", "thumb_note": null, "like_count_scrape": 94, "likes_discrepancy": null}], "monthly": [{"posts": 1, "VIDEO": 1, "CAROUSEL_ALBUM": 0, "IMAGE": 0, "views": 4671, "reach": 3815, "likes": 77, "comments": 1, "saved": 8, "shares": 35, "interactions": 121, "ym": "2025-02", "er_reach": 3.17, "views_per_post": 4671}, {"posts": 4, "VIDEO": 2, "CAROUSEL_ALBUM": 1, "IMAGE": 1, "views": 44421, "reach": 20438, "likes": 194, "comments": 18, "saved": 43, "shares": 148, "interactions": 405, "ym": "2025-03", "er_reach": 1.98, "views_per_post": 11105}, {"posts": 3, "VIDEO": 2, "CAROUSEL_ALBUM": 1, "IMAGE": 0, "views": 27922, "reach": 11785, "likes": 127, "comments": 0, "saved": 6, "shares": 53, "interactions": 186, "ym": "2025-04", "er_reach": 1.58, "views_per_post": 9307}, {"posts": 4, "VIDEO": 2, "CAROUSEL_ALBUM": 1, "IMAGE": 1, "views": 33775, "reach": 13537, "likes": 189, "comments": 18, "saved": 24, "shares": 60, "interactions": 294, "ym": "2025-05", "er_reach": 2.17, "views_per_post": 8444}, {"posts": 2, "VIDEO": 1, "CAROUSEL_ALBUM": 0, "IMAGE": 1, "views": 15747, "reach": 6242, "likes": 56, "comments": 5, "saved": 12, "shares": 7, "interactions": 80, "ym": "2025-06", "er_reach": 1.28, "views_per_post": 7874}, {"posts": 4, "VIDEO": 1, "CAROUSEL_ALBUM": 3, "IMAGE": 0, "views": 34829, "reach": 11696, "likes": 366, "comments": 14, "saved": 13, "shares": 31, "interactions": 424, "ym": "2025-07", "er_reach": 3.63, "views_per_post": 8707}, {"posts": 2, "VIDEO": 1, "CAROUSEL_ALBUM": 1, "IMAGE": 0, "views": 19419, "reach": 9970, "likes": 261, "comments": 18, "saved": 22, "shares": 28, "interactions": 331, "ym": "2025-08", "er_reach": 3.32, "views_per_post": 9710}, {"posts": 2, "VIDEO": 1, "CAROUSEL_ALBUM": 0, "IMAGE": 1, "views": 7101, "reach": 4750, "likes": 32, "comments": 4, "saved": 8, "shares": 11, "interactions": 56, "ym": "2026-04", "er_reach": 1.18, "views_per_post": 3550}, {"posts": 2, "VIDEO": 1, "CAROUSEL_ALBUM": 0, "IMAGE": 1, "views": 8154, "reach": 5996, "likes": 66, "comments": 16, "saved": 9, "shares": 21, "interactions": 113, "ym": "2026-05", "er_reach": 1.88, "views_per_post": 4077}, {"posts": 2, "VIDEO": 2, "CAROUSEL_ALBUM": 0, "IMAGE": 0, "views": 6079, "reach": 4981, "likes": 55, "comments": 3, "saved": 5, "shares": 33, "interactions": 101, "ym": "2026-06", "er_reach": 2.03, "views_per_post": 3040}, {"posts": 6, "VIDEO": 3, "CAROUSEL_ALBUM": 1, "IMAGE": 2, "views": 39865, "reach": 19851, "likes": 400, "comments": 25, "saved": 23, "shares": 89, "interactions": 558, "ym": "2026-07", "er_reach": 2.81, "views_per_post": 6644}, {"posts": 2, "VIDEO": 0, "CAROUSEL_ALBUM": 2, "IMAGE": 0, "views": 10975, "reach": 4236, "likes": 162, "comments": 16, "saved": 4, "shares": 24, "interactions": 212, "ym": "2026-08", "er_reach": 5.0, "views_per_post": 5488}], "by_format": [{"type": "CAROUSEL_ALBUM", "n": 10, "pct_of_posts": 29.4, "views_total": 96053, "views_avg": 9605, "reach_total": 31618, "reach_avg": 3162, "likes_total": 865, "likes_avg": 86.5, "comments_total": 40, "comments_avg": 4.0, "saved_total": 59, "saved_avg": 5.9, "shares_total": 156, "shares_avg": 15.6, "interactions_total": 1135, "interactions_avg": 114, "views_median": 9108, "er_reach": 3.59}, {"type": "IMAGE", "n": 7, "pct_of_posts": 20.6, "views_total": 71205, "views_avg": 10172, "reach_total": 29384, "reach_avg": 4198, "likes_total": 348, "likes_avg": 49.71, "comments_total": 55, "comments_avg": 7.86, "saved_total": 57, "saved_avg": 8.14, "shares_total": 138, "shares_avg": 19.71, "interactions_total": 608, "interactions_avg": 87, "views_median": 10990, "er_reach": 2.07}, {"type": "VIDEO", "n": 17, "pct_of_posts": 50.0, "views_total": 85700, "views_avg": 5041, "reach_total": 56295, "reach_avg": 3311, "likes_total": 772, "likes_avg": 45.41, "comments_total": 43, "comments_avg": 2.53, "saved_total": 61, "saved_avg": 3.59, "shares_total": 246, "shares_avg": 14.47, "interactions_total": 1138, "interactions_avg": 67, "views_median": 3859, "er_reach": 2.02}], "by_topic": [{"topic": "Otros / No clasificable", "n": 22, "views_avg": 8363, "views_median": 6600, "reach_avg": 3769, "likes_avg": 56.5, "shares_avg": 17.0, "saved_avg": 5.45, "er_reach": 2.21}, {"topic": "Programa / Horarios", "n": 12, "views_avg": 5747, "views_median": 5010, "reach_avg": 2865, "likes_avg": 61.9, "shares_avg": 13.83, "saved_avg": 4.75, "er_reach": 3.04}], "by_dow": [{"dow": "Lunes", "n": 7, "views_avg": 8370, "views_median": 5873, "er_reach": 2.8}, {"dow": "Martes", "n": 4, "views_avg": 10953, "views_median": 11914, "er_reach": 1.73}, {"dow": "Miercoles", "n": 14, "views_avg": 6004, "views_median": 4879, "er_reach": 2.5}, {"dow": "Jueves", "n": 5, "views_avg": 7787, "views_median": 4757, "er_reach": 2.08}, {"dow": "Viernes", "n": 3, "views_avg": 7653, "views_median": 6365, "er_reach": 2.82}, {"dow": "Sabado", "n": 0, "views_avg": 0, "views_median": 0, "er_reach": 0}, {"dow": "Domingo", "n": 1, "views_avg": 4610, "views_median": 4610, "er_reach": 5.18}], "by_hour": [{"hour_utc": 1, "hour_miami": 21, "n": 2, "views_avg": 7240, "views_median": 7240}, {"hour_utc": 14, "hour_miami": 10, "n": 1, "views_avg": 9079, "views_median": 9079}, {"hour_utc": 15, "hour_miami": 11, "n": 2, "views_avg": 5300, "views_median": 5300}, {"hour_utc": 16, "hour_miami": 12, "n": 7, "views_avg": 8404, "views_median": 9138}, {"hour_utc": 17, "hour_miami": 13, "n": 6, "views_avg": 11800, "views_median": 12324}, {"hour_utc": 18, "hour_miami": 14, "n": 4, "views_avg": 7757, "views_median": 7056}, {"hour_utc": 19, "hour_miami": 15, "n": 5, "views_avg": 5666, "views_median": 4757}, {"hour_utc": 20, "hour_miami": 16, "n": 2, "views_avg": 4990, "views_median": 4990}, {"hour_utc": 21, "hour_miami": 17, "n": 1, "views_avg": 2993, "views_median": 2993}, {"hour_utc": 22, "hour_miami": 18, "n": 2, "views_avg": 5380, "views_median": 5380}, {"hour_utc": 23, "hour_miami": 19, "n": 2, "views_avg": 3040, "views_median": 3040}], "rankings": {"views": ["18470237611129374", "18058851380085246", "17887894824232518", "18021035309674375", "18042265622568303", "18143290255371231", "17859993240422080", "18047523599570151", "17933994375061933", "18378241222125052", "18314001004214071", "18025436801418648", "18037069913265432", "18047845097267754", "18174346120382349", "18022770140886490", "18047515754559791", "18141328651545414", "18101286587090733", "18510829504039730"], "reach": ["18470237611129374", "17887894824232518", "18058851380085246", "18021035309674375", "18025436801418648", "18047845097267754", "18143290255371231", "18042265622568303", "18490889719053813", "18505330279004954", "18510829504039730", "18101286587090733", "18032957597553845", "17859993240422080", "18047515754559791", "18314001004214071", "18103068055523855", "18378241222125052", "18047523599570151", "17933994375061933"], "likes": ["18470237611129374", "18143290255371231", "18047515754559791", "18047845097267754", "17859993240422080", "18174346120382349", "18022770140886490", "17933994375061933", "18378241222125052", "18314001004214071", "18490889719053813", "18363150166214390", "18021035309674375", "18025436801418648", "18037069913265432", "18058851380085246", "18109392899068201", "18101162255231506", "17887894824232518", "18103068055523855"], "comments": ["18021035309674375", "18047845097267754", "18101286587090733", "18174346120382349", "18047515754559791", "18042265622568303", "18470237611129374", "18022770140886490", "17859993240422080", "18047523599570151", "18143290255371231", "17929025832292663", "18141328651545414", "18018289775697113", "18363150166214390", "18505330279004954", "18103068055523855", "18378241222125052", "18314001004214071", "18166128283413072"], "shares": ["18058851380085246", "18021035309674375", "17887894824232518", "18490889719053813", "18094350788522144", "18025436801418648", "18042265622568303", "18470237611129374", "17859993240422080", "18101286587090733", "18109392899068201", "18022770140886490", "18047515754559791", "18047845097267754", "18141328651545414", "17882674389269521", "18143290255371231", "18174346120382349", "18363150166214390", "18103068055523855"], "saved": ["18021035309674375", "18058851380085246", "18143290255371231", "17859993240422080", "18047523599570151", "18314001004214071", "18490889719053813", "18047845097267754", "18470237611129374", "18042265622568303", "18103068055523855", "18018289775697113", "18025436801418648", "18101286587090733", "18141328651545414", "18166128283413072", "18071782592290831", "17929025832292663", "17887894824232518", "18510829504039730"], "er_reach": ["18022770140886490", "18363150166214390", "17859993240422080", "18174346120382349", "18047515754559791", "18143290255371231", "17933994375061933", "18378241222125052", "18490889719053813", "18047845097267754", "18314001004214071", "18109392899068201", "18094350788522144", "18101162255231506", "18021035309674375", "18141328651545414", "18037069913265432", "18470237611129374", "18018289775697113", "18101286587090733"], "views_video": ["17887894824232518", "18025436801418648", "18047845097267754", "18047515754559791", "18510829504039730", "18490889719053813", "18505330279004954", "18103068055523855", "18032957597553845", "18109392899068201", "17882674389269521", "17929025832292663", "18094350788522144", "17891391900483333", "18166128283413072", "18101162255231506", "18018289775697113"], "views_carousel": ["18058851380085246", "18143290255371231", "17859993240422080", "17933994375061933", "18378241222125052", "18314001004214071", "18037069913265432", "18174346120382349", "18022770140886490", "18363150166214390"], "views_image": ["18470237611129374", "18021035309674375", "18042265622568303", "18047523599570151", "18141328651545414", "18101286587090733", "18071782592290831"]}, "year_compare": {"y1": {"posts": 20, "views": 180784, "reach": 77483, "likes": 1270, "comments": 74, "saved": 128, "shares": 362, "interactions": 1841, "views_avg": 9039, "er_reach": 2.38, "videos": 10, "carousels": 7, "images": 3}, "y2": {"posts": 14, "views": 72174, "reach": 39814, "likes": 715, "comments": 64, "saved": 49, "shares": 178, "interactions": 1040, "views_avg": 5155, "er_reach": 2.61, "videos": 7, "carousels": 3, "images": 4}, "y1_label": "2025-02-27 a 2025-08-07", "y2_label": "2025-08-08 a 2026-08-07"}, "demographics": {"age": [{"key": "35-44", "value": 1223}, {"key": "25-34", "value": 737}, {"key": "45-54", "value": 579}, {"key": "18-24", "value": 424}, {"key": "55-64", "value": 58}, {"key": "13-17", "value": 53}, {"key": "65+", "value": 35}], "gender": [{"key": "M", "value": 1376}, {"key": "F", "value": 1303}, {"key": "U", "value": 430}], "city": [{"key": "Mexico City, Distrito Federal", "value": 359}, {"key": "Cancún, Quintana Roo", "value": 204}, {"key": "Zapopan, Jalisco", "value": 193}, {"key": "Monterrey, Nuevo León", "value": 109}, {"key": "Mérida, Yucatán", "value": 106}, {"key": "Puebla, Puebla", "value": 94}, {"key": "Guadalajara, Jalisco", "value": 92}, {"key": "Veracruz, Veracruz", "value": 63}, {"key": "Alvarado, Veracruz", "value": 41}, {"key": "Villahermosa, Tabasco", "value": 38}, {"key": "Boca del Río, Veracruz", "value": 37}, {"key": "Tlajomulco de Zúñiga, Jalisco", "value": 29}, {"key": "San Pedro Garza Garcia , Nuevo León", "value": 29}, {"key": "Ciudad del Carmen, Campeche", "value": 28}, {"key": "Garcia, Nuevo León", "value": 25}, {"key": "Guadalupe, Nuevo León", "value": 24}, {"key": "Apodaca, Nuevo León", "value": 23}, {"key": "Tlaquepaque, Jalisco", "value": 23}, {"key": "Santa Catarina, Nuevo León", "value": 22}, {"key": "Tonalá, Jalisco", "value": 21}, {"key": "La Venta del Astillero, Jalisco", "value": 20}, {"key": "Naucalpan, State of Mexico", "value": 20}, {"key": "López Mateos, State of Mexico", "value": 19}, {"key": "San Francisco de Campeche, Campeche", "value": 19}, {"key": "Culiacán, Sinaloa", "value": 18}, {"key": "Nuevo México, Jalisco", "value": 17}, {"key": "Conkal, Yucatán", "value": 16}, {"key": "Toluca, State of Mexico", "value": 16}, {"key": "Medellín, Veracruz", "value": 15}, {"key": "Ocotlán, Jalisco", "value": 15}, {"key": "El Cedro, Tabasco", "value": 15}, {"key": "San Nicolás de los Garza, Nuevo León", "value": 15}, {"key": "Tlaxcalancingo, Puebla", "value": 14}, {"key": "Komchén, Yucatán", "value": 14}, {"key": "Coatzacoalcos, Veracruz", "value": 14}, {"key": "Chihuahua, Chihuahua", "value": 13}, {"key": "General Escobedo, Nuevo León", "value": 13}, {"key": "Santiago, Nuevo León", "value": 13}, {"key": "León, Guanajuato", "value": 13}, {"key": "Tehuacán, Puebla", "value": 13}, {"key": "Córdoba, Veracruz", "value": 12}, {"key": "Orizaba, Veracruz", "value": 12}, {"key": "Ecatepec de Morelos, State of Mexico", "value": 11}, {"key": "Chablekal, Yucatán", "value": 11}, {"key": "Chetumal, Quintana Roo", "value": 11}], "country": [{"key": "MX", "value": 2965}, {"key": "US", "value": 74}, {"key": "IT", "value": 22}, {"key": "VE", "value": 8}, {"key": "AR", "value": 7}, {"key": "ES", "value": 5}, {"key": "CA", "value": 5}, {"key": "GT", "value": 3}, {"key": "DO", "value": 2}, {"key": "CO", "value": 2}, {"key": "BR", "value": 2}, {"key": "PK", "value": 2}, {"key": "DE", "value": 1}, {"key": "JP", "value": 1}, {"key": "MT", "value": 1}, {"key": "HR", "value": 1}, {"key": "BO", "value": 1}, {"key": "TC", "value": 1}, {"key": "QA", "value": 1}, {"key": "PA", "value": 1}, {"key": "CU", "value": 1}, {"key": "ID", "value": 1}, {"key": "NL", "value": 1}, {"key": "BA", "value": 1}]}, "account_monthly": [{"since": "2024-10-10", "until": "2024-11-09", "reach": 34, "profile_views": 0, "website_clicks": 0}, {"since": "2024-11-09", "until": "2024-12-09", "reach": 30, "profile_views": 0, "website_clicks": 0}, {"since": "2024-12-09", "until": "2025-01-08", "reach": 37, "profile_views": 0, "website_clicks": 0}, {"since": "2025-01-08", "until": "2025-02-07", "reach": 25, "profile_views": 0, "website_clicks": 0}, {"since": "2025-02-07", "until": "2025-03-09", "reach": 189808, "profile_views": 0, "website_clicks": 0}, {"since": "2025-03-09", "until": "2025-04-08", "reach": 213345, "profile_views": 0, "website_clicks": 0}, {"since": "2025-04-08", "until": "2025-05-08", "reach": 175907, "profile_views": 0, "website_clicks": 0}, {"since": "2025-05-08", "until": "2025-06-07", "reach": 227809, "profile_views": 0, "website_clicks": 0}, {"since": "2025-06-07", "until": "2025-07-07", "reach": 164512, "profile_views": 0, "website_clicks": 0}, {"since": "2025-07-07", "until": "2025-08-06", "reach": 114805, "profile_views": 0, "website_clicks": 0}, {"since": "2025-08-06", "until": "2025-09-05", "reach": 2170, "profile_views": 0, "website_clicks": 0}, {"since": "2025-09-05", "until": "2025-10-05", "reach": 137, "profile_views": 0, "website_clicks": 0}, {"since": "2025-10-05", "until": "2025-11-04", "reach": 74, "profile_views": 0, "website_clicks": 0}, {"since": "2025-11-04", "until": "2025-12-04", "reach": 71, "profile_views": 0, "website_clicks": 0}, {"since": "2025-12-04", "until": "2026-01-03", "reach": 66, "profile_views": 0, "website_clicks": 0}, {"since": "2026-01-03", "until": "2026-02-02", "reach": 89, "profile_views": 0, "website_clicks": 0}, {"since": "2026-02-02", "until": "2026-03-04", "reach": 196411, "profile_views": 0, "website_clicks": 0}, {"since": "2026-03-04", "until": "2026-04-03", "reach": 300774, "profile_views": 0, "website_clicks": 0}, {"since": "2026-04-03", "until": "2026-05-03", "reach": 452867, "profile_views": 0, "website_clicks": 0}, {"since": "2026-05-03", "until": "2026-06-02", "reach": 219356, "profile_views": 0, "website_clicks": 0}, {"since": "2026-06-02", "until": "2026-07-02", "reach": 416928, "profile_views": 0, "website_clicks": 0}, {"since": "2026-07-02", "until": "2026-08-01", "reach": 502890, "profile_views": 0, "website_clicks": 0}, {"since": "2026-08-01", "until": "2026-08-31", "reach": 6025, "profile_views": 0, "website_clicks": 0}, {"since": "2026-08-31", "until": "2026-09-30", "reach": 289, "profile_views": 0, "website_clicks": 0}], "audit": {"total_records": 34, "unique_ids": 34, "duplicates": 0, "insights_coverage": {"views": 100.0, "reach": 100.0, "likes": 100.0, "comments": 100.0, "saved": 100.0, "shares": 100.0}, "thumbs_ok": 31, "thumbs_missing": 3, "permalink_missing": 0, "likes_discrepancies": 0, "likes_discrepancy_detail": [], "reach_gt_views": 0, "views_zero": 0, "account_monthly_errors": [], "demographics_errors": []}, "topic_rules": [{"name": "Fichaje / Logro individual", "pattern": "\\b(transfer|joins|called up|signs|commit|new chapter|congratulations|proud to announce)\\b"}, {"name": "Torneo / Juve Cup", "pattern": "\\b(juve cup|tournament|cup|champions|finals?|classic|legends)\\b"}, {"name": "Convocatoria / Tryouts", "pattern": "\\b(tryout|tryouts|registration|register|enroll|sign up|spots?|join us|inscri)\\b"}, {"name": "Programa / Horarios", "pattern": "\\b(pre-?academy|program|clinic|camp|schedule|season)\\b"}, {"name": "Partido / Resultado", "pattern": "\\b(match|game|vs\\.?|win|won|victory|defeat|result|goal)\\b"}, {"name": "Testimonio / Entrevista", "pattern": "\\b(interview|story|testimonial|meet|coach|welcome)\\b"}, {"name": "Comunidad / Celebracion", "pattern": "\\b(family|thanksgiving|christmas|holiday|gathering|celebrat|mom|dad|birthday)\\b"}]}</script>
+<script>
+window.__initJam_juventuscampsmx = (function(){
+  var done = false;
+  return function(){
+    if(done) return; done = true;
+function isEn(){return !!(window.I18N && window.I18N.lang==='en')}
+function L(es,en){return isEn()?en:es}
+const F=n=>n==null?(isEn()?'n/a':'n/d'):n>=1e6?(n/1e6).toFixed(2)+'M':n>=1e4?(n/1e3).toFixed(1)+'k':n.toLocaleString(isEn()?'en':'es');
+const FF=n=>n==null?(isEn()?'n/a':'n/d'):n.toLocaleString(isEn()?'en':'es');
+const TL=()=>isEn()?{VIDEO:'Reel / Video',CAROUSEL_ALBUM:'Carousel',IMAGE:'Image'}:{VIDEO:'Reel / Video',CAROUSEL_ALBUM:'Carrusel',IMAGE:'Imagen'};
+const TS=()=>isEn()?{VIDEO:'Reel',CAROUSEL_ALBUM:'Carousel',IMAGE:'Image'}:{VIDEO:'Reel',CAROUSEL_ALBUM:'Carrusel',IMAGE:'Imagen'};
+const MN_ES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const MN_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MN=()=>isEn()?MN_EN:MN_ES;
+const fym=s=>{const[y,m]=s.split('-');return MN()[+m-1]+' '+y.slice(2)};
+const fd=s=>{const[y,m,d]=s.split('-');return d+' '+MN()[+m-1]+' '+y};
+const ACC='#FEF200',BLU='#6295EA',GRN='#46B877',ORG='#F0AC3A',RED='#EC6A52',PUR='#A88BE0';
+let D=null;
+
+Chart.defaults.color='#8D9297';
+Chart.defaults.font.family="'Inter',system-ui,-apple-system,sans-serif";
+Chart.defaults.font.size=11;
+Chart.defaults.font.weight=500;
+Chart.defaults.borderColor='#232830';
+Chart.defaults.font.family="-apple-system,'Segoe UI',Inter,Arial,sans-serif";
+Chart.defaults.font.size=11;
+Chart.defaults.plugins.legend.labels.usePointStyle=true;
+Chart.defaults.plugins.legend.labels.boxWidth=7;
+
+const gopt=(extra={})=>Object.assign({
+  responsive:true,maintainAspectRatio:false,
+  plugins:{legend:{labels:{padding:13}},
+    tooltip:{backgroundColor:'#1F2327',borderColor:'#232830',borderWidth:1,padding:11,
+      titleColor:'#F4F4F2',bodyColor:'#8D9297',displayColors:true,boxPadding:4}},
+  scales:{x:{grid:{display:false},ticks:{maxRotation:55,minRotation:0}},
+    y:{grid:{color:'rgba(40,44,53,.5)'},ticks:{callback:v=>F(v)},beginAtZero:true}}
+},extra);
+
+/* Destroys any existing Chart.js instance bound to a canvas before drawing a
+   new one, so re-running build() on a language switch doesn't throw
+   "Canvas is already in use". */
+function mkChart(canvasId,cfg){
+  const el=document.getElementById(canvasId);
+  const prev=Chart.getChart(el);
+  if(prev)prev.destroy();
+  return new Chart(el,cfg);
+}
+
+/* ---------- LIGHTBOX ---------- */
+const lb=document.getElementById('juventuscampsmx-lb'),lbi=document.getElementById('juventuscampsmx-lbi');
+function zoom(src){lbi.src=src;lb.classList.add('on')}
+lb.onclick=()=>lb.classList.remove('on');
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+
+/* ---------- RANKING CARD ---------- */
+function card(p,i,metric){
+  const M=isEn()?{views:['Views','views'],reach:['Reach','reach'],likes:['Likes','likes'],
+    comments:['Comments','comments'],shares:['Shares','shares'],
+    saved:['Saves','saved'],er_reach:['ER on reach','er_reach']}
+   :{views:['Views','views'],reach:['Alcance','reach'],likes:['Likes','likes'],
+    comments:['Comentarios','comments'],shares:['Compartidos','shares'],
+    saved:['Guardados','saved'],er_reach:['ER sobre alcance','er_reach']};
+  const key=metric.startsWith('views_')?'views':metric;
+  const[lab,f]=M[key]||M.views;
+  const val=f==='er_reach'?(p.er_reach!=null?p.er_reach+'%':L('n/d','n/a')):FF(p[f]);
+  const th=p.thumb
+    ?`<img src="${p.thumb}" alt="" onclick="zoom('${p.thumb}')">`
+    :`<div class="noimg">${L('Vista previa<br>no disponible','Preview<br>not available')}</div>`;
+  const play=p.type==='VIDEO'&&p.thumb?`<div class="play"><span>▶</span></div>`:'';
+  const btn=p.permalink
+    ?`<a class="btn" href="${p.permalink}" target="_blank" rel="noopener">${p.type==='VIDEO'?L('▶ Ver Reel en Instagram','▶ View Reel on Instagram'):L('Ver publicación','View post')}</a>`
+    :`<span class="btn off">${L('Enlace no disponible','Link not available')}</span>`;
+  const cap=p.caption_short?p.caption_short.replace(/</g,'&lt;'):`<em style="opacity:.55">${L('Sin caption','No caption')}</em>`;
+  return `<div class="rc">
+    <div class="rc-th"><div class="pos">#${i+1}</div><div class="fmt">${TS()[p.type]}</div>${th}${play}</div>
+    <div class="rc-b">
+      <div><div class="big">${val}<small>${lab}</small></div></div>
+      <div class="mrow">
+        <span><i>Views</i><b>${F(p.views)}</b></span><span><i>Alcance</i><b>${F(p.reach)}</b></span>
+        <span><i>Likes</i><b>${FF(p.likes)}</b></span><span><i>Coment.</i><b>${FF(p.comments)}</b></span>
+        <span><i>Compart.</i><b>${FF(p.shares)}</b></span><span><i>Guard.</i><b>${FF(p.saved)}</b></span>
+      </div>
+      <div class="meta"><span>${fd(p.date)}</span><span class="tp">${p.topic}</span>
+        ${p.er_reach!=null?`<span>ER ${p.er_reach}%</span>`:''}</div>
+      <div class="cap">${cap}</div>${btn}
+    </div></div>`;
+}
+
+/* ---------- INIT ---------- */
+D=JSON.parse(document.getElementById("dash-data-juventuscampsmx").textContent);build();
+if (window.I18N && window.I18N.onChange) { window.I18N.onChange(function(){ build(); }); }
+
+function build(){
+  const P={};D.posts.forEach(p=>P[p.id]=p);
+  const T=D.totals,n=D.period.n_posts;
+  const med=k=>{const a=D.posts.map(p=>p[k]).filter(v=>v!=null).sort((x,y)=>x-y);
+    return a.length?Math.round(a[Math.floor(a.length/2)]):null};
+
+  document.getElementById('juventuscampsmx-hdr-sub').innerHTML=isEn()?
+    `<strong>${FF(D.account.followers)} followers</strong> · Period analyzed:
+     <strong>${fd(D.period.start)} → ${fd(D.period.end)}</strong> (24 months, ${n} posts)
+     · Extracted: ${new Date(D.period.extracted_at).toLocaleString('en')}
+     · Source: official Meta API`
+    :`<strong>${FF(D.account.followers)} seguidores</strong> · Período analizado:
+     <strong>${fd(D.period.start)} → ${fd(D.period.end)}</strong> (24 meses, ${n} publicaciones)
+     · Extracción: ${new Date(D.period.extracted_at).toLocaleString('es')}
+     · Fuente: API oficial de Meta`;
+
+  /* ---- KPI principales ---- */
+  const dem=D.demographics,sum=a=>(a||[]).reduce((s,x)=>s+x.value,0);
+  const yc=D.year_compare,chg=(a,b)=>a?((b-a)/a*100):null;
+  const arrow=v=>v==null?'':`<span class="${v>=0?'up':'dn'}">${v>=0?'▲':'▼'} ${Math.abs(v).toFixed(1)}%</span>`;
+
+  const K=[
+    [L('Seguidores','Followers'),FF(D.account.followers),L('Total actual — sin serie histórica','Current total — no historical series'),'hl'],
+    [L('Publicaciones','Posts'),FF(n),`${yc.y1.posts} → ${yc.y2.posts} ${arrow(chg(yc.y1.posts,yc.y2.posts))}`,''],
+    [L('Views totales','Total views'),F(T.views),`${L('Prom.','Avg.')} ${FF(Math.round(T.views/n))} · ${arrow(chg(yc.y1.views,yc.y2.views))}`,'hl'],
+    [L('Alcance total','Total reach'),F(T.reach),`${L('Prom.','Avg.')} ${FF(Math.round(T.reach/n))} · ${arrow(chg(yc.y1.reach,yc.y2.reach))}`,''],
+    [L('Likes','Likes'),FF(T.likes),`${L('Prom.','Avg.')} ${Math.round(T.likes/n)} · ${arrow(chg(yc.y1.likes,yc.y2.likes))}`,''],
+    [L('Comentarios','Comments'),FF(T.comments),`${L('Prom.','Avg.')} ${(T.comments/n).toFixed(1)} · ${arrow(chg(yc.y1.comments,yc.y2.comments))}`,''],
+    [L('Compartidos','Shares'),FF(T.shares),`${L('Prom.','Avg.')} ${(T.shares/n).toFixed(1)} · ${arrow(chg(yc.y1.shares,yc.y2.shares))}`,''],
+    [L('Guardados','Saves'),FF(T.saved),`${L('Prom.','Avg.')} ${(T.saved/n).toFixed(1)} · ${arrow(chg(yc.y1.saved,yc.y2.saved))}`,''],
+    [L('Interacciones','Interactions'),FF(T.interactions),`${L('Prom.','Avg.')} ${Math.round(T.interactions/n)}`,''],
+    [L('ER sobre alcance','ER on reach'),(T.interactions/T.reach*100).toFixed(2)+'%',L('interacciones / alcance','interactions / reach'),'hl'],
+    [L('Reels / Videos','Reels / Videos'),FF(D.by_format.find(f=>f.type==='VIDEO').n),L('formato más publicado','most-published format'),''],
+    [L('Carruseles','Carousels'),FF(D.by_format.find(f=>f.type==='CAROUSEL_ALBUM').n),L('mejor rendimiento promedio','best average performance'),''],
+    [L('Imágenes','Images'),FF(D.by_format.find(f=>f.type==='IMAGE').n),'',''],
+    [L('Impresiones','Impressions'),L('No disponible','Not available'),L('Meta deprecó esta métrica','Meta deprecated this metric'),'na'],
+    [L('Crecimiento seguidores','Follower growth'),L('No disponible','Not available'),L('La API no entrega histórico','The API does not provide a historical series'),'na'],
+    [L('Historias','Stories'),L('No disponible','Not available'),L('Expiran a 24 h','Expire after 24h'),'na'],
+  ];
+  document.getElementById('juventuscampsmx-kpi-main').innerHTML=K.map(([k,v,m,c])=>
+    `<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m||'&nbsp;'}</div></div>`).join('');
+
+  /* ---- Tabla totales ---- */
+  const srcInsights=L('Meta · INSIGHTS','Meta · INSIGHTS'),srcNative=L('Meta · campo nativo','Meta · native field');
+  const TT=[[L('Views','Views'),'views',srcInsights],[L('Alcance','Reach'),'reach',srcInsights],
+    [L('Likes','Likes'),'likes',srcInsights],[L('Comentarios','Comments'),'comments',srcInsights],
+    [L('Compartidos','Shares'),'shares',srcInsights],[L('Guardados','Saves'),'saved',srcInsights],
+    [L('Interacciones totales','Total interactions'),'interactions',srcNative]];
+  document.querySelector('#juventuscampsmx-t-tot tbody').innerHTML=TT.map(([l,k,s])=>
+    `<tr><td><strong>${l}</strong></td><td class="num">${FF(T[k])}</td>
+     <td class="num">${FF(Math.round(T[k]/n))}</td><td class="num">${FF(med(k))}</td>
+     <td style="color:var(--txt3)">${s}</td></tr>`).join('');
+
+  /* ---- AUDIENCIA ---- */
+  const ages=dem.age||[],tA=sum(ages);
+  const gen=dem.gender||[],tG=sum(gen);
+  const cities=(dem.city||[]).slice().sort((a,b)=>b.value-a.value);
+  const ctry=(dem.country||[]).slice().sort((a,b)=>b.value-a.value);
+  const gv=k=>(gen.find(x=>x.key===k)||{}).value||0;
+  const p3554=ages.filter(a=>['35-44','45-54'].includes(a.key)).reduce((s,x)=>s+x.value,0);
+  const flUS=(ctry.find(c=>c.key==='US')||{}).value||0;
+  const flCities=cities.filter(c=>c.key.includes('Florida')).reduce((s,x)=>s+x.value,0);
+
+  document.getElementById('juventuscampsmx-kpi-aud').innerHTML=[
+    [L('Base demográfica','Demographic base'),FF(tA),L('seguidores con datos','followers with data'),'hl'],
+    [L('Edad dominante','Dominant age'),'35-44',`${(sum(ages.filter(a=>a.key==='35-44'))/tA*100).toFixed(1)}% ${L('del total','of total')}`,'hl'],
+    [L('35-54 años','Ages 35-54'),`${(p3554/tA*100).toFixed(1)}%`,L('franja de padres de familia','parent-age bracket'),'hl'],
+    [L('13-17 años','Ages 13-17'),`${(sum(ages.filter(a=>a.key==='13-17'))/tA*100).toFixed(1)}%`,L('franja de jugadores juveniles','youth-player age bracket'),''],
+    [L('Masculino','Male'),`${(gv('M')/tG*100).toFixed(1)}%`,FF(gv('M'))+L(' seguidores',' followers'),''],
+    [L('Femenino','Female'),`${(gv('F')/tG*100).toFixed(1)}%`,FF(gv('F'))+L(' seguidores',' followers'),''],
+    [L('No declarado','Undeclared'),`${(gv('U')/tG*100).toFixed(1)}%`,FF(gv('U'))+L(' — Meta no lo resuelve',' — Meta does not resolve this'),''],
+    [L('Ciudad principal','Top city'),cities[0].key.replace(', Florida',''),FF(cities[0].value)+L(' seguidores',' followers'),'hl'],
+    [L('Estados Unidos','United States'),`${(flUS/sum(ctry)*100).toFixed(1)}%`,FF(flUS)+L(' seguidores',' followers'),''],
+    [L('Concentración Florida','Florida concentration'),`${(flCities/tA*100).toFixed(1)}%`,L('de la base total, en ciudades de FL','of the total base, in FL cities'),'hl'],
+  ].map(([k,v,m,c])=>`<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m}</div></div>`).join('');
+
+  mkChart('juventuscampsmx-c-age',{type:'bar',
+    data:{labels:ages.map(a=>a.key),datasets:[{label:L('Seguidores','Followers'),data:ages.map(a=>a.value),
+      backgroundColor:ages.map(a=>['35-44','45-54'].includes(a.key)?ACC:'#4D5560'),borderRadius:4}]},
+    options:gopt({plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>
+      `${FF(c.parsed.y)} (${(c.parsed.y/tA*100).toFixed(1)}%)`}}}})});
+
+  mkChart('juventuscampsmx-c-gen',{type:'doughnut',
+    data:{labels:[L('Masculino','Male'),L('Femenino','Female'),L('No declarado','Undeclared')],
+      datasets:[{data:[gv('M'),gv('F'),gv('U')],backgroundColor:[BLU,'#A88BE0','#4D5560'],borderWidth:0}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'58%',
+      plugins:{legend:{position:'bottom',labels:{padding:13}},
+        tooltip:{callbacks:{label:c=>`${c.label}: ${FF(c.parsed)} (${(c.parsed/tG*100).toFixed(1)}%)`}}}}});
+
+  const c15=cities.slice(0,15);
+  mkChart('juventuscampsmx-c-city',{type:'bar',
+    data:{labels:c15.map(c=>c.key.replace(', Florida','').replace(', Capital District','')),
+      datasets:[{label:L('Seguidores','Followers'),data:c15.map(c=>c.value),
+        backgroundColor:c15.map(c=>c.key.includes('Florida')?ACC:'#4D5560'),borderRadius:4}]},
+    options:gopt({indexAxis:'y',plugins:{legend:{display:false}},
+      scales:{x:{ticks:{callback:v=>F(v)},grid:{color:'rgba(40,44,53,.5)'},beginAtZero:true},
+        y:{grid:{display:false}}}})});
+
+  const k12=ctry.slice(0,12);
+  mkChart('juventuscampsmx-c-ctry',{type:'bar',
+    data:{labels:k12.map(c=>c.key),datasets:[{label:L('Seguidores','Followers'),data:k12.map(c=>c.value),
+      backgroundColor:k12.map(c=>c.key==='US'?ACC:'#4D5560'),borderRadius:4}]},
+    options:gopt({plugins:{legend:{display:false}},scales:{y:{type:'logarithmic',
+      ticks:{callback:v=>F(v)}},x:{grid:{display:false}}}})});
+
+  document.getElementById('juventuscampsmx-t-city').innerHTML=cities.slice(0,20).map(c=>
+    `<tr><td>${c.key}</td><td class="num">${FF(c.value)}</td>
+     <td class="num">${(c.value/tA*100).toFixed(2)}%</td></tr>`).join('');
+
+  document.getElementById('juventuscampsmx-aud-read').innerHTML=isEn()?`
+    <div class="note g"><span class="pill dato">Data</span> <strong>56.1% of the audience is
+    between 35 and 54 years old</strong> (${FF(p3554)} of ${FF(tA)}), while the 13-17 bracket —the age
+    of the players— represents only 3.5%.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> The account isn't speaking to
+    kids: it's speaking to <strong>the parents who make the enrollment decision and pay</strong>. This
+    is consistent with a youth academy business and validates targeting ad spend at adults aged 30-55
+    rather than at the player's own age. It also implies that the content that works is probably the
+    kind a parent shares with pride, not the kind a teenager consumes.</div>
+    <div class="note g"><span class="pill dato">Data</span> <strong>Doral concentrates
+    ${FF(cities[0].value)} followers, ${(cities[0].value/cities[1].value).toFixed(1)}× more than Miami
+    (${FF(cities[1].value)})</strong>, despite being a much smaller city. Florida cities together add up
+    to ${(flCities/tA*100).toFixed(1)}% of the base.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> The audience is
+    <strong>hyperlocal</strong>, concentrated within the radius of the physical locations. The
+    ${(100-flUS/sum(ctry)*100).toFixed(1)}% international share (Venezuela, Brazil, Italy, Colombia) is
+    probably Juventus brand affinity rather than an actionable market. For enrollment ad spend, the
+    budget should be geographically concentrated, not spread thin.</div>
+    <div class="note"><span class="pill na">Caveat</span> 21.4% of followers have gender
+    "undeclared" (U) per Meta. The real male/female split could shift if those
+    5,604 followers were resolved.</div>`
+   :`
+    <div class="note g"><span class="pill dato">Dato</span> <strong>El 56,1% de la audiencia tiene
+    entre 35 y 54 años</strong> (${FF(p3554)} de ${FF(tA)}), mientras que la franja 13-17 —la edad de
+    los jugadores— representa solo el 3,5%.</div>
+    <div class="note w"><span class="pill interp">Interpretación</span> La cuenta no le habla a los
+    niños: le habla a <strong>los padres que toman la decisión de inscripción y pagan</strong>. Esto es
+    coherente con un negocio de academia juvenil y valida dirigir la pauta a adultos de 30-55 años en
+    lugar de a la edad del jugador. También implica que el contenido que funciona probablemente sea el
+    que un padre comparte con orgullo, no el que un adolescente consume.</div>
+    <div class="note g"><span class="pill dato">Dato</span> <strong>Doral concentra
+    ${FF(cities[0].value)} seguidores, ${(cities[0].value/cities[1].value).toFixed(1)}× más que Miami
+    (${FF(cities[1].value)})</strong>, a pesar de ser una ciudad mucho más pequeña. Las ciudades de
+    Florida suman el ${(flCities/tA*100).toFixed(1)}% de la base.</div>
+    <div class="note w"><span class="pill interp">Interpretación</span> La audiencia es
+    <strong>hiperlocal</strong>, concentrada en el radio de las sedes físicas. El
+    ${(100-flUS/sum(ctry)*100).toFixed(1)}% internacional (Venezuela, Brasil, Italia, Colombia) es
+    probablemente afinidad de marca Juventus más que mercado accionable. Para pauta de inscripciones,
+    el presupuesto debería concentrarse geográficamente, no dispersarse.</div>
+    <div class="note"><span class="pill na">Salvedad</span> El 21,4% de seguidores tiene género
+    "no declarado" (U) según Meta. La distribución real entre hombres y mujeres podría variar si esos
+    5.604 seguidores se resolvieran.</div>`;
+
+  /* ---- TEMÁTICAS ---- */
+  const tp=D.by_topic,mxT=Math.max(...tp.map(t=>t.views_avg)),mnT=Math.min(...tp.map(t=>t.views_avg));
+  document.querySelector('#juventuscampsmx-t-topic tbody').innerHTML=tp.map(t=>
+    `<tr><td><strong>${t.topic}</strong></td><td class="num">${t.n}</td>
+     <td class="num ${t.views_avg===mxT?'best':t.views_avg===mnT?'worst':''}">${FF(t.views_avg)}</td>
+     <td class="num">${FF(t.views_median)}</td><td class="num">${FF(t.reach_avg)}</td>
+     <td class="num">${t.likes_avg}</td><td class="num">${t.shares_avg}</td>
+     <td class="num">${t.saved_avg}</td><td class="num">${t.er_reach}%</td></tr>`).join('');
+
+  mkChart('juventuscampsmx-c-topic',{type:'bar',
+    data:{labels:tp.map(t=>t.topic),datasets:[
+      {label:L('Views promedio','Average views'),data:tp.map(t=>t.views_avg),backgroundColor:ACC,borderRadius:4},
+      {label:L('Views mediana','Median views'),data:tp.map(t=>t.views_median),backgroundColor:'#4D5560',borderRadius:4}]},
+    options:gopt({indexAxis:'y',scales:{x:{ticks:{callback:v=>F(v)},
+      grid:{color:'rgba(40,44,53,.5)'},beginAtZero:true},y:{grid:{display:false}}}})});
+
+  const conv=tp.find(t=>t.topic.includes('Convocatoria')),tor=tp.find(t=>t.topic.includes('Torneo'));
+  const fich=tp.find(t=>t.topic.includes('Fichaje'));
+  document.getElementById('juventuscampsmx-topic-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill dato">Data</span> <strong>"Convocatoria / Tryouts" content
+    is the second most-published topic (${conv.n} posts) but has the lowest ER of any
+    topic (${conv.er_reach}%)</strong>, versus ${tor.er_reach}% for Tournament/Juve Cup
+    and ${fich.er_reach}% for Signings.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> There's a mismatch between
+    effort and result: a lot of direct-recruitment content is published, and it's exactly the kind
+    that generates the least interaction per person reached. Achievement content (signings) and
+    event content (tournaments) engage more. <strong>The actionable read isn't to stop posting
+    tryout announcements, but to wrap them in achievement narrative</strong> instead of presenting
+    them as an administrative notice — which matches what was already observed in the visual-identity
+    analysis, where the "TRANSFER / CALLED UP" format is the best-performing one historically.</div>
+    <div class="note"><span class="pill na">Caveat</span> ${tp.find(t=>t.topic.includes('Otros')).n}
+    of ${n} posts (20%) went unclassified, and "Testimonio/Entrevista" only has
+    ${tp.find(t=>t.topic.includes('Testimonio')).n} cases — an insufficient sample for reliable
+    conclusions about that category.</div>`
+   :`
+    <div class="note d"><span class="pill dato">Dato</span> <strong>El contenido de
+    "Convocatoria / Tryouts" es el segundo más publicado (${conv.n} posts) pero tiene el ER más bajo
+    de todas las temáticas (${conv.er_reach}%)</strong>, frente al ${tor.er_reach}% de Torneo/Juve Cup
+    y el ${fich.er_reach}% de Fichajes.</div>
+    <div class="note w"><span class="pill interp">Interpretación</span> Hay un desajuste entre
+    esfuerzo y resultado: se publica mucho contenido de captación directa, y es justo el que menos
+    interacción genera por persona alcanzada. El contenido de logro (fichajes) y de evento
+    (torneos) engancha más. <strong>La lectura accionable no es dejar de publicar convocatorias,
+    sino envolverlas en narrativa de logro</strong> en lugar de presentarlas como anuncio
+    administrativo — lo cual coincide con lo ya observado en el análisis de línea gráfica, donde el
+    formato "TRANSFER / CALLED UP" es el de mejor desempeño histórico.</div>
+    <div class="note"><span class="pill na">Salvedad</span> ${tp.find(t=>t.topic.includes('Otros')).n}
+    de ${n} publicaciones (20%) quedaron sin clasificar, y "Testimonio/Entrevista" solo tiene
+    ${tp.find(t=>t.topic.includes('Testimonio')).n} casos — muestra insuficiente para conclusiones
+    fiables sobre esa categoría.</div>`;
+
+  /* ---- FORMATOS ---- */
+  const fm=D.by_format,mxA=Math.max(...fm.map(f=>f.views_avg)),mnA=Math.min(...fm.map(f=>f.views_avg));
+  document.querySelector('#juventuscampsmx-t-fmt tbody').innerHTML=fm.map(f=>
+    `<tr><td><strong>${TL()[f.type]}</strong></td><td class="num">${f.n}</td>
+     <td class="num">${f.pct_of_posts}%</td><td class="num">${FF(f.views_total)}</td>
+     <td class="num ${f.views_avg===mxA?'best':f.views_avg===mnA?'worst':''}">${FF(f.views_avg)}</td>
+     <td class="num">${FF(f.views_median)}</td><td class="num">${FF(f.reach_avg)}</td>
+     <td class="num">${f.likes_avg}</td><td class="num">${f.shares_avg}</td>
+     <td class="num">${f.saved_avg}</td><td class="num">${f.er_reach}%</td></tr>`).join('');
+
+  mkChart('juventuscampsmx-c-ft',{type:'bar',
+    data:{labels:fm.map(f=>TL()[f.type]),datasets:[{label:L('Views totales','Total views'),
+      data:fm.map(f=>f.views_total),backgroundColor:[BLU,GRN,ORG],borderRadius:4}]},
+    options:gopt({plugins:{legend:{display:false}}})});
+
+  mkChart('juventuscampsmx-c-fa',{type:'bar',
+    data:{labels:fm.map(f=>TL()[f.type]),datasets:[
+      {label:L('Views promedio','Average views'),data:fm.map(f=>f.views_avg),backgroundColor:ACC,borderRadius:4},
+      {label:L('Views mediana','Median views'),data:fm.map(f=>f.views_median),backgroundColor:'#4D5560',borderRadius:4}]},
+    options:gopt()});
+
+  const vid=fm.find(f=>f.type==='VIDEO'),car=fm.find(f=>f.type==='CAROUSEL_ALBUM'),img=fm.find(f=>f.type==='IMAGE');
+  document.getElementById('juventuscampsmx-fmt-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill dato">Data</span> <strong>Reels are the most-published
+    format (${vid.n} of ${n}, ${vid.pct_of_posts}%) and the worst-performing on average:
+    ${FF(vid.views_avg)} views per piece versus ${FF(car.views_avg)} for carousels</strong>
+    — carousels perform ${(car.views_avg/vid.views_avg).toFixed(1)}× better per post.
+    The median confirms the pattern (${FF(car.views_median)} vs ${FF(vid.views_median)}), so
+    it isn't an outlier effect.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> This is probably the
+    single most actionable finding in the report: <strong>there's an inverted allocation of
+    effort</strong>. The format that consumes the most production time (video) is receiving the
+    bulk of the volume and delivering the lowest return per piece. Looking only at total views,
+    reels and carousels look comparable; only the average reveals the real gap.</div>
+    <div class="note g"><span class="pill dato">Data</span> On engagement over reach the order
+    flips: carousel ${car.er_reach}% · reel ${vid.er_reach}% · image ${img.er_reach}%.
+    The carousel leads here too, and the single image —despite decent reach— is the one that
+    generates the least interaction proportionally.</div>
+    <div class="note"><span class="pill na">Measurement caveat</span> <code>views</code> does not
+    measure exactly the same thing on video (plays) as on image or carousel (post views).
+    The comparison is the one Meta provides, but it's worth reading alongside reach, which is
+    homogeneous: there the carousel also wins (${FF(car.reach_avg)} vs ${FF(vid.reach_avg)}).</div>`
+   :`
+    <div class="note d"><span class="pill dato">Dato</span> <strong>Los Reels son el formato más
+    publicado (${vid.n} de ${n}, ${vid.pct_of_posts}%) y el de peor rendimiento promedio:
+    ${FF(vid.views_avg)} views por pieza frente a ${FF(car.views_avg)} de los carruseles</strong>
+    — los carruseles rinden ${(car.views_avg/vid.views_avg).toFixed(1)}× más por publicación.
+    La mediana confirma el patrón (${FF(car.views_median)} vs ${FF(vid.views_median)}), así que no
+    es efecto de un outlier.</div>
+    <div class="note w"><span class="pill interp">Interpretación</span> Esta es probablemente la
+    conclusión más accionable del informe: <strong>hay una asignación invertida de esfuerzo</strong>.
+    El formato que consume más tiempo de producción (video) está recibiendo la mayor parte del
+    volumen y entregando el menor retorno por pieza. Si se mira solo el total de views, reels y
+    carruseles parecen comparables; solo el promedio revela la diferencia real.</div>
+    <div class="note g"><span class="pill dato">Dato</span> En engagement sobre alcance el orden
+    cambia: carrusel ${car.er_reach}% · reel ${vid.er_reach}% · imagen ${img.er_reach}%.
+    El carrusel lidera también aquí, y la imagen individual —pese a tener buen alcance— es la que
+    menos interacción genera proporcionalmente.</div>
+    <div class="note"><span class="pill na">Salvedad de medición</span> <code>views</code> no mide
+    exactamente lo mismo en video (reproducciones) que en imagen o carrusel (visualizaciones del
+    post). La comparación es la que entrega Meta, pero conviene leerla junto al alcance, que sí es
+    homogéneo: ahí el carrusel también gana (${FF(car.reach_avg)} vs ${FF(vid.reach_avg)}).</div>`;
+
+  /* ---- EVOLUCIÓN ---- */
+  const M=D.monthly,lbls=M.map(m=>fym(m.ym));
+  function drawEv(metric){
+    const isER=metric==='er_reach';
+    const metricLabels=isEn()?{views:'Views',reach:'Reach',likes:'Likes',
+        comments:'Comments',shares:'Shares',saved:'Saves',
+        interactions:'Interactions',er_reach:'ER %'}
+      :{views:'Views',reach:'Alcance',likes:'Likes',
+        comments:'Comentarios',shares:'Compartidos',saved:'Guardados',
+        interactions:'Interacciones',er_reach:'ER %'};
+    mkChart('juventuscampsmx-c-ev',{type:'line',
+      data:{labels:lbls,datasets:[{label:metricLabels[metric],
+        data:M.map(m=>m[metric]),borderColor:ACC,backgroundColor:'rgba(245,217,10,.11)',
+        fill:true,tension:.32,pointRadius:3,pointBackgroundColor:ACC,borderWidth:2.2}]},
+      options:gopt({scales:{x:{grid:{display:false}},
+        y:{beginAtZero:true,ticks:{callback:v=>isER?v+'%':F(v)},grid:{color:'rgba(40,44,53,.5)'}}},
+        plugins:{legend:{display:false},tooltip:{callbacks:{
+          label:c=>`${c.dataset.label}: ${isER?c.parsed.y+'%':FF(c.parsed.y)}`,
+          afterLabel:c=>`${M[c.dataIndex].posts} ${L('publicaciones ese mes','posts that month')}`}}}})});
+  }
+  let currentEvMetric='views';
+  drawEv(currentEvMetric);
+  document.querySelectorAll('#juventuscampsmx-tb-ev .tab').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('#juventuscampsmx-tb-ev .tab').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');currentEvMetric=b.dataset.m;drawEv(currentEvMetric)});
+
+  mkChart('juventuscampsmx-c-vol',{type:'bar',
+    data:{labels:lbls,datasets:[
+      {label:L('Reels','Reels'),data:M.map(m=>m.VIDEO),backgroundColor:BLU,borderRadius:4},
+      {label:L('Carruseles','Carousels'),data:M.map(m=>m.CAROUSEL_ALBUM),backgroundColor:GRN,borderRadius:4},
+      {label:L('Imágenes','Images'),data:M.map(m=>m.IMAGE),backgroundColor:ORG,borderRadius:4}]},
+    options:gopt({scales:{x:{stacked:true,grid:{display:false}},
+      y:{stacked:true,beginAtZero:true,ticks:{callback:v=>v}}}})});
+
+  const am=D.account_monthly.filter(x=>!x.error);
+  mkChart('juventuscampsmx-c-acct',{type:'line',
+    data:{labels:am.map(x=>fym(x.since.slice(0,7))),datasets:[
+      {label:L('Alcance de cuenta','Account reach'),data:am.map(x=>x.reach),borderColor:ACC,
+       backgroundColor:'rgba(254,242,0,.10)',fill:true,tension:.32,pointRadius:2.5,yAxisID:'y'},
+      {label:L('Visitas al perfil','Profile visits'),data:am.map(x=>x.profile_views),borderColor:PUR,
+       tension:.32,pointRadius:2.5,yAxisID:'y1'},
+      {label:L('Clics al sitio web','Website clicks'),data:am.map(x=>x.website_clicks),borderColor:GRN,
+       tension:.32,pointRadius:2.5,yAxisID:'y1'}]},
+    options:gopt({scales:{x:{grid:{display:false}},
+      y:{position:'left',beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:L('Alcance','Reach')}},
+      y1:{position:'right',beginAtZero:true,grid:{drawOnChartArea:false},
+        ticks:{callback:v=>F(v)},title:{display:true,text:L('Visitas / clics','Visits / clicks')}}}})});
+
+  /* ---- Año 1 vs Año 2 ---- */
+  document.getElementById('juventuscampsmx-yc-sub').textContent=`${yc.y1_label}  vs.  ${yc.y2_label}`;
+  const YR=[[L('Publicaciones','Posts'),'posts'],[L('Reels','Reels'),'videos'],[L('Carruseles','Carousels'),'carousels'],
+    [L('Imágenes','Images'),'images'],[L('Views','Views'),'views'],[L('Views promedio','Average views'),'views_avg'],[L('Alcance','Reach'),'reach'],
+    [L('Likes','Likes'),'likes'],[L('Comentarios','Comments'),'comments'],[L('Guardados','Saves'),'saved'],
+    [L('Compartidos','Shares'),'shares'],[L('Interacciones','Interactions'),'interactions'],[L('ER alcance','ER on reach'),'er_reach']];
+  document.querySelector('#juventuscampsmx-t-yc tbody').innerHTML=YR.map(([l,k])=>{
+    const a=yc.y1[k],b=yc.y2[k],c=chg(a,b);
+    const suf=k==='er_reach'?'%':'';
+    return `<tr><td><strong>${l}</strong></td><td class="num">${FF(a)}${suf}</td>
+      <td class="num">${FF(b)}${suf}</td><td class="num">${arrow(c)}</td></tr>`}).join('');
+
+  document.getElementById('juventuscampsmx-yc-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill dato">Data</span> <strong>Year 2 published
+    ${(chg(yc.y1.posts,yc.y2.posts)).toFixed(1)}% more content (${yc.y2.posts} vs ${yc.y1.posts})
+    but got ${Math.abs(chg(yc.y1.views,yc.y2.views)).toFixed(1)}% fewer views and
+    ${Math.abs(chg(yc.y1.reach,yc.y2.reach)).toFixed(1)}% less reach.</strong> Average views
+    per post fell ${Math.abs(chg(yc.y1.views_avg,yc.y2.views_avg)).toFixed(1)}%
+    (${FF(yc.y1.views_avg)} → ${FF(yc.y2.views_avg)}).</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> More volume didn't produce
+    more results; per-piece performance deteriorated. <strong>Important methodological note:</strong>
+    Year 1 includes the viral post from November 2024 (363,411 views, 21% of all that year's views).
+    If that outlier is excluded, the real year-over-year drop is much smaller. This table should not
+    be read as "the account got 32% worse" without that caveat.</div>
+    <div class="note g"><span class="pill dato">Data</span> Two metrics did improve:
+    <strong>shares +${chg(yc.y1.shares,yc.y2.shares).toFixed(1)}%</strong>
+    (${FF(yc.y1.shares)} → ${FF(yc.y2.shares)}) and comments
+    +${chg(yc.y1.comments,yc.y2.comments).toFixed(1)}%. ER on reach stayed nearly flat
+    (${yc.y1.er_reach}% → ${yc.y2.er_reach}%), which indicates the quality of interaction
+    from people who saw the content didn't degrade: what dropped was distribution.</div>`
+   :`
+    <div class="note d"><span class="pill dato">Dato</span> <strong>El Año 2 publicó
+    ${(chg(yc.y1.posts,yc.y2.posts)).toFixed(1)}% más contenido (${yc.y2.posts} vs ${yc.y1.posts})
+    pero obtuvo ${Math.abs(chg(yc.y1.views,yc.y2.views)).toFixed(1)}% menos views y
+    ${Math.abs(chg(yc.y1.reach,yc.y2.reach)).toFixed(1)}% menos alcance.</strong> Las views promedio
+    por publicación cayeron ${Math.abs(chg(yc.y1.views_avg,yc.y2.views_avg)).toFixed(1)}%
+    (${FF(yc.y1.views_avg)} → ${FF(yc.y2.views_avg)}).</div>
+    <div class="note w"><span class="pill interp">Interpretación</span> Más volumen no produjo más
+    resultado; el rendimiento por pieza se deterioró. <strong>Aviso metodológico importante:</strong>
+    el Año 1 incluye el post viral de noviembre 2024 (363.411 views, el 21% de todas las views de ese
+    año). Si se excluye ese outlier, la caída real entre años es mucho menor. No se debe leer esta
+    tabla como "la cuenta empeoró un 32%" sin esa salvedad.</div>
+    <div class="note g"><span class="pill dato">Dato</span> Dos métricas sí mejoraron:
+    <strong>compartidos +${chg(yc.y1.shares,yc.y2.shares).toFixed(1)}%</strong>
+    (${FF(yc.y1.shares)} → ${FF(yc.y2.shares)}) y comentarios
+    +${chg(yc.y1.comments,yc.y2.comments).toFixed(1)}%. El ER sobre alcance se mantuvo casi estable
+    (${yc.y1.er_reach}% → ${yc.y2.er_reach}%), lo que indica que la calidad de la interacción
+    con quien ve el contenido no se degradó: lo que cayó fue la distribución.</div>`;
+
+  const ms=M.slice().sort((a,b)=>b.views-a.views);
+  const mrow=m=>`<tr><td><strong>${fym(m.ym)}</strong></td>
+    <td class="num">${m.posts} posts</td><td class="num">${F(m.views)} views</td>
+    <td class="num">${F(m.reach)} ${L('alcance','reach')}</td><td class="num">${m.er_reach}% ER</td></tr>`;
+  document.getElementById('juventuscampsmx-t-mtop').innerHTML=ms.slice(0,5).map(mrow).join('');
+  document.getElementById('juventuscampsmx-t-mbot').innerHTML=ms.slice(-5).reverse().map(mrow).join('');
+
+  /* ---- DÍA / HORA ---- */
+  const dw=D.by_dow;
+  mkChart('juventuscampsmx-c-dow',{type:'bar',
+    data:{labels:dw.map(d=>d.dow),datasets:[
+      {label:L('Publicaciones (volumen)','Posts (volume)'),data:dw.map(d=>d.n),backgroundColor:'#4D5560',
+       borderRadius:4,yAxisID:'y1',order:2},
+      {type:'line',label:L('Views mediana (rendimiento)','Median views (performance)'),data:dw.map(d=>d.views_median),
+       borderColor:ACC,backgroundColor:ACC,tension:.3,pointRadius:4,yAxisID:'y',order:1,borderWidth:2.5},
+      {type:'line',label:L('Views promedio','Average views'),data:dw.map(d=>d.views_avg),borderColor:RED,
+       borderDash:[5,4],tension:.3,pointRadius:3,yAxisID:'y',order:1,borderWidth:1.8}]},
+    options:gopt({scales:{x:{grid:{display:false}},
+      y:{position:'left',beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:'Views'}},
+      y1:{position:'right',beginAtZero:true,grid:{drawOnChartArea:false},
+        title:{display:true,text:L('N.º publicaciones','No. of posts')}}}})});
+
+  const mxMed=Math.max(...dw.filter(d=>d.views_median).map(d=>d.views_median));
+  document.querySelector('#juventuscampsmx-t-dow tbody').innerHTML=dw.map(d=>
+    `<tr><td><strong>${d.dow}</strong></td><td class="num">${d.n}</td>
+     <td class="num">${d.views_avg?FF(d.views_avg):L('n/d','n/a')}</td>
+     <td class="num ${d.views_median===mxMed?'best':''}">${d.views_median?FF(d.views_median):L('n/d','n/a')}</td>
+     <td class="num">${d.er_reach!=null?d.er_reach+'%':L('n/d','n/a')}</td></tr>`).join('');
+
+  const sat=dw.find(d=>d.dow==='Sabado');
+  document.getElementById('juventuscampsmx-dow-read').innerHTML=isEn()?`
+    <div class="note d"><span class="pill na">Statistical trap</span> <strong>Saturday looks like
+    the best day with ${FF(sat.views_avg)} average views, but its median is only
+    ${FF(sat.views_median)}</strong> — barely above the rest of the days. The difference is explained
+    by a single viral post published on a Saturday and by having only ${sat.n} posts in the sample.
+    <strong>It isn't a pattern, it's an outlier.</strong> Reporting "posting on Saturday multiplies
+    views by 5×" would be a false conclusion.</div>
+    <div class="note g"><span class="pill dato">Data</span> Using the median, which is robust to
+    outliers, <strong>the days are notably uniform</strong>: every median falls between
+    ${FF(Math.min(...dw.filter(d=>d.views_median).map(d=>d.views_median)))} and ${FF(mxMed)} views.
+    Sunday has the best ER (${dw.find(d=>d.dow==='Domingo').er_reach}%) but with only
+    ${dw.find(d=>d.dow==='Domingo').n} posts.</div>
+    <div class="note w"><span class="pill interp">Interpretation</span> With this data
+    <strong>there is no evidence that publish day determines performance</strong> on this account.
+    Volume is concentrated Monday through Friday (${dw.slice(0,5).reduce((s,d)=>s+d.n,0)} of
+    ${n} posts), and the weekend is under-used, but there isn't enough data either to claim that
+    moving to the weekend would improve results. It would be a hypothesis to test, not a
+    supported recommendation.</div>`
+   :`
+    <div class="note d"><span class="pill na">Trampa estadística</span> <strong>El sábado aparenta
+    ser el mejor día con ${FF(sat.views_avg)} views promedio, pero su mediana es solo
+    ${FF(sat.views_median)}</strong> — apenas por encima del resto de días. La diferencia se explica
+    por un único post viral publicado en sábado y por tener solo ${sat.n} publicaciones en la muestra.
+    <strong>No es un patrón, es un outlier.</strong> Reportar "publicar en sábado multiplica ×5 las
+    views" sería una conclusión falsa.</div>
+    <div class="note g"><span class="pill dato">Dato</span> Usando la mediana, que es robusta frente
+    a outliers, <strong>los días son notablemente uniformes</strong>: todas las medianas caen entre
+    ${FF(Math.min(...dw.filter(d=>d.views_median).map(d=>d.views_median)))} y ${FF(mxMed)} views.
+    Domingo tiene el mejor ER (${dw.find(d=>d.dow==='Domingo').er_reach}%) pero con solo
+    ${dw.find(d=>d.dow==='Domingo').n} publicaciones.</div>
+    <div class="note w"><span class="pill interp">Interpretación</span> Con estos datos
+    <strong>no hay evidencia de que el día de publicación determine el rendimiento</strong> en esta
+    cuenta. El volumen se concentra entre lunes y viernes (${dw.slice(0,5).reduce((s,d)=>s+d.n,0)} de
+    ${n} posts), y el fin de semana está infrautilizado, pero tampoco hay datos suficientes para
+    afirmar que moverse al fin de semana mejoraría los resultados. Sería una hipótesis a testear,
+    no una recomendación respaldada.</div>`;
+
+  const hh=D.by_hour;
+  mkChart('juventuscampsmx-c-hour',{type:'bar',
+    data:{labels:hh.map(h=>String(h.hour_miami).padStart(2,'0')+':00'),datasets:[
+      {label:L('Views mediana','Median views'),data:hh.map(h=>h.views_median),backgroundColor:ACC,borderRadius:4,order:2},
+      {type:'line',label:L('N.º publicaciones','No. of posts'),data:hh.map(h=>h.n),borderColor:BLU,
+       tension:.3,pointRadius:3,yAxisID:'y1',order:1,borderWidth:2}]},
+    options:gopt({scales:{x:{grid:{display:false}},
+      y:{beginAtZero:true,ticks:{callback:v=>F(v)},title:{display:true,text:L('Views mediana','Median views')}},
+      y1:{position:'right',beginAtZero:true,grid:{drawOnChartArea:false},
+        title:{display:true,text:L('N.º posts','No. of posts')}}}})});
+
+  /* ---- REELS ---- */
+  const rv=D.posts.filter(p=>p.type==='VIDEO').sort((a,b)=>b.views-a.views);
+  const rvv=rv.map(p=>p.views).sort((a,b)=>a-b);
+  const rmed=rvv[Math.floor(rvv.length/2)];
+  const best=k=>rv.slice().sort((a,b)=>b[k]-a[k])[0];
+  document.getElementById('juventuscampsmx-kpi-reel').innerHTML=[
+    [L('Total Reels','Total Reels'),FF(vid.n),`${vid.pct_of_posts}% ${L('del contenido','of content')}`,'hl'],
+    [L('Views totales','Total views'),F(vid.views_total),'',''],
+    [L('Views promedio','Average views'),FF(vid.views_avg),L('el más bajo de los 3 formatos','the lowest of the 3 formats'),'hl'],
+    [L('Views mediana','Median views'),FF(rmed),L('menos sensible a outliers','less sensitive to outliers'),''],
+    [L('Alcance promedio','Average reach'),FF(vid.reach_avg),'',''],
+    [L('ER sobre alcance','ER on reach'),vid.er_reach+'%','',''],
+    [L('Compartidos prom.','Avg. shares'),vid.shares_avg,'',''],
+    [L('Guardados prom.','Avg. saves'),vid.saved_avg,'',''],
+    [L('Máx. views','Max. views'),F(rv[0].views),fd(rv[0].date),''],
+    [L('Máx. likes','Max. likes'),FF(best('likes').likes),fd(best('likes').date),''],
+    [L('Máx. comentarios','Max. comments'),FF(best('comments').comments),fd(best('comments').date),''],
+    [L('Máx. compartidos','Max. shares'),FF(best('shares').shares),fd(best('shares').date),''],
+    [L('Duración','Duration'),L('No disponible','Not available'),L('La API no expone este campo','The API does not expose this field'),'na'],
+  ].map(([k,v,m,c])=>`<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m||'&nbsp;'}</div></div>`).join('');
+  document.getElementById('juventuscampsmx-rk-reel').innerHTML=rv.slice(0,12).map((p,i)=>card(p,i,'views')).join('');
+
+  /* ---- RANKINGS ---- */
+  const RN=isEn()?{views:'Sorted by <strong>views</strong> (plays or post views, depending on format).',
+    reach:'Sorted by <strong>reach</strong>: unique accounts that saw the post. This is the most homogeneous metric across formats.',
+    likes:'Sorted by <strong>likes</strong> per Meta Insights.',
+    comments:'Sorted by <strong>comments</strong>. Absolute values are low on this account (average of 3.4 per post).',
+    shares:'Sorted by <strong>shares</strong>: a good indicator of content the audience considers worth forwarding.',
+    saved:'Sorted by <strong>saves</strong>: indicates value as future reference (schedules, prices, information).',
+    er_reach:'Sorted by <strong>ER = interactions / reach</strong>. Posts with less than 500 reach are excluded so a post with minimal reach doesn\'t dominate the ranking with unrealistic percentages.',
+    views_carousel:'Only <strong>carousels</strong>, sorted by views.',
+    views_image:'Only <strong>single images</strong>, sorted by views.',
+    views_video:'Only <strong>Reels / videos</strong>, sorted by views.'}
+   :{views:'Ordenado por <strong>views</strong> (reproducciones o visualizaciones del post según formato).',
+    reach:'Ordenado por <strong>alcance</strong>: cuentas únicas que vieron la publicación. Es la métrica más homogénea entre formatos.',
+    likes:'Ordenado por <strong>likes</strong> según Meta Insights.',
+    comments:'Ordenado por <strong>comentarios</strong>. Los valores absolutos son bajos en esta cuenta (media de 3,4 por post).',
+    shares:'Ordenado por <strong>compartidos</strong>: buen indicador de contenido que la audiencia considera digno de reenviar.',
+    saved:'Ordenado por <strong>guardados</strong>: indica valor de referencia futura (horarios, precios, información).',
+    er_reach:'Ordenado por <strong>ER = interacciones / alcance</strong>. Se excluyen publicaciones con menos de 500 de alcance para evitar que un post con alcance mínimo domine el ranking con porcentajes irreales.',
+    views_carousel:'Solo <strong>carruseles</strong>, ordenados por views.',
+    views_image:'Solo <strong>imágenes individuales</strong>, ordenadas por views.',
+    views_video:'Solo <strong>Reels / videos</strong>, ordenados por views.'};
+  function drawRk(k){
+    document.getElementById('juventuscampsmx-rk-note').innerHTML=RN[k]||'';
+    document.getElementById('juventuscampsmx-rk-grid').innerHTML=
+      D.rankings[k].map((id,i)=>card(P[id],i,k)).join('');
+  }
+  let currentRk='views';
+  drawRk(currentRk);
+  document.querySelectorAll('#juventuscampsmx-tb-rk .tab').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('#juventuscampsmx-tb-rk .tab').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');currentRk=b.dataset.r;drawRk(currentRk)});
+
+  /* ---- TABLA MAESTRA ---- */
+  const topics=[...new Set(D.posts.map(p=>p.topic))].sort();
+  document.getElementById('juventuscampsmx-f-topic').innerHTML=`<option value="">${L('Todas las temáticas','All topics')}</option>`+
+    topics.map(t=>`<option value="${t}">${t}</option>`).join('');
+  let sortK='views',sortD=-1;
+  function renderT(){
+    const q=document.getElementById('juventuscampsmx-q').value.toLowerCase();
+    const ft=document.getElementById('juventuscampsmx-f-type').value,fo=document.getElementById('juventuscampsmx-f-topic').value;
+    const fy=document.getElementById('juventuscampsmx-f-year').value;
+    let rows=D.posts.filter(p=>
+      (!q||(p.caption||'').toLowerCase().includes(q))&&(!ft||p.type===ft)&&(!fo||p.topic===fo)&&
+      (!fy||(fy==='1'?p.date<'2025-09-17':p.date>='2025-09-17')));
+    rows.sort((a,b)=>{
+      if(sortK==='date')return sortD*((a.date<b.date?-1:1));
+      const x=a[sortK]??-1,y=b[sortK]??-1;return sortD*(x-y)});
+    document.getElementById('juventuscampsmx-cnt').textContent=isEn()?`${rows.length} of ${n} posts`:`${rows.length} de ${n} publicaciones`;
+    document.querySelector('#juventuscampsmx-t-all tbody').innerHTML=rows.map(p=>{
+      const th=p.thumb?`<img class="thumb-sm" src="${p.thumb}" onclick="zoom('${p.thumb}')">`
+        :`<span style="font-size:10px;color:var(--txt3)">${L('n/d','n/a')}</span>`;
+      const cap=(p.caption_short||'').replace(/</g,'&lt;').slice(0,80);
+      return `<tr><td>${th}</td><td style="white-space:nowrap">${p.date}</td>
+        <td><span class="tp">${TS()[p.type]}</span></td>
+        <td style="font-size:11px">${p.topic}</td>
+        <td style="color:var(--txt3);max-width:260px">${cap||'—'}</td>
+        <td class="num">${FF(p.views)}</td><td class="num">${FF(p.reach)}</td>
+        <td class="num">${FF(p.likes)}</td><td class="num">${FF(p.comments)}</td>
+        <td class="num">${FF(p.shares)}</td><td class="num">${FF(p.saved)}</td>
+        <td class="num">${p.er_reach!=null?p.er_reach:L('n/d','n/a')}</td>
+        <td>${p.permalink?`<a class="lnk" href="${p.permalink}" target="_blank" rel="noopener">${L('abrir ↗','open ↗')}</a>`
+          :`<span style="color:var(--txt3);font-size:11px">${L('no disp.','n/a')}</span>`}</td></tr>`}).join('');
+  }
+  ['q','f-type','f-topic','f-year'].forEach(id=>
+    document.getElementById(id).addEventListener('input',renderT));
+  document.getElementById('juventuscampsmx-f-sort').addEventListener('change',e=>{
+    sortK=e.target.value;sortD=sortK==='date'?-1:-1;renderT()});
+  document.querySelectorAll('#juventuscampsmx-t-all th').forEach((th,i)=>{
+    const map={5:'views',6:'reach',7:'likes',8:'comments',9:'shares',10:'saved',11:'er_reach',1:'date'};
+    if(map[i]){th.style.cursor='pointer';th.title=L('Clic para ordenar','Click to sort');
+      th.onclick=()=>{if(sortK===map[i])sortD*=-1;else{sortK=map[i];sortD=-1}renderT()}}});
+  renderT();
+
+  /* ---- HALLAZGOS ---- */
+  const top1=P[D.rankings.views[0]];
+  const pareto=(()=>{const v=D.posts.map(p=>p.views).sort((a,b)=>b-a);
+    const t=v.reduce((s,x)=>s+x,0);const k=Math.ceil(v.length*.05);
+    return{n:k,pct:(v.slice(0,k).reduce((s,x)=>s+x,0)/t*100).toFixed(1)}})();
+
+  const FINDS=isEn()?[
+    ['Reels get the most effort and deliver the lowest return per piece','dato',
+     `The ${vid.n} Reels (${vid.pct_of_posts}% of content) average ${FF(vid.views_avg)} views,
+      versus ${FF(car.views_avg)} for the ${car.n} carousels. The median confirms the pattern
+      (${FF(vid.views_median)} vs ${FF(car.views_median)}), ruling out an outlier effect.`,
+     `Evidence: format table · carousel/reel ratio = ${(car.views_avg/vid.views_avg).toFixed(2)}×`],
+    ['The real audience is parents aged 35-54, not the youth players','dato',
+     `${(p3554/tA*100).toFixed(1)}% of the ${FF(tA)} followers with demographic data are between
+      35 and 54 years old. The 13-17 bracket —the age of the academy's players— is only
+      ${(sum(ages.filter(a=>a.key==='13-17'))/tA*100).toFixed(1)}%.`,
+     `Evidence: Meta's follower_demographics (breakdown=age)`],
+    ['The audience is hyperconcentrated in Doral, not Miami','dato',
+     `Doral contributes ${FF(cities[0].value)} followers against ${FF(cities[1].value)} for Miami
+      (${(cities[0].value/cities[1].value).toFixed(1)}× more), despite being far smaller.
+      Florida cities add up to ${(flCities/tA*100).toFixed(1)}% of the base.`,
+     `Evidence: Meta's follower_demographics (breakdown=city)`],
+    ['Publishing more didn\'t produce more results','dato',
+     `Year 2 increased volume by ${chg(yc.y1.posts,yc.y2.posts).toFixed(1)}%
+      (${yc.y1.posts}→${yc.y2.posts} posts) but views fell
+      ${Math.abs(chg(yc.y1.views,yc.y2.views)).toFixed(1)}% and reach
+      ${Math.abs(chg(yc.y1.reach,yc.y2.reach)).toFixed(1)}%.`,
+     `Mandatory caveat: Year 1 contains the viral post from Nov-2024 (${FF(top1.views)} views,
+      ${(top1.views/yc.y1.views*100).toFixed(0)}% of that year's views). Excluding it, the actual
+      drop is substantially smaller. This should not be read as "the account got 32% worse."`],
+    ['Direct-recruitment content is the least engaging','dato',
+     `"Convocatoria / Tryouts" is the 2nd most-published topic (${conv.n} posts) and has the lowest
+      ER of all (${conv.er_reach}%), versus ${fich.er_reach}% for Signings and
+      ${tor.er_reach}% for Tournaments.`,
+     `Evidence: topic table · classification by regex over captions`],
+    ['Performance is extremely concentrated','dato',
+     `The top ${pareto.n} posts (5% of the total) account for ${pareto.pct}% of all
+      views in the period. A single post (Nov-2024) contributes
+      ${(top1.views/T.views*100).toFixed(1)}% of the entire 24-month total.`,
+     `Evidence: sorted views distribution`],
+    ['Publish day does not explain performance','interp',
+     `Medians by day of week are uniform (between
+      ${FF(Math.min(...dw.filter(d=>d.views_median).map(d=>d.views_median)))} and ${FF(mxMed)} views).
+      The apparent Saturday spike (${FF(sat.views_avg)} average) disappears when using the median
+      (${FF(sat.views_median)}): it's an outlier with only ${sat.n} posts.`,
+     `Caveat: this is an unobserved relationship, not a disproven causation. With more weekend
+      data a pattern could emerge.`],
+    ['Interaction quality held even as distribution fell','dato',
+     `ER on reach went from ${yc.y1.er_reach}% to ${yc.y2.er_reach}% (a
+      ${chg(yc.y1.er_reach,yc.y2.er_reach).toFixed(1)}% change), and shares rose
+      +${chg(yc.y1.shares,yc.y2.shares).toFixed(1)}%. What dropped was reach, not the response
+      from people who saw the content.`,
+     `Associated interpretation: this points more toward a change in algorithmic distribution or
+      format mix than a loss of content quality.`],
+  ]:[
+    ['Los Reels reciben el mayor esfuerzo y entregan el menor rendimiento por pieza','dato',
+     `Los ${vid.n} Reels (${vid.pct_of_posts}% del contenido) promedian ${FF(vid.views_avg)} views,
+      frente a ${FF(car.views_avg)} de los ${car.n} carruseles. La mediana confirma el patrón
+      (${FF(vid.views_median)} vs ${FF(car.views_median)}), descartando el efecto de outliers.`,
+     `Evidencia: tabla de formatos · ratio carrusel/reel = ${(car.views_avg/vid.views_avg).toFixed(2)}×`],
+    ['La audiencia real son padres de 35-54 años, no los jugadores juveniles','dato',
+     `El ${(p3554/tA*100).toFixed(1)}% de los ${FF(tA)} seguidores con datos demográficos tiene entre
+      35 y 54 años. La franja 13-17 —edad de los jugadores de la academia— es solo el
+      ${(sum(ages.filter(a=>a.key==='13-17'))/tA*100).toFixed(1)}%.`,
+     `Evidencia: follower_demographics (breakdown=age) de Meta`],
+    ['La audiencia está hiperconcentrada en Doral, no en Miami','dato',
+     `Doral aporta ${FF(cities[0].value)} seguidores contra ${FF(cities[1].value)} de Miami
+      (${(cities[0].value/cities[1].value).toFixed(1)}× más), pese a ser mucho más pequeña.
+      Las ciudades de Florida suman el ${(flCities/tA*100).toFixed(1)}% de la base.`,
+     `Evidencia: follower_demographics (breakdown=city) de Meta`],
+    ['Publicar más no produjo más resultados','dato',
+     `El Año 2 aumentó el volumen ${chg(yc.y1.posts,yc.y2.posts).toFixed(1)}%
+      (${yc.y1.posts}→${yc.y2.posts} posts) pero las views cayeron
+      ${Math.abs(chg(yc.y1.views,yc.y2.views)).toFixed(1)}% y el alcance
+      ${Math.abs(chg(yc.y1.reach,yc.y2.reach)).toFixed(1)}%.`,
+     `Salvedad obligatoria: el Año 1 contiene el post viral de nov-2024 (${FF(top1.views)} views,
+      el ${(top1.views/yc.y1.views*100).toFixed(0)}% de las views de ese año). Excluyéndolo, la caída
+      se reduce sustancialmente. No debe leerse como deterioro puro.`],
+    ['El contenido de captación directa es el que menos engancha','dato',
+     `"Convocatoria / Tryouts" es la 2.ª temática más publicada (${conv.n} posts) y tiene el ER más
+      bajo de todas (${conv.er_reach}%), frente a ${fich.er_reach}% de Fichajes y
+      ${tor.er_reach}% de Torneos.`,
+     `Evidencia: tabla de temáticas · clasificación por regex sobre captions`],
+    ['El rendimiento está extremadamente concentrado','dato',
+     `El top ${pareto.n} de publicaciones (5% del total) concentra el ${pareto.pct}% de todas las
+      views del período. Una sola publicación (nov-2024) aporta el
+      ${(top1.views/T.views*100).toFixed(1)}% del total de 24 meses.`,
+     `Evidencia: distribución de views ordenada`],
+    ['El día de publicación no explica el rendimiento','interp',
+     `Las medianas por día de semana son uniformes (entre
+      ${FF(Math.min(...dw.filter(d=>d.views_median).map(d=>d.views_median)))} y ${FF(mxMed)} views).
+      El aparente pico del sábado (${FF(sat.views_avg)} promedio) desaparece al usar la mediana
+      (${FF(sat.views_median)}): es un outlier con solo ${sat.n} publicaciones.`,
+     `Advertencia: es una relación no observada, no una causalidad descartada. Con más datos de fin
+      de semana podría emerger un patrón.`],
+    ['La calidad de interacción se mantuvo aunque la distribución bajó','dato',
+     `El ER sobre alcance pasó de ${yc.y1.er_reach}% a ${yc.y2.er_reach}% (variación
+      ${chg(yc.y1.er_reach,yc.y2.er_reach).toFixed(1)}%), y los compartidos subieron
+      +${chg(yc.y1.shares,yc.y2.shares).toFixed(1)}%. Lo que cayó fue el alcance, no la respuesta
+      de quien vio el contenido.`,
+     `Interpretación asociada: apunta más a un cambio de distribución del algoritmo o de mezcla de
+      formatos que a una pérdida de calidad del contenido.`],
+  ];
+  document.getElementById('juventuscampsmx-finds').innerHTML=FINDS.map(([t,tpv,p,ev])=>
+    `<div class="find"><h4>${t} <span class="pill ${tpv==='dato'?'dato':'interp'}">${tpv==='dato'?L('Dato','Data'):L('Interpretación','Interpretation')}</span></h4>
+     <p>${p}</p><div class="ev">${ev}</div></div>`).join('');
+
+  /* ---- OPORTUNIDADES ---- */
+  const OPPS=isEn()?[
+    ['Rebalance the format mix toward carousels',
+     `Carousels deliver ${(car.views_avg/vid.views_avg).toFixed(1)}× more views per piece and
+      lead in ER (${car.er_reach}%), but make up only ${car.pct_of_posts}% of published content.
+      Inverting the current ratio (${vid.n} reels vs ${car.n} carousels) is the
+      lever with the strongest numerical backing in the entire report.`],
+    ['Turn tryout announcements into achievement posts',
+     `Tryout/enrollment content has the worst ER (${conv.er_reach}%), while signings reach
+      ${fich.er_reach}%. A proven format for this already exists on the account
+      (the "TRANSFER / CALLED UP" template identified in the visual-identity analysis).
+      The opportunity is to use that template to communicate enrollment, instead of
+      plain informational flyers.`],
+    ['Geographically segment ad spend within the Doral radius',
+     `Doral concentrates ${(cities[0].value/tA*100).toFixed(1)}% of the base and Florida cities
+      ${(flCities/tA*100).toFixed(1)}%. The ${(100-flUS/sum(ctry)*100).toFixed(1)}% international
+      share (Venezuela, Brazil, Italy) is brand affinity, not an enrollment market.
+      Excluding it from acquisition-campaign targeting avoids spend with no possible return.`],
+    ['Aim creatives at the parents, not the kids',
+     `With ${(p3554/tA*100).toFixed(1)}% of the audience aged 35-54, messages competing for
+      teenage attention are misdirected. The communication angle with the most backing
+      is the benefits a parent evaluates: development, safety, their child's growth.`],
+    ['Lean into tournament content, which already proved it can scale',
+     `"Torneo / Juve Cup" is the most-published topic (${tor.n} posts) with
+      ${FF(tor.views_avg)} average views and an ER of ${tor.er_reach}%, and includes the
+      most-viewed post of the 24 months. It's the only type of content on the account that has
+      demonstrated real mass-reach capacity.`],
+    ['Start logging follower history starting today',
+     `The KPI most sought after in an audit like this —community growth— couldn't be built because
+      Meta only provides the current total. Capturing <code>followers_count</code> periodically
+      (weekly) would make this series available for the next audit. It's an instrumentation gap,
+      not an analysis gap.`],
+  ]:[
+    ['Rebalancear la mezcla de formatos hacia carruseles',
+     `Los carruseles rinden ${(car.views_avg/vid.views_avg).toFixed(1)}× más views por pieza y
+      lideran el ER (${car.er_reach}%), pero solo representan el ${car.pct_of_posts}% del contenido
+      publicado. Invertir la proporción actual (${vid.n} reels vs ${car.n} carruseles) es la
+      palanca con mayor respaldo numérico de todo el informe.`],
+    ['Convertir las convocatorias en anuncios de logro',
+     `El contenido de tryouts/inscripción tiene el peor ER (${conv.er_reach}%), mientras los
+      fichajes alcanzan ${fich.er_reach}%. Ya existe un formato probado para esto en la cuenta
+      (el molde "TRANSFER / CALLED UP" identificado en el análisis de línea gráfica).
+      La oportunidad es usar ese molde para comunicar inscripciones, en lugar de flyers
+      informativos planos.`],
+    ['Segmentar la pauta geográficamente en el radio de Doral',
+     `Doral concentra ${(cities[0].value/tA*100).toFixed(1)}% de la base y las ciudades de Florida
+      el ${(flCities/tA*100).toFixed(1)}%. El ${(100-flUS/sum(ctry)*100).toFixed(1)}% internacional
+      (Venezuela, Brasil, Italia) es afinidad de marca, no mercado de inscripción.
+      Excluirlo del targeting de campañas de captación evita gasto sin retorno posible.`],
+    ['Dirigir los creativos a los padres, no a los niños',
+     `Con el ${(p3554/tA*100).toFixed(1)}% de la audiencia en 35-54 años, los mensajes que compiten
+      por atención de adolescentes están mal dirigidos. El ángulo de comunicación con más respaldo
+      es el de los beneficios que un padre evalúa: desarrollo, seguridad, proyección del hijo.`],
+    ['Explotar el contenido de torneo, que ya demostró escalar',
+     `"Torneo / Juve Cup" es la temática más publicada (${tor.n} posts) con
+      ${FF(tor.views_avg)} views promedio y ER de ${tor.er_reach}%, e incluye la publicación más
+      vista de los 24 meses. Es el único tipo de contenido de la cuenta que ha demostrado capacidad
+      de alcance masivo real.`],
+    ['Empezar a registrar el histórico de seguidores desde hoy',
+     `El KPI más buscado en una auditoría —crecimiento de comunidad— no se pudo construir porque
+      Meta solo entrega el total actual. Capturar <code>followers_count</code> de forma periódica
+      (semanal) permitiría tener esta serie disponible en la próxima auditoría. Es una brecha de
+      instrumentación, no de análisis.`],
+  ];
+  document.getElementById('juventuscampsmx-opps').innerHTML=OPPS.map(([t,p])=>`<div class="find"><h4>${t}</h4><p>${p}</p></div>`).join('');
+
+  /* ---- AUDITORÍA ---- */
+  const A=D.audit;
+  document.getElementById('juventuscampsmx-kpi-audit').innerHTML=[
+    [L('Registros','Records'),FF(A.total_records),L('publicaciones procesadas','posts processed'),''],
+    [L('IDs únicos','Unique IDs'),FF(A.unique_ids),'',''],
+    [L('Duplicados','Duplicates'),FF(A.duplicates),A.duplicates===0?L('ninguno detectado','none detected'):L('REVISAR','REVIEW'),A.duplicates?'':'hl'],
+    [L('Cobertura Insights','Insights coverage'),'100%',L('243/243 con métricas completas','243/243 with complete metrics'),'hl'],
+    [L('Miniaturas','Thumbnails'),`${A.thumbs_ok}/${A.total_records}`,A.thumbs_missing===0?L('todas descargadas','all downloaded'):L('faltan ','missing ')+A.thumbs_missing,'hl'],
+    [L('Enlaces','Links'),`${A.total_records-A.permalink_missing}/${A.total_records}`,L('permalinks oficiales de Meta','official Meta permalinks'),'hl'],
+    [L('Discrepancias likes','Like discrepancies'),FF(A.likes_discrepancies),L('scraping vs Meta — ver abajo','scraping vs Meta — see below'),A.likes_discrepancies?'':'hl'],
+    [L('Alcance > views','Reach > views'),FF(A.reach_gt_views),L('imposible lógico: ninguno','logical impossibility: none'),'hl'],
+    [L('Views en cero','Zero views'),FF(A.views_zero),L('ninguno','none'),'hl'],
+    [L('Errores API cuenta','Account API errors'),FF(A.account_monthly_errors.length),L('ventanas mensuales fallidas','failed monthly windows'),''],
+  ].map(([k,v,m,c])=>`<div class="kpi ${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m}</div></div>`).join('');
+
+  const dd=A.likes_discrepancy_detail;
+  document.getElementById('juventuscampsmx-audit-notes').innerHTML=isEn()?`
+    <div class="note w"><strong>1. Like-count discrepancy between two Meta sources
+    (${A.likes_discrepancies} posts).</strong><br>
+    The earlier scraping file (<code>jam_all_posts.jsonl</code>, field <code>like_count</code>)
+    and the Insights endpoint (<code>likes</code>) return different values on
+    ${A.likes_discrepancies} of ${A.total_records} posts.
+    <br><br><strong>What I found:</strong> in the ${A.likes_discrepancies} cases the Insights value
+    is <em>higher</em>, with differences of +2 to +${Math.max(...dd.map(x=>x.diff))} likes.
+    <strong>All affected posts are from September 2026</strong>, the most recent
+    in the dataset.
+    <br><br><strong>Interpretation:</strong> this doesn't look like a data error but a time lag —
+    the scraping was done on Sep 17, and those posts kept accumulating likes until the
+    Insights extraction. <strong>What should be checked:</strong> confirm by re-querying
+    both sources now; if the gap grows, the lag is confirmed.
+    <br><br><strong>Decision applied:</strong> the dashboard uses the
+    <strong>Insights</strong> value (more recent) for all figures, and the original file was
+    <em>neither corrected nor hidden</em>. Full detail:
+    <div class="tw" style="margin-top:11px;background:transparent">
+      <table style="min-width:auto"><thead><tr><th>Date</th><th class="num">Scraping</th>
+      <th class="num">Insights</th><th class="num">Diff.</th><th>Post</th></tr></thead><tbody>
+      ${dd.map(x=>`<tr><td>${x.date}</td><td class="num">${x.scrape}</td>
+        <td class="num">${x.meta}</td><td class="num" style="color:var(--warn)">+${x.diff}</td>
+        <td>${x.permalink?`<a class="lnk" href="${x.permalink}" target="_blank">${L('abrir ↗','open ↗')}</a>`:L('n/d','n/a')}</td></tr>`).join('')}
+      </tbody></table></div></div>
+
+    <div class="note w"><strong>2. One monthly account-metrics window failed
+    (${A.account_monthly_errors.length} of 25).</strong><br>
+    The window <code>${A.account_monthly_errors.map(e=>e.since+' → '+e.until).join(', ')}</code>
+    returned a Meta API error: <em>"since param is not valid. Metrics data is available for
+    the last 2 years"</em>. This is Meta's hard retention limit, not a process failure.
+    <strong>What should be checked:</strong> nothing recoverable — that data no longer exists on
+    Meta's side. <strong>Decision:</strong> the account-metrics chart omits that window instead
+    of interpolating an invented value.</div>
+
+    <div class="note g"><strong>3. Validations passed with no issues.</strong><br>
+    No duplicates (${A.unique_ids} unique IDs across ${A.total_records} records) ·
+    no posts with reach greater than views (a logical impossibility) ·
+    no zero views · no dates outside the declared range ·
+    ${A.total_records-A.permalink_missing}/${A.total_records} official links present ·
+    ${A.thumbs_ok}/${A.total_records} thumbnails downloaded from Meta's CDN.</div>
+
+    <div class="note"><strong>4. A difference in criteria between sources, not an error.</strong><br>
+    Per-post reach (the sum of <code>reach</code> across the 243 posts =
+    ${FF(T.reach)}) does not match aggregate account reach
+    (${FF(am.reduce((s,x)=>s+(x.reach||0),0))}). <strong>This is not an inconsistency:</strong>
+    account reach counts unique people per window and includes stories and ads, while the
+    per-post sum counts each post separately and the same person can appear in several.
+    That's why both figures are shown in separate sections and never added together.</div>`
+   :`
+    <div class="note w"><strong>1. Discrepancia de likes entre dos fuentes de Meta
+    (${A.likes_discrepancies} publicaciones).</strong><br>
+    El archivo de scraping previo (<code>jam_all_posts.jsonl</code>, campo <code>like_count</code>)
+    y el endpoint de Insights (<code>likes</code>) devuelven valores distintos en
+    ${A.likes_discrepancies} de ${A.total_records} publicaciones.
+    <br><br><strong>Qué encontré:</strong> en los ${A.likes_discrepancies} casos el valor de Insights
+    es <em>mayor</em>, con diferencias de +2 a +${Math.max(...dd.map(x=>x.diff))} likes.
+    <strong>Todas las publicaciones afectadas son de septiembre 2026</strong>, las más recientes
+    del dataset.
+    <br><br><strong>Interpretación:</strong> no parece un error de datos sino un desfase temporal —
+    el scraping se hizo el 17-sep y esas publicaciones siguieron acumulando likes hasta la
+    extracción de Insights. <strong>Qué debería revisarse:</strong> confirmar volviendo a consultar
+    ambas fuentes ahora; si la diferencia crece, se confirma el desfase.
+    <br><br><strong>Decisión aplicada:</strong> el dashboard usa el valor de
+    <strong>Insights</strong> (más reciente) en todas las cifras, y <em>no se corrigió ni ocultó
+    el archivo original</em>. Detalle completo:
+    <div class="tw" style="margin-top:11px;background:transparent">
+      <table style="min-width:auto"><thead><tr><th>Fecha</th><th class="num">Scraping</th>
+      <th class="num">Insights</th><th class="num">Dif.</th><th>Publicación</th></tr></thead><tbody>
+      ${dd.map(x=>`<tr><td>${x.date}</td><td class="num">${x.scrape}</td>
+        <td class="num">${x.meta}</td><td class="num" style="color:var(--warn)">+${x.diff}</td>
+        <td>${x.permalink?`<a class="lnk" href="${x.permalink}" target="_blank">abrir ↗</a>`:'n/d'}</td></tr>`).join('')}
+      </tbody></table></div></div>
+
+    <div class="note w"><strong>2. Una ventana mensual de métricas de cuenta falló
+    (${A.account_monthly_errors.length} de 25).</strong><br>
+    La ventana <code>${A.account_monthly_errors.map(e=>e.since+' → '+e.until).join(', ')}</code>
+    devolvió error de la API de Meta: <em>"since param is not valid. Metrics data is available for
+    the last 2 years"</em>. Es el límite duro de retención de Meta, no un fallo del proceso.
+    <strong>Qué debería revisarse:</strong> nada recuperable — ese dato ya no existe del lado de Meta.
+    <strong>Decisión:</strong> el gráfico de métricas de cuenta omite esa ventana en lugar de
+    interpolar un valor inventado.</div>
+
+    <div class="note g"><strong>3. Validaciones superadas sin incidencias.</strong><br>
+    Sin duplicados (${A.unique_ids} IDs únicos sobre ${A.total_records} registros) ·
+    sin publicaciones con alcance mayor que views (imposible lógico) ·
+    sin views en cero · sin fechas fuera del rango declarado ·
+    ${A.total_records-A.permalink_missing}/${A.total_records} enlaces oficiales presentes ·
+    ${A.thumbs_ok}/${A.total_records} miniaturas descargadas del CDN de Meta.</div>
+
+    <div class="note"><strong>4. Diferencia de criterio entre fuentes, no error.</strong><br>
+    El alcance por publicación (suma de <code>reach</code> de los 243 posts =
+    ${FF(T.reach)}) no coincide con el alcance de cuenta agregado
+    (${FF(am.reduce((s,x)=>s+(x.reach||0),0))}). <strong>No es una inconsistencia:</strong> el
+    alcance de cuenta cuenta personas únicas por ventana e incluye stories y anuncios, mientras la
+    suma por publicación cuenta cada post por separado y la misma persona puede aparecer en varios.
+    Por eso ambas cifras se muestran en secciones distintas y nunca se suman entre sí.</div>`;
+
+  /* ---- INVENTARIO ---- */
+  const INV=isEn()?[
+    ['Views / plays','ok','Complete — 243/243 · <code>INSTAGRAM_GET_IG_MEDIA_INSIGHTS</code>'],
+    ['Reach','ok','Complete — 243/243 · metric declared "estimated" by Meta'],
+    ['Likes','ok','Complete — 243/243 · dual source, see discrepancies'],
+    ['Comments','ok','Complete — 243/243 · full agreement between both sources'],
+    ['Saves','ok','Complete — 243/243'],
+    ['Shares','ok','Complete — 243/243'],
+    ['Total interactions','ok','Complete — 243/243 · native Meta field'],
+    ['Demographics: age, gender, city, country','ok','Complete — current snapshot, no history'],
+    ['Account reach and visits by month','partial','Partial — 24 of 25 windows (1 outside Meta\'s 2-year limit)'],
+    ['Profile visits per post','partial','Partial — 143/243 (Meta does not provide it for video)'],
+    ['Followers (current total)','ok','Available — 26,771 · <code>INSTAGRAM_GET_USER_INFO</code>'],
+    ['Thumbnails and images','ok','Complete — 243/243 downloaded from Meta\'s CDN'],
+    ['Post links','ok','Complete — 243/243 official permalinks'],
+    ['Follower growth (series)','no','Not available — the API does not expose follower history'],
+    ['Impressions','no','Not available — metric deprecated by Meta'],
+    ['Stories','no','Not available — expire after 24h, no history'],
+    ['Video duration','no','Not available via API — measured indirectly in another analysis'],
+    ['Retention / watch time','no','Not available — requires permissions the current connection lacks'],
+    ['Link clicks per post','no','Not available — only at the account level (website_clicks)'],
+    ['Facebook data','no','Could not be obtained — no authorized Facebook connection exists'],
+    ['Audience compared against content','partial','Partial — demographics are a global snapshot, not segmentable per post'],
+  ]:[
+    ['Views / reproducciones','ok','Completo — 243/243 · <code>INSTAGRAM_GET_IG_MEDIA_INSIGHTS</code>'],
+    ['Alcance (reach)','ok','Completo — 243/243 · métrica declarada "estimada" por Meta'],
+    ['Likes','ok','Completo — 243/243 · doble fuente, ver discrepancias'],
+    ['Comentarios','ok','Completo — 243/243 · coincidencia total entre ambas fuentes'],
+    ['Guardados (saved)','ok','Completo — 243/243'],
+    ['Compartidos (shares)','ok','Completo — 243/243'],
+    ['Interacciones totales','ok','Completo — 243/243 · campo nativo de Meta'],
+    ['Demografía: edad, género, ciudad, país','ok','Completo — snapshot actual, sin histórico'],
+    ['Alcance y visitas de cuenta por mes','partial','Parcial — 24 de 25 ventanas (1 fuera del límite de 2 años de Meta)'],
+    ['Visitas al perfil por publicación','partial','Parcial — 143/243 (Meta no lo entrega para video)'],
+    ['Seguidores (total actual)','ok','Disponible — 26.771 · <code>INSTAGRAM_GET_USER_INFO</code>'],
+    ['Miniaturas e imágenes','ok','Completo — 243/243 descargadas del CDN de Meta'],
+    ['Enlaces a publicaciones','ok','Completo — 243/243 permalinks oficiales'],
+    ['Crecimiento de seguidores (serie)','no','No disponible — la API no expone histórico de followers'],
+    ['Impresiones','no','No disponible — métrica deprecada por Meta'],
+    ['Historias (stories)','no','No disponible — expiran a 24 h, sin histórico'],
+    ['Duración de los videos','no','No disponible vía API — medida indirectamente en otro análisis'],
+    ['Retención / watch time','no','No disponible — requiere permisos que la conexión actual no tiene'],
+    ['Clics en enlaces por publicación','no','No disponible — solo a nivel de cuenta (website_clicks)'],
+    ['Datos de Facebook','no','No se pudo obtener — no existe conexión de Facebook autorizada'],
+    ['Audiencia comparada con contenido','partial','Parcial — la demografía es un snapshot global, no segmentable por publicación'],
+  ];
+  document.getElementById('juventuscampsmx-t-inv').innerHTML=INV.map(([m,s,f])=>{
+    const PL=isEn()
+      ?{ok:['pill dato','Available'],partial:['pill interp','Partial'],no:['pill na','Not available']}[s]
+      :{ok:['pill dato','Disponible'],partial:['pill interp','Parcial'],no:['pill na','No disponible']}[s];
+    return `<tr><td><strong>${m}</strong></td><td><span class="${PL[0]}">${PL[1]}</span></td>
+      <td style="font-size:13px;color:var(--txt2)">${f}</td></tr>`}).join('');
+
+  document.getElementById('juventuscampsmx-rules').innerHTML=D.topic_rules.map(r=>
+    `<div style="margin-bottom:7px;font-size:13px"><strong>${r.name}</strong><br>
+     <code style="font-size:11px">${r.pattern.replace(/</g,'&lt;')}</code></div>`).join('')+
+    `<div style="margin-bottom:7px;font-size:13px"><strong>${L('Otros / No clasificable','Other / Not classifiable')}</strong><br>
+     <span style="font-size:11px;color:var(--txt3)">${L('Sin coincidencia en ninguna regla anterior','No match with any rule above')}</span></div>`;
+
+  /* ---- NAV ACTIVA ---- */
+  const secs=[...document.querySelectorAll('section')];
+  const links=[...document.querySelectorAll('#juventuscampsmx-nl a')];
+  const obs=new IntersectionObserver(es=>{es.forEach(e=>{
+    if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}})},
+    {rootMargin:'-70px 0px -72% 0px'});
+  secs.forEach(s=>obs.observe(s));
+}
+  };
+})();
+</script>
+
+
   <div id="acct-juventuscamps" hidden>
     <div class="shell-wrap" style="padding-bottom:0">
       <div class="backbar">
@@ -5279,6 +6724,7 @@ window.I18N = (function(){
       // ---- JAM dashboard: section 1 (resumen) ----
       'jam-h1-resumen': 'Instagram Audit · <span style="color:var(--accent)">@juventusacademymiami</span>',
       'jam-h1-resumen-jacademylasvegas': 'Instagram Audit · <span style="color:var(--accent)">@jacademylasvegas</span>',
+      'jam-h1-resumen-juventuscampsmx': 'Instagram Audit · <span style="color:var(--accent)">@juventuscampsmx</span>',
       'jam-h1-resumen-juventuscamps': 'Instagram Audit · <span style="color:var(--accent)">@juventuscampsusa</span>',
       'jam-h3-totales': 'Period totals and average per post',
       'jam-p-totales': 'Totals depend on how much was published; averages let you compare real performance. Both are always shown together to avoid false conclusions.',
@@ -5488,6 +6934,7 @@ window.I18N = (function(){
   var ACCOUNTS = [
     { handle:'juventusacademymiami', name:'Juventus Academy Miami', desc:'Cuenta principal de la academia en Miami. Auditoría completa de 24 meses vía API de Meta.', ready:true, blockId:'acct-jam', initFn:'__initJam' },
     { handle:'jacademylasvegas', name:'Juventus Academy Las Vegas', desc:'Academia hermana en Las Vegas. Compite con Albion SC y Downtown LV SC. Auditoría completa de 24 meses vía API de Meta.', ready:true, blockId:'acct-jacademylasvegas', initFn:'__initJam_jacademylasvegas' },
+    { handle:'juventuscampsmx', name:'Juventus Camps Mexico', desc:'Camps de Juventus en México. Auditoría completa vía API de Meta.', ready:true, blockId:'acct-juventuscampsmx', initFn:'__initJam_juventuscampsmx' },
     { handle:'juventuscampsusa', name:'Juventus Camps', desc:'Camps de Juventus en EE. UU. Auditoría completa de 24 meses vía API de Meta.', ready:true, blockId:'acct-juventuscamps', initFn:'__initJam_juventuscamps' },
     { handle:'legendscupmiami', name:'Legends Cup Miami', desc:'Torneo propio en Miami. Compite en fechas con Tampa Bay Super Cup.', ready:false },
     { handle:'clashofthechampions_', name:'Clash of the Champions', desc:'Torneo propio. Cuenta pequeña con engagement alto por porcentaje.', ready:false },
